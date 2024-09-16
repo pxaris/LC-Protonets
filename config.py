@@ -8,7 +8,6 @@ SAVED_MODELS_DIR = os.path.join(ROOT_DIR, 'saved_models')
 PRETRAINED_DIR = os.path.join(SAVED_MODELS_DIR, 'pretrained')
 EVALUATIONS_DIR = os.path.join(ROOT_DIR, 'evaluation')
 LOGS_DIR = os.path.join(ROOT_DIR, 'logs')
-VISUALIZATION_DIR = os.path.join(LOGS_DIR, 'visualization')
 
 # seeds for the five runs
 SEEDS = {
