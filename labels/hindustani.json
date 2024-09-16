@@ -1,0 +1,41 @@
+{
+    "train": [
+        "instrument--Voice",
+        "instrument--Tabla",
+        "form--Khayal",
+        "instrument--Harmonium",
+        "tala--Teentaal",
+        "instrument--Tambura",
+        "tala--Ektaal",
+        "instrument--Sarangi",
+        "instrument--Pakhavaj",
+        "form--Dhrupad",
+        "form--Tarana",
+        "instrument--Sarod",
+        "raga--Yaman kalyan",
+        "tala--Rupak",
+        "raga--Bageshree",
+        "tala--Jhaptaal",
+        "form--Thumri",
+        "form--Bhajan",
+        "instrument--Sitar",
+        "raga--Bhairabi"
+    ],
+    "test": [
+        "raga--Khamaj",
+        "instrument--Shehnai",
+        "raga--Ahir bhairav",
+        "raga--Madhukauns",
+        "raga--Malkauns",
+        "tala--Sooltal",
+        "instrument--Harp",
+        "instrument--Violin",
+        "raga--Chandrakauns",
+        "raga--Des",
+        "raga--Kedar",
+        "tala--Jhoomra",
+        "raga--Bairagi",
+        "raga--Bihag",
+        "raga--Charukeshi"
+    ]
+}
