@@ -21,16 +21,17 @@ SEEDS = {
 # FSL configuration per dataset
 FSL_CONFIG = {
     'training': {
-        'n_way': 10, # number of labels for each task/episode
-        'k_shot': 3, # number of support items per label
-        'n_query': 3, # number of query items per label
-        'n_task': 50, # number of tasks (episodes) per epoch
-        'n_valid_labels': 5, # number of labels to be used for validation
-        'n_valid_tasks': 20, # number of tasks during validation
-        'epochs': 200, # total number of epochs
-        'lr': 1e-5, # learning rate while training from scratch
-        'finetuning_lr': 1e-6, # learning rate while fine-tuning a pre-trained model
-        'early_stopping_patience': 20 # number of consecutive epochs with worse validation metric before early stopping is activated 
+        'n_way': 10,  # number of labels for each task/episode
+        'k_shot': 3,  # number of support items per label
+        'n_query': 3,  # number of query items per label
+        'n_task': 50,  # number of tasks (episodes) per epoch
+        'n_valid_labels': 5,  # number of labels to be used for validation
+        'n_valid_tasks': 20,  # number of tasks during validation
+        'epochs': 200,  # total number of epochs
+        'lr': 1e-5,  # learning rate while training from scratch
+        'finetuning_lr': 1e-6,  # learning rate while fine-tuning a pre-trained model
+        # number of consecutive epochs with worse validation metric before early stopping is activated
+        'early_stopping_patience': 20
     }
 }
 
