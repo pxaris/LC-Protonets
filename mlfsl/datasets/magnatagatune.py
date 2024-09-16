@@ -32,24 +32,24 @@ class MagnatagatuneFSL(Dataset):
 
         self.files_list = np.load(os.path.join(
             self.split_path, f'{self.split}.npy'))
-        
+
         self.all_ids = self.get_ids()
 
         self.metadata = np.load(os.path.join(
             self.split_path, 'metadata.npy'), allow_pickle=True).item()
         self._all_labels = [self.metadata[id] for id in self.all_ids]
-        
+
         self.ids, self._labels = [], []
         self.labels = []
         for piece_id, label_list in zip(self.all_ids, self._all_labels):
-            # include only the item's labels that exist in the specified target labels 
+            # include only the item's labels that exist in the specified target labels
             target_label_list = list(set(label_list) & set(self._tags))
             # do not include items that do not have any target label
             if target_label_list:
                 self.labels += [target_label_list]
                 self.ids.append(piece_id)
                 self._labels += [label_list]
-        
+
         self.len_labels = len(self._tags)
 
         self.label_transformer = MultiLabelBinarizer(classes=self._tags)
@@ -67,7 +67,7 @@ class MagnatagatuneFSL(Dataset):
             _, path = line.split('\t')
             ids.append(path.split('/')[-1].replace('.mp3', ''))
         return ids
-    
+
     def get_spectrogram_and_tags(self, item):
         spec_path = os.path.join(self.specs_dir, f'{self.ids[item]}.npy')
         spectrogram = np.load(spec_path, mmap_mode='r').T
@@ -75,10 +75,10 @@ class MagnatagatuneFSL(Dataset):
         if self.split in ['train', 'valid']:
             # get a single chunk randomly
             random_idx = int(np.floor(np.random.random(1) *
-                                    (len(spectrogram)-self.input_length)))
+                                      (len(spectrogram)-self.input_length)))
             spectrogram = np.array(
                 spectrogram[random_idx:random_idx+self.input_length])
-        
+
         tags_binary = self.labels[item]
 
         return spectrogram, tags_binary

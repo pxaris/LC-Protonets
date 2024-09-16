@@ -19,7 +19,8 @@ class LyraDatasetFSL(Dataset):
                  ):
 
         if split not in ['train', 'valid', 'test']:
-            raise ValueError(f'split argument must take one of the following values: "train", "valid", "test"')
+            raise ValueError(
+                f'split argument must take one of the following values: "train", "valid", "test"')
         self.split = split
         self._tags = tags
         self.mel_specs_config = mel_specs_config
@@ -43,11 +44,11 @@ class LyraDatasetFSL(Dataset):
             spectrogram_file = os.path.join(self.specs_dir, piece_id + '.npy')
             if self.split in ['train', 'valid']:
                 piece_mel = self.get_random_spec_segment_from_file(
-                        spectrogram_file)
+                    spectrogram_file)
             else:
                 piece_mel = self.get_spectrogram_from_file(spectrogram_file)
-            
-            # include only the item's labels that exist in the specified target labels 
+
+            # include only the item's labels that exist in the specified target labels
             target_label_list = list(set(label_list) & set(self._tags))
             # do not include items that do not have any target label
             if target_label_list:
@@ -74,14 +75,16 @@ class LyraDatasetFSL(Dataset):
         return [np.load(spectrogram_file).T]
 
     def get_ids_labels(self, annotations_file):
-        data_df = pd.read_csv(annotations_file, sep='\t', keep_default_na=False)
+        data_df = pd.read_csv(annotations_file, sep='\t',
+                              keep_default_na=False)
         if self.split in ['train', 'valid']:
             n_val_items = int(len(data_df) * self.val_size)
-            n_samples = n_val_items if self.split == 'valid' else len(data_df) - n_val_items
+            n_samples = n_val_items if self.split == 'valid' else len(
+                data_df) - n_val_items
             # a same item can be sampled for both training and validation sets
-            # but its labels will be totally different in the two sets 
+            # but its labels will be totally different in the two sets
             data_df = data_df.sample(n=n_samples, random_state=12)
-        
+
         ids, labels = [], []
         for _, row in data_df.iterrows():
             ids.append(row['id'])
@@ -89,9 +92,9 @@ class LyraDatasetFSL(Dataset):
             for col_name in ['instruments', 'genres', 'place']:
                 label_list += [
                     f'{col_name}--{label}' for label in row[col_name].split('|')]
-                        
+
             labels.append(label_list)
-        
+
         return ids, labels
 
     def __getitem__(self, item):
@@ -99,4 +102,3 @@ class LyraDatasetFSL(Dataset):
 
     def __len__(self):
         return len(self.labels)
-

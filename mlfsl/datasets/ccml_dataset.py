@@ -31,7 +31,7 @@ class CCMLDatasetFSL(Dataset):
 
         self.all_ids = np.load(os.path.join(
             self.split_path, f'{self.split}.npy'), allow_pickle=True).tolist()
-        
+
         self.metadata = np.load(os.path.join(
             self.split_path, 'metadata.npy'), allow_pickle=True).item()
         self._all_labels = [self.metadata[id] for id in self.all_ids]
@@ -39,14 +39,14 @@ class CCMLDatasetFSL(Dataset):
         self.ids, self._labels = [], []
         self.labels = []
         for piece_id, label_list in zip(self.all_ids, self._all_labels):
-            # include only the item's labels that exist in the specified target labels 
+            # include only the item's labels that exist in the specified target labels
             target_label_list = list(set(label_list) & set(self._tags))
             # do not include items that do not have any target label
             if target_label_list:
                 self.labels += [target_label_list]
                 self.ids.append(piece_id)
                 self._labels += [label_list]
-        
+
         self.len_labels = len(self._tags)
 
         self.label_transformer = MultiLabelBinarizer(classes=self._tags)
