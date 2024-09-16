@@ -9,7 +9,8 @@ class Protonets(nn.Module):
             self,
             backbone,
             distance='cos',  # "cos" for cosine distance and "l2" for euclidean distance
-            normalize_distances=False, # whether to apply min-max row-wise normalization to distances
+            # whether to apply min-max row-wise normalization to distances
+            normalize_distances=False,
     ):
         super().__init__()
         self.backbone = backbone
@@ -19,10 +20,13 @@ class Protonets(nn.Module):
 
     def process_support_set(self, support_items, support_labels, device='cpu'):
         self.support_labels = support_labels.to(device)
-        self.support_embeddings = self.compute_embeddings(support_items, device=device)
-        self.per_label_embeddings = self.compute_per_label_embeddings(self.support_embeddings, self.support_labels, device)
-        self.prototypes = self.compute_prototypes(self.per_label_embeddings, device)
-    
+        self.support_embeddings = self.compute_embeddings(
+            support_items, device=device)
+        self.per_label_embeddings = self.compute_per_label_embeddings(
+            self.support_embeddings, self.support_labels, device)
+        self.prototypes = self.compute_prototypes(
+            self.per_label_embeddings, device)
+
     def compute_embeddings(self, items, device='cpu'):
         if torch.is_tensor(items):
             # training phase
@@ -31,10 +35,12 @@ class Protonets(nn.Module):
             # in testing phase items is a list of lists that include all input chunks for each piece
             embeddings = torch.tensor(()).to(device)
             for item_chunks in items:
-                chunks = torch.cat([torch.tensor(chunk[np.newaxis, :, :]) for chunk in item_chunks])
+                chunks = torch.cat(
+                    [torch.tensor(chunk[np.newaxis, :, :]) for chunk in item_chunks])
                 chunks_embeddings = self.backbone(chunks.float().to(device))
                 # mean reduction is applied to chunk embeddings
-                embeddings = torch.cat([embeddings, torch.mean(chunks_embeddings, axis=0).unsqueeze(0)])
+                embeddings = torch.cat([embeddings, torch.mean(
+                    chunks_embeddings, axis=0).unsqueeze(0)])
 
         return embeddings
 
@@ -45,11 +51,13 @@ class Protonets(nn.Module):
             item_labels_indices = torch.nonzero(item_labels).T.tolist()[0]
             for label_idx in item_labels_indices:
                 if label_idx not in per_label_embeddings:
-                    per_label_embeddings[label_idx] = torch.tensor(()).to(device)
-                per_label_embeddings[label_idx] = torch.cat([per_label_embeddings[label_idx], embedding.unsqueeze(0)])
-        
+                    per_label_embeddings[label_idx] = torch.tensor(
+                        ()).to(device)
+                per_label_embeddings[label_idx] = torch.cat(
+                    [per_label_embeddings[label_idx], embedding.unsqueeze(0)])
+
         return per_label_embeddings
-    
+
     @staticmethod
     def compute_prototypes(per_label_embeddings, device):
         prototypes = torch.tensor(()).to(device)
@@ -58,16 +66,16 @@ class Protonets(nn.Module):
             # Prototype is the mean of all embeddings corresponding to a label-combination
             mean_embedding = per_label_embeddings[label_idx].mean(0)
             prototypes = torch.cat([prototypes, mean_embedding.unsqueeze(0)])
-        
-        return prototypes    
-    
+
+        return prototypes
+
     def euclidean_distance(self, x, y):
         distances = torch.cdist(x, y)
         if self.normalize_distances:
             # distances to lie in [-1, 1] in order to be fed to a sigmoid
             distances = min_max_row_wise(distances, min=-1, max=1)
         return distances
-    
+
     @staticmethod
     def cosine_similarity(x, y, eps=1e-8):
         # Normalize x and y
@@ -91,14 +99,17 @@ class Protonets(nn.Module):
             the distances from the prototypes (n_query, n_prototypes)
         '''
         # extract the embeddings of query items
-        query_embeddings = self.compute_embeddings(query_items, device=self.prototypes.device)
+        query_embeddings = self.compute_embeddings(
+            query_items, device=self.prototypes.device)
 
         # compute the distance of queries from the prototypes
         if self.distance == 'cos':
             # distances will lie in [-1, 1] and they can be, in turn, fed to a sigmoid
-            similarities = self.cosine_similarity(query_embeddings, self.prototypes)
+            similarities = self.cosine_similarity(
+                query_embeddings, self.prototypes)
             distances = -similarities
         else:
-            distances = self.euclidean_distance(query_embeddings, self.prototypes)
-    
+            distances = self.euclidean_distance(
+                query_embeddings, self.prototypes)
+
         return distances

@@ -22,11 +22,14 @@ def train_one_epoch(model, train_loader, config):
         # compute loss
         if config['method'] == 'LCP':
             # expand query labels in LC-Protonets
-            expanded_query_labels = model.expand_labels_multihot_vectors(query_labels)
-            loss = config['loss_function'](-distances, expanded_query_labels.float().to(config['device']))
+            expanded_query_labels = model.expand_labels_multihot_vectors(
+                query_labels)
+            loss = config['loss_function'](-distances,
+                                           expanded_query_labels.float().to(config['device']))
         else:
-            # baseline - one prototype per label and hence distances aree equal to labels 
-            loss = config['loss_function'](-distances, query_labels.float().to(config['device']))
+            # baseline - one prototype per label and hence distances aree equal to labels
+            loss = config['loss_function'](-distances,
+                                           query_labels.float().to(config['device']))
 
         # prepare
         config['optimizer'].zero_grad()
@@ -59,7 +62,8 @@ def train_one_epoch_ovr(model, train_loader, config):
             distances = model(query_item.to(config['device']))
 
             # compute loss
-            loss = config['loss_function'](-distances, query_active_label.float().to(config['device']))
+            loss = config['loss_function'](-distances,
+                                           query_active_label.float().to(config['device']))
 
             # prepare
             config['optimizer'].zero_grad()
@@ -76,13 +80,15 @@ def train_one_epoch_ovr(model, train_loader, config):
 def train_model(model, train_loader, val_loader, config):
     start_time = time.time()
     kickoff_message = f'Training started for model "{Path(config["save_path"]).parent.name}/{Path(config["save_path"]).stem}"...'
-    print(kickoff_message)    
+    print(kickoff_message)
     config['logger'].info(kickoff_message)
-    
+
     # report the number of trainable parameters
-    n_trainable_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
-    config['logger'].info(f'number of trainable parameters: {n_trainable_params}')
-    
+    n_trainable_params = sum(p.numel()
+                             for p in model.parameters() if p.requires_grad)
+    config['logger'].info(
+        f'number of trainable parameters: {n_trainable_params}')
+
     if not config['early_stopping_patience']:
         # no early-stopping; EarlyStopper will just save the best model
         config['early_stopping_patience'] = config['epochs']
@@ -95,9 +101,9 @@ def train_model(model, train_loader, val_loader, config):
             train_loss = train_one_epoch_ovr(model, train_loader, config)
         else:
             train_loss = train_one_epoch(model, train_loader, config)
-        
+
         print(f"Training loss {train_loss}")
-        
+
         # evaluate on validation set
         if config['method'] == 'OvR':
             validation_f1, _, _, _ = evaluate_ovr(
@@ -105,7 +111,7 @@ def train_model(model, train_loader, val_loader, config):
         else:
             validation_f1, _, _, _ = evaluate(
                 model, val_loader, config, is_test=False)
-        
+
         print(
             f'Validation set metrics:\n- macro-f1: {validation_f1}')
 
@@ -116,7 +122,8 @@ def train_model(model, train_loader, val_loader, config):
     done_message = f'\nDone. Epoch with the best model: {early_stopper.best_epoch}/{config["epochs"]}'
     print(done_message)
     config['logger'].info(done_message)
-    config['logger'].info(f'Execution time: {round(time.time() - start_time)} seconds')
+    config['logger'].info(
+        f'Execution time: {round(time.time() - start_time)} seconds')
 
 
 def evaluate(model, dataloader, config, is_test=True):
@@ -132,14 +139,15 @@ def evaluate(model, dataloader, config, is_test=True):
             # compute prototypes
             model.process_support_set(
                 support_items, support_labels, device=config['device'])
-            
+
             # get distances
             distances = model(query_items)
 
             # predictions
             if config['method'] == 'LCP':
                 # get predictions with LC-Protonets method
-                predictions = get_lc_protonets_predictions(distances, model.support_label_combinations, query_labels.shape[1], tqdm_active=is_test)
+                predictions = get_lc_protonets_predictions(
+                    distances, model.support_label_combinations, query_labels.shape[1], tqdm_active=is_test)
             else:
                 # baseline method, one prototype per label
                 probabilities = sigmoid(-distances)
@@ -152,7 +160,7 @@ def evaluate(model, dataloader, config, is_test=True):
 
             tasks_macro_f1 += f1_score(y, y_, average='macro')
             tasks_micro_f1 += f1_score(y, y_, average='micro')
-    
+
     # add info messages
     info_messages += [
         f'\n[INFO]',
@@ -168,7 +176,8 @@ def evaluate(model, dataloader, config, is_test=True):
     n_tasks = len(dataloader)
     if n_tasks == 1:
         # n_tasks is exepected to be 1 during evaluation on the test set
-        all_target_names = [str(label) for label in dataloader.dataset.label_transformer.classes_.tolist()]
+        all_target_names = [
+            str(label) for label in dataloader.dataset.label_transformer.classes_.tolist()]
         target_names = [all_target_names[i] for i in selected_labels_idx]
         clf_report = classification_report(y, y_, target_names=target_names)
     else:
@@ -196,16 +205,16 @@ def evaluate_ovr(model, dataloader, config, is_test=True):
             support_labels = cluster_labels[:support_length]
             query_item = cluster_items[support_length:]
             query_labels = cluster_labels[support_length:]
-            
+
             # compute prototypes
             model.process_support_set(
                 support_items, support_labels, device=config['device'])
-            
+
             # get distances
             distances = model(query_item)
-            
+
             # predictions
-            probabilities = sigmoid(-distances)            
+            probabilities = sigmoid(-distances)
             probabilities = probabilities.detach().cpu().numpy()
             predictions = np.around(probabilities)
 
@@ -227,10 +236,11 @@ def evaluate_ovr(model, dataloader, config, is_test=True):
         f'- Mean predicted labels per item: {round(np.count_nonzero(np.array(y_))/len(y_), 2)}\n',
         f'Execution time: {round(time.time() - start_time)} seconds'
     ]
-    
+
     n_tasks = len(dataloader)
     if is_test:
-        all_target_names = [str(label) for label in dataloader.dataset.label_transformer.classes_.tolist()]
+        all_target_names = [
+            str(label) for label in dataloader.dataset.label_transformer.classes_.tolist()]
         target_names = [all_target_names[i] for i in cluster_active_labels]
         clf_report = classification_report(y, y_, target_names=target_names)
     else:
@@ -242,13 +252,13 @@ def get_lc_protonets_predictions(items_distances_from_lc_protonets, label_combin
     predictions = []
     for item_distances_from_protonets in tqdm(items_distances_from_lc_protonets, disable=(not tqdm_active)):
         min_distance = np.inf
-        predicted_lc = tuple([])        
+        predicted_lc = tuple([])
         for distance_from_lc_protonet, protonet_lc in zip(item_distances_from_protonets, label_combinations):
             if distance_from_lc_protonet < min_distance:
                 predicted_lc = protonet_lc
                 min_distance = distance_from_lc_protonet
             elif distance_from_lc_protonet == min_distance:
-                # in case of same distances, prefer one with the more labels 
+                # in case of same distances, prefer one with the more labels
                 # this approach supports hierarchically related labels
                 if len(protonet_lc) > len(predicted_lc):
                     predicted_lc = protonet_lc
@@ -264,7 +274,8 @@ def get_lc_protonets_predictions(items_distances_from_lc_protonets, label_combin
 
 
 def get_distances_from_singletons(distances, label_combinations, n_labels):
-    singletons_indices = sorted([label_combinations.index(tuple([idx])) for idx in range(n_labels)])
+    singletons_indices = sorted(
+        [label_combinations.index(tuple([idx])) for idx in range(n_labels)])
     return distances[:, singletons_indices]
 
 
@@ -293,7 +304,8 @@ def min_max_row_wise(tensor, min=0.0, max=1.0):
     max_vals = torch.amax(tensor, dim=1, keepdim=True)
 
     # Normalize each row using min and max values
-    normalized = (tensor - min_vals) / (max_vals - min_vals + eps) * (max - min) + min
+    normalized = (tensor - min_vals) / (max_vals -
+                                        min_vals + eps) * (max - min) + min
 
     return normalized
 
