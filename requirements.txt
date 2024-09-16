@@ -4,6 +4,6 @@ imblearn==0.0
 matplotlib==3.9.1
 seaborn==0.13.2
 librosa==0.10.2
-tqdm==4.66.4
+tqdm==4.66.5
 torchaudio==2.4.0
 pandas==2.2.2
