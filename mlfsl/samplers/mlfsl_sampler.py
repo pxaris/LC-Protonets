@@ -58,15 +58,15 @@ class MLFSLSampler(Sampler):
 
     def __len__(self):
         return self.n_task
-    
+
     def sample_items(self, selected_labels, n_items, exclude_set):
         # sample set
         sample_set = set()
         # items to sample from
         pool_items_indices = set(self.indices) - exclude_set
-        
+
         # keep running counts to avoid sampling more than necessary items
-        label_counts = {label_name: 0 for label_name in selected_labels}        
+        label_counts = {label_name: 0 for label_name in selected_labels}
         for label in selected_labels:
             n_items_to_sample = n_items - label_counts[label]
             if n_items_to_sample > 0:
@@ -80,7 +80,6 @@ class MLFSLSampler(Sampler):
                             label_counts[tuple([selected_item_label])] += 1
         return sample_set
 
-
     def __iter__(self):
         '''
         Sample n_way labels uniformly at random,
@@ -92,16 +91,19 @@ class MLFSLSampler(Sampler):
             batch_ids = []
             selected_labels = random.sample(
                 self.per_label_indices.keys(), self.n_way)
-            self.selected_labels_idx = torch.tensor([label[0] for label in selected_labels])
+            self.selected_labels_idx = torch.tensor(
+                [label[0] for label in selected_labels])
 
             # support set
-            support_set = self.sample_items(selected_labels, n_items=self.k_shot, exclude_set=set())
+            support_set = self.sample_items(
+                selected_labels, n_items=self.k_shot, exclude_set=set())
             batch_ids.extend(list(support_set))
             self.support_set_length = len(support_set)
 
             # query set
             if self.n_query:
-                query_set = self.sample_items(selected_labels, n_items=self.n_query, exclude_set=support_set)
+                query_set = self.sample_items(
+                    selected_labels, n_items=self.n_query, exclude_set=support_set)
             else:
                 # if n_query is None, return all query items
                 # to be used in evaluation phases
@@ -128,17 +130,18 @@ class MLFSLSampler(Sampler):
             # in case of test set, the full length of the spectrogram is retuned by the dataset
             all_items = []
             for x in input_data:
-                splitted_spectrogram = split_spectrogram(x[0], self.input_length)
+                splitted_spectrogram = split_spectrogram(
+                    x[0], self.input_length)
                 all_items.append(splitted_spectrogram)
             support_items = all_items[:self.support_set_length]
             query_items = all_items[self.support_set_length:]
-        else:        
+        else:
             all_items = torch.cat([torch.tensor(x[0]).unsqueeze(0)
-                                for x in input_data])
+                                   for x in input_data])
             # support_set_length is stored to the object to be used here
             support_items = all_items[:self.support_set_length, :, :]
             query_items = all_items[self.support_set_length:, :, :]
-        
+
         all_labels = torch.cat([torch.tensor(x[1]).unsqueeze(0)
                                for x in input_data])
         # filter all labels to keep only the selected ones in the current task
