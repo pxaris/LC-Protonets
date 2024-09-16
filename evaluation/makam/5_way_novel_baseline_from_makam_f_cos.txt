@@ -1,0 +1,35 @@
+
+Evaluation of model "makam/baseline_from_makam_f_cos" on "makam" test set, with
+- N-way: 5
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.3461684748920555
+- micro-f1: 0.3436426116838488
+
+
+Classification report:
+                   precision    recall  f1-score   support
+
+     makam--Mahur       0.29      0.77      0.43        35
+      usul--Semai       0.05      0.19      0.09        26
+instrument--Daire       0.33      1.00      0.50        26
+  makam--Hicazkar       0.27      0.79      0.40        29
+  makam--Muhayyer       0.20      0.76      0.32        25
+
+        micro avg       0.23      0.71      0.34       141
+        macro avg       0.23      0.70      0.35       141
+     weighted avg       0.24      0.71      0.35       141
+      samples avg       0.24      0.70      0.33       141
+
+
+[INFO]
+- Method: baseline
+- # Prototypes: 5
+- # Unique items in support set: 13
+- # Unique items in query set: 138
+- Mean groung truth labels per item: 1.02
+- Mean predicted labels per item: 3.2
+
+Execution time: 3 seconds

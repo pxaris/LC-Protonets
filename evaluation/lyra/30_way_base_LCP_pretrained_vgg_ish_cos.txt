@@ -1,0 +1,60 @@
+
+Evaluation of model "pretrained/lyra/vgg_ish" on "lyra" test set, with
+- N-way: 30
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.4128358252218532
+- micro-f1: 0.6608300907911803
+
+
+Classification report:
+                         precision    recall  f1-score   support
+
+  instruments--Santouri       0.64      0.41      0.50        34
+       place--Macedonia       0.09      0.17      0.12        12
+  instruments--Mandolin       0.25      0.71      0.37         7
+     instruments--Piano       0.00      0.00      0.00         0
+  genres--Peloponnesian       0.08      0.14      0.10         7
+ instruments--Accordion       0.45      0.51      0.48        49
+   genres--Mikrasiatiko       0.46      0.18      0.26        33
+         genres--Aegean       0.62      0.19      0.29        27
+            place--None       0.89      0.46      0.61        54
+      place--Asia-minor       0.46      0.18      0.26        33
+          genres--Laiko       0.33      0.20      0.25         5
+       genres--Rebetiko       0.20      0.03      0.05        33
+  instruments--Kanonaki       0.75      0.22      0.34        27
+      place--Aegean-sea       0.62      0.19      0.29        27
+     instruments--Voice       0.89      0.65      0.75       201
+     place--Peloponnese       0.08      0.14      0.10         7
+      instruments--Lyra       0.77      0.51      0.62        39
+  instruments--Bouzouki       0.88      0.19      0.31        37
+          place--Epirus       0.30      0.11      0.16        27
+    genres--Traditional       0.98      0.91      0.94       253
+    instruments--Violin       0.81      0.62      0.70       154
+    instruments--Laouto       0.86      0.71      0.78       125
+instruments--Percussion       0.99      0.52      0.68       172
+       genres--Epirotic       0.30      0.11      0.16        27
+    instruments--Guitar       0.81      0.79      0.80       141
+      instruments--Bass       0.80      0.91      0.85        35
+      genres--Nisiotiko       0.89      0.42      0.57        59
+     genres--Macedonian       0.09      0.17      0.12        12
+   instruments--Klarino       0.95      0.69      0.80       108
+       instruments--Oud       0.60      0.07      0.12        45
+
+              micro avg       0.79      0.57      0.66      1790
+              macro avg       0.56      0.37      0.41      1790
+           weighted avg       0.79      0.57      0.64      1790
+            samples avg       0.79      0.58      0.63      1790
+
+
+[INFO]
+- Method: LCP
+- # Prototypes: 2771
+- # Unique items in support set: 31
+- # Unique items in query set: 299
+- Mean groung truth labels per item: 5.99
+- Mean predicted labels per item: 4.33
+
+Execution time: 49 seconds

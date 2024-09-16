@@ -1,0 +1,35 @@
+
+Evaluation of model "hindustani/baseline_cos" on "hindustani" test set, with
+- N-way: 5
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.6748583953947428
+- micro-f1: 0.6996904024767802
+
+
+Classification report:
+                       precision    recall  f1-score   support
+
+    instrument--Tabla       0.55      0.98      0.70       123
+instrument--Harmonium       0.41      0.98      0.58        92
+         form--Khayal       0.47      0.94      0.63        95
+       tala--Teentaal       0.38      0.83      0.52        81
+    instrument--Voice       0.91      0.99      0.95       201
+
+            micro avg       0.55      0.95      0.70       592
+            macro avg       0.54      0.94      0.67       592
+         weighted avg       0.61      0.95      0.73       592
+          samples avg       0.54      0.96      0.65       592
+
+
+[INFO]
+- Method: baseline
+- # Prototypes: 5
+- # Unique items in support set: 5
+- # Unique items in query set: 222
+- Mean groung truth labels per item: 2.67
+- Mean predicted labels per item: 4.61
+
+Execution time: 100 seconds

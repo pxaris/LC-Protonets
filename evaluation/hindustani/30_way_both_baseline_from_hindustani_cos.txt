@@ -1,0 +1,60 @@
+
+Evaluation of model "hindustani/baseline_from_hindustani_cos" on "hindustani" test set, with
+- N-way: 30
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.2354696922373967
+- micro-f1: 0.31058823529411766
+
+
+Classification report:
+                       precision    recall  f1-score   support
+
+         tala--Ektaal       0.21      0.94      0.35        34
+    instrument--Sitar       0.27      1.00      0.43         9
+   instrument--Violin       0.02      1.00      0.03         2
+      raga--Bageshree       0.01      1.00      0.02         1
+    instrument--Sarod       0.04      1.00      0.08         2
+        form--Dhrupad       0.24      0.92      0.38        13
+       raga--Malkauns       0.02      1.00      0.04         3
+  instrument--Tambura       0.33      0.88      0.48        51
+       raga--Bhairabi       0.03      0.83      0.06         6
+  instrument--Shehnai       0.06      1.00      0.11         3
+            raga--Des       0.01      0.50      0.01         2
+     instrument--Harp       0.02      1.00      0.03         2
+   raga--Ahir bhairav       0.01      0.33      0.02         3
+       tala--Jhaptaal       0.04      1.00      0.08         6
+    instrument--Voice       0.98      0.88      0.93       172
+         raga--Khamaj       0.04      0.50      0.07         6
+     raga--Madhukauns       0.02      1.00      0.04         3
+   raga--Chandrakauns       0.01      0.50      0.02         2
+         form--Tarana       0.02      1.00      0.04         3
+    instrument--Tabla       0.68      0.90      0.78       105
+         form--Khayal       0.56      1.00      0.72        83
+instrument--Harmonium       0.56      0.97      0.71        79
+ instrument--Pakhavaj       0.25      1.00      0.41        14
+          tala--Rupak       0.03      1.00      0.05         4
+  instrument--Sarangi       0.12      1.00      0.21        12
+         form--Bhajan       0.03      0.80      0.07         5
+       tala--Teentaal       0.43      0.93      0.58        69
+        tala--Sooltal       0.06      1.00      0.11         3
+   raga--Yaman kalyan       0.03      1.00      0.06         5
+         form--Thumri       0.09      0.93      0.16        14
+
+            micro avg       0.19      0.92      0.31       716
+            macro avg       0.17      0.89      0.24       716
+         weighted avg       0.56      0.92      0.64       716
+          samples avg       0.19      0.89      0.30       716
+
+
+[INFO]
+- Method: baseline
+- # Prototypes: 30
+- # Unique items in support set: 44
+- # Unique items in query set: 193
+- Mean groung truth labels per item: 3.71
+- Mean predicted labels per item: 18.31
+
+Execution time: 23 seconds

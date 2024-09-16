@@ -1,0 +1,50 @@
+
+Evaluation of model "pretrained/carnatic/vgg_ish" on "carnatic" test set, with
+- N-way: 20
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.29655478872646923
+- micro-f1: 0.3782414055241152
+
+
+Classification report:
+                            precision    recall  f1-score   support
+
+        instrument--Ghatam       0.31      1.00      0.48       150
+            form--Mangalam       0.02      1.00      0.04        10
+            form--Thillana       0.03      1.00      0.05        13
+        tala--khanda chapu       0.03      1.00      0.06        15
+        tala--mishra chapu       0.05      1.00      0.10        25
+               raga--thodi       0.02      1.00      0.04         9
+               form--Kriti       0.70      1.00      0.82       335
+          raga--ragamalika       0.02      1.00      0.04        11
+form--Varnam - Tana Varnam       0.07      1.00      0.12        32
+      instrument--Khanjira       0.16      1.00      0.28        79
+     instrument--Mridangam       0.78      1.00      0.87       373
+              tala--rupaka       0.12      1.00      0.21        56
+             raga--kalyani       0.01      1.00      0.02         6
+            raga--bhairavi       0.01      1.00      0.02         6
+         instrument--Voice       0.84      1.00      0.91       401
+             form--Pallavi       0.03      1.00      0.06        14
+             form--Alapana       0.07      1.00      0.12        32
+       instrument--Morsing       0.03      1.00      0.06        14
+        instrument--Violin       0.83      1.00      0.91       399
+                 tala--adi       0.54      1.00      0.70       259
+
+                 micro avg       0.23      1.00      0.38      2239
+                 macro avg       0.23      1.00      0.30      2239
+              weighted avg       0.63      1.00      0.73      2239
+               samples avg       0.23      1.00      0.37      2239
+
+
+[INFO]
+- Method: baseline
+- # Prototypes: 20
+- # Unique items in support set: 38
+- # Unique items in query set: 480
+- Mean groung truth labels per item: 4.66
+- Mean predicted labels per item: 20.0
+
+Execution time: 29 seconds

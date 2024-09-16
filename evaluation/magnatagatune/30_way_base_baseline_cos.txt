@@ -1,0 +1,60 @@
+
+Evaluation of model "magnatagatune/baseline_cos" on "magnatagatune" test set, with
+- N-way: 30
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.24286741931779807
+- micro-f1: 0.2504443231593826
+
+
+Classification report:
+              precision    recall  f1-score   support
+
+      guitar       0.24      0.66      0.35       865
+    no vocal       0.05      0.53      0.09       188
+      indian       0.06      0.85      0.12       170
+  male vocal       0.06      0.73      0.11       161
+      techno       0.29      0.94      0.44       592
+      female       0.08      0.42      0.14       376
+       synth       0.10      0.66      0.17       325
+        fast       0.20      0.79      0.32       490
+       woman       0.07      0.51      0.12       246
+       drums       0.24      0.90      0.38       510
+      vocals       0.11      0.61      0.18       278
+       piano       0.20      0.89      0.32       462
+        rock       0.30      0.99      0.46       558
+ harpsichord       0.08      1.00      0.15       186
+   classical       0.31      0.97      0.47       691
+   no vocals       0.06      0.50      0.10       242
+        beat       0.17      0.97      0.29       339
+       vocal       0.11      0.48      0.18       428
+     singing       0.08      0.52      0.14       290
+     strings       0.16      0.87      0.27       390
+      violin       0.09      0.87      0.16       228
+       opera       0.17      0.99      0.29       369
+        loud       0.14      0.97      0.24       270
+        male       0.09      0.67      0.16       261
+     ambient       0.23      0.81      0.36       505
+  electronic       0.21      0.81      0.34       490
+       quiet       0.12      0.95      0.21       244
+        slow       0.30      0.76      0.43       800
+         pop       0.10      0.95      0.17       190
+       flute       0.07      0.87      0.12       159
+
+   micro avg       0.15      0.79      0.25     11303
+   macro avg       0.15      0.78      0.24     11303
+weighted avg       0.18      0.79      0.29     11303
+ samples avg       0.15      0.80      0.24     11303
+
+
+[INFO]
+- Method: baseline
+- # Prototypes: 30
+- # Unique items in support set: 38
+- # Unique items in query set: 4171
+- Mean groung truth labels per item: 2.71
+- Mean predicted labels per item: 14.42
+
+Execution time: 23 seconds

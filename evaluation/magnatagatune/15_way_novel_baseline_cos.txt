@@ -1,0 +1,45 @@
+
+Evaluation of model "magnatagatune/baseline_cos" on "magnatagatune" test set, with
+- N-way: 15
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.21644483872308293
+- micro-f1: 0.21801705756929637
+
+
+Classification report:
+               precision    recall  f1-score   support
+
+female vocals       0.13      0.46      0.21        98
+        heavy       0.11      1.00      0.20        59
+  male vocals       0.13      0.88      0.23        82
+     electric       0.05      0.22      0.08        54
+      electro       0.13      0.95      0.23        74
+         jazz       0.12      0.83      0.22        83
+    hard rock       0.16      1.00      0.28        86
+     no piano       0.12      0.58      0.20        65
+       voices       0.12      0.72      0.20        54
+       trance       0.09      0.86      0.16        56
+ instrumental       0.14      0.65      0.23        72
+      foreign       0.13      0.77      0.22        62
+       chorus       0.20      0.99      0.33        68
+   harpsicord       0.17      0.98      0.28        57
+         drum       0.12      0.78      0.20        79
+
+    micro avg       0.13      0.78      0.22      1049
+    macro avg       0.13      0.78      0.22      1049
+ weighted avg       0.13      0.78      0.22      1049
+  samples avg       0.13      0.78      0.22      1049
+
+
+[INFO]
+- Method: baseline
+- # Prototypes: 15
+- # Unique items in support set: 35
+- # Unique items in query set: 890
+- Mean groung truth labels per item: 1.18
+- Mean predicted labels per item: 7.25
+
+Execution time: 5 seconds

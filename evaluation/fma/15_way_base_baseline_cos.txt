@@ -1,0 +1,45 @@
+
+Evaluation of model "fma/baseline_cos" on "fma" test set, with
+- N-way: 15
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.2764605739090586
+- micro-f1: 0.29787465940054497
+
+
+Classification report:
+                    precision    recall  f1-score   support
+
+              Rock       0.63      0.89      0.74      1387
+        Indie-Rock       0.11      0.91      0.20       260
+      Experimental       0.16      0.72      0.26       438
+        Chip Music       0.08      0.91      0.15       178
+            Techno       0.07      0.90      0.12       141
+              Folk       0.16      0.94      0.27       322
+              Punk       0.32      0.93      0.47       645
+      Instrumental       0.12      0.83      0.21       272
+           Hip-Hop       0.21      0.88      0.34       443
+        Electronic       0.53      0.82      0.64      1247
+               IDM       0.08      0.85      0.15       189
+               Pop       0.06      0.58      0.11       244
+Ambient Electronic       0.04      0.58      0.08       200
+     International       0.09      0.76      0.16       221
+            Garage       0.14      0.96      0.24       277
+
+         micro avg       0.18      0.85      0.30      6464
+         macro avg       0.19      0.83      0.28      6464
+      weighted avg       0.33      0.85      0.43      6464
+       samples avg       0.19      0.83      0.30      6464
+
+
+[INFO]
+- Method: baseline
+- # Prototypes: 15
+- # Unique items in support set: 39
+- # Unique items in query set: 4574
+- Mean groung truth labels per item: 1.41
+- Mean predicted labels per item: 6.61
+
+Execution time: 107 seconds

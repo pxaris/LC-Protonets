@@ -1,0 +1,45 @@
+
+Evaluation of model "makam/OvR_from_makam_f_cos" on "makam" test set, with
+- N-way: 15
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.46158790458553406
+- micro-f1: 0.4564224736946595
+
+
+Classification report:
+                                  precision    recall  f1-score   support
+
+               instrument--Voice       0.69      0.39      0.50       635
+               instrument--Kanun       0.74      0.88      0.81       311
+              instrument--Tanbur       0.53      0.88      0.66       305
+                 instrument--Ney       0.63      0.59      0.61       301
+instrument--performing orchestra       0.45      0.96      0.61       245
+                 instrument--Oud       0.50      0.73      0.59       241
+   instrument--Classical kemençe       0.44      0.80      0.57       244
+               instrument--Cello       0.30      0.66      0.41       164
+              instrument--Violin       0.53      0.88      0.66       172
+                     usul--Aksak       0.13      0.87      0.22       103
+                    makam--Hicaz       0.16      0.66      0.25       122
+          instrument--Percussion       0.30      0.94      0.45       108
+                     usul--Düyek       0.13      0.80      0.23        91
+                usul--Aksaksemai       0.12      0.83      0.21        81
+                 makam--Nihavent       0.08      0.81      0.14        70
+
+                       micro avg       0.33      0.72      0.46      3193
+                       macro avg       0.38      0.78      0.46      3193
+                    weighted avg       0.50      0.72      0.54      3193
+                     samples avg       0.28      0.60      0.36      3193
+
+
+[INFO]
+- Method: OvR
+- # Prototypes: 15
+- # Unique items in support set: 18
+- # Unique items in query set: 1033
+- Mean groung truth labels per item: 3.09
+- Mean predicted labels per item: 6.66
+
+Execution time: 21 seconds

@@ -1,0 +1,35 @@
+
+Evaluation of model "carnatic/baseline_from_carnatic_f_cos" on "carnatic" test set, with
+- N-way: 5
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.8439429954803245
+- micro-f1: 0.849438202247191
+
+
+Classification report:
+                       precision    recall  f1-score   support
+
+   instrument--Violin       0.84      1.00      0.92       432
+          form--Kriti       0.69      1.00      0.82       353
+instrument--Mridangam       0.79      1.00      0.88       404
+            tala--adi       0.53      1.00      0.70       273
+    instrument--Voice       0.84      1.00      0.91       429
+
+            micro avg       0.74      1.00      0.85      1891
+            macro avg       0.74      1.00      0.84      1891
+         weighted avg       0.76      1.00      0.86      1891
+          samples avg       0.74      1.00      0.83      1891
+
+
+[INFO]
+- Method: baseline
+- # Prototypes: 5
+- # Unique items in support set: 5
+- # Unique items in query set: 512
+- Mean groung truth labels per item: 3.69
+- Mean predicted labels per item: 5.0
+
+Execution time: 28 seconds

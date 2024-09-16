@@ -1,0 +1,60 @@
+
+Evaluation of model "pretrained/magnatagatune/vgg_ish" on "magnatagatune" test set, with
+- N-way: 30
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.13599708428964413
+- micro-f1: 0.14278550112219143
+
+
+Classification report:
+               precision    recall  f1-score   support
+
+       guitar       0.23      1.00      0.37       866
+    classical       0.18      1.00      0.31       693
+         slow       0.21      1.00      0.35       792
+       techno       0.16      1.00      0.27       589
+      strings       0.10      1.00      0.19       389
+        drums       0.13      1.00      0.24       508
+   electronic       0.13      1.00      0.23       488
+         rock       0.15      1.00      0.26       554
+         fast       0.13      1.00      0.23       484
+        piano       0.12      1.00      0.22       460
+      ambient       0.13      1.00      0.24       503
+         beat       0.09      1.00      0.16       336
+       violin       0.06      1.00      0.11       228
+        vocal       0.11      1.00      0.20       423
+        synth       0.09      1.00      0.16       322
+female vocals       0.03      1.00      0.05        96
+    hard rock       0.02      1.00      0.04        84
+  male vocals       0.02      1.00      0.04        84
+         jazz       0.02      1.00      0.04        83
+         drum       0.02      1.00      0.04        78
+      electro       0.02      1.00      0.04        73
+ instrumental       0.02      1.00      0.04        72
+       chorus       0.02      1.00      0.04        68
+     no piano       0.02      1.00      0.03        65
+      foreign       0.02      1.00      0.03        62
+        heavy       0.02      1.00      0.03        59
+   harpsicord       0.02      1.00      0.03        58
+       voices       0.02      1.00      0.03        57
+       trance       0.01      1.00      0.03        56
+     electric       0.01      1.00      0.03        54
+
+    micro avg       0.08      1.00      0.14      8684
+    macro avg       0.08      1.00      0.14      8684
+ weighted avg       0.13      1.00      0.23      8684
+  samples avg       0.08      1.00      0.14      8684
+
+
+[INFO]
+- Method: OvR
+- # Prototypes: 30
+- # Unique items in support set: 44
+- # Unique items in query set: 3766
+- Mean groung truth labels per item: 2.31
+- Mean predicted labels per item: 29.99
+
+Execution time: 77 seconds

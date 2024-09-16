@@ -1,0 +1,60 @@
+
+Evaluation of model "hindustani/OvR_cos" on "hindustani" test set, with
+- N-way: 30
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.17595480511027706
+- micro-f1: 0.21961282132656298
+
+
+Classification report:
+                       precision    recall  f1-score   support
+
+    instrument--Voice       0.89      1.00      0.94       167
+    instrument--Tabla       0.55      1.00      0.71       102
+         form--Khayal       0.44      1.00      0.61        82
+instrument--Harmonium       0.41      1.00      0.58        76
+       tala--Teentaal       0.37      1.00      0.54        69
+  instrument--Tambura       0.24      1.00      0.38        44
+         tala--Ektaal       0.17      1.00      0.29        32
+  instrument--Sarangi       0.07      1.00      0.13        13
+ instrument--Pakhavaj       0.07      1.00      0.14        14
+        form--Dhrupad       0.07      1.00      0.14        14
+         form--Tarana       0.01      1.00      0.02         2
+    instrument--Sarod       0.01      1.00      0.02         2
+   raga--Yaman kalyan       0.03      1.00      0.05         5
+          tala--Rupak       0.02      1.00      0.03         3
+      raga--Bageshree       0.01      1.00      0.02         2
+       tala--Jhaptaal       0.03      1.00      0.06         6
+         form--Thumri       0.06      1.00      0.12        12
+         form--Bhajan       0.03      1.00      0.05         5
+    instrument--Sitar       0.05      1.00      0.09         9
+       raga--Bhairabi       0.02      1.00      0.04         4
+         raga--Khamaj       0.03      1.00      0.05         5
+  instrument--Shehnai       0.02      1.00      0.03         3
+   raga--Ahir bhairav       0.02      1.00      0.03         3
+     raga--Madhukauns       0.02      1.00      0.03         3
+       raga--Malkauns       0.02      1.00      0.03         3
+        tala--Sooltal       0.02      1.00      0.03         3
+     instrument--Harp       0.01      1.00      0.02         2
+   instrument--Violin       0.01      1.00      0.02         2
+   raga--Chandrakauns       0.02      1.00      0.03         3
+            raga--Des       0.01      1.00      0.02         2
+
+            micro avg       0.12      1.00      0.22       692
+            macro avg       0.12      1.00      0.18       692
+         weighted avg       0.46      1.00      0.57       692
+          samples avg       0.12      1.00      0.21       692
+
+
+[INFO]
+- Method: OvR
+- # Prototypes: 30
+- # Unique items in support set: 50
+- # Unique items in query set: 187
+- Mean groung truth labels per item: 3.7
+- Mean predicted labels per item: 30.0
+
+Execution time: 22 seconds

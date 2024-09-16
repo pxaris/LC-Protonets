@@ -1,0 +1,90 @@
+
+Evaluation of model "pretrained/magnatagatune/vgg_ish" on "magnatagatune" test set, with
+- N-way: 60
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.1046458714140315
+- micro-f1: 0.10772928843874503
+
+
+Classification report:
+               precision    recall  f1-score   support
+
+       female       0.09      1.00      0.16       368
+         beat       0.08      1.00      0.15       334
+        sitar       0.02      1.00      0.04        96
+ female voice       0.03      1.00      0.05       116
+      electro       0.02      1.00      0.03        73
+      new age       0.03      1.00      0.06       143
+         jazz       0.02      1.00      0.04        83
+          pop       0.04      1.00      0.09       192
+         male       0.06      1.00      0.11       254
+   male vocal       0.04      1.00      0.07       161
+       techno       0.14      1.00      0.24       590
+        voice       0.03      1.00      0.06       137
+        cello       0.00      1.00      0.01        16
+    no vocals       0.06      1.00      0.11       238
+        flute       0.04      1.00      0.07       159
+    classical       0.16      1.00      0.28       690
+       choral       0.03      1.00      0.06       126
+   electronic       0.11      1.00      0.21       488
+       indian       0.04      1.00      0.08       169
+        dance       0.04      1.00      0.07       150
+      classic       0.02      1.00      0.05       106
+         loud       0.06      1.00      0.12       267
+female vocals       0.02      1.00      0.04        95
+ female vocal       0.04      1.00      0.07       156
+       violin       0.05      1.00      0.10       227
+       vocals       0.06      1.00      0.12       273
+        choir       0.04      1.00      0.08       183
+   male voice       0.03      1.00      0.05       117
+    hard rock       0.02      1.00      0.04        84
+      singing       0.07      1.00      0.12       283
+       chorus       0.02      1.00      0.03        68
+     no vocal       0.04      1.00      0.08       187
+         harp       0.03      1.00      0.06       138
+        drums       0.12      1.00      0.21       503
+        opera       0.08      1.00      0.16       362
+      ambient       0.12      1.00      0.21       499
+         solo       0.04      1.00      0.07       156
+        vocal       0.10      1.00      0.18       422
+     no voice       0.03      1.00      0.05       112
+         drum       0.02      1.00      0.04        77
+         rock       0.13      1.00      0.23       558
+         soft       0.06      1.00      0.11       246
+          man       0.03      1.00      0.06       132
+        quiet       0.06      1.00      0.11       243
+        beats       0.03      1.00      0.06       139
+       guitar       0.20      1.00      0.34       862
+         fast       0.11      1.00      0.20       487
+        weird       0.03      1.00      0.06       127
+      foreign       0.01      1.00      0.03        62
+        metal       0.04      1.00      0.07       161
+  male vocals       0.02      1.00      0.04        84
+      country       0.02      1.00      0.03        65
+     no piano       0.01      1.00      0.03        64
+ instrumental       0.02      1.00      0.03        72
+      strings       0.09      1.00      0.16       383
+         slow       0.18      1.00      0.31       790
+        piano       0.11      1.00      0.20       463
+  harpsichord       0.04      1.00      0.08       186
+        synth       0.08      1.00      0.14       325
+        woman       0.06      1.00      0.11       241
+
+    micro avg       0.06      1.00      0.11     14588
+    macro avg       0.06      1.00      0.10     14588
+ weighted avg       0.09      1.00      0.16     14588
+  samples avg       0.06      1.00      0.11     14588
+
+
+[INFO]
+- Method: baseline
+- # Prototypes: 60
+- # Unique items in support set: 61
+- # Unique items in query set: 4271
+- Mean groung truth labels per item: 3.42
+- Mean predicted labels per item: 60.0
+
+Execution time: 22 seconds

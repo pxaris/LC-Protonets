@@ -1,0 +1,45 @@
+
+Evaluation of model "pretrained/carnatic/vgg_ish" on "carnatic" test set, with
+- N-way: 15
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.12345284345284344
+- micro-f1: 0.12682926829268293
+
+
+Classification report:
+                     precision    recall  f1-score   support
+
+      raga--mohanam       0.00      0.00      0.00         6
+        raga--kamas       0.25      0.11      0.15         9
+ form--Thiruppugazh       0.40      0.33      0.36         6
+       raga--abhogi       0.00      0.00      0.00         7
+     raga--hindolam       0.00      0.00      0.00         5
+        raga--behag       0.00      0.00      0.00         8
+       form--Javali       0.00      0.00      0.00         4
+  raga--saurashtram       0.18      0.22      0.20         9
+  raga--kamavardani       0.00      0.00      0.00         5
+       raga--surati       0.20      0.11      0.14         9
+         raga--kapi       0.50      0.14      0.22         7
+       raga--kanada       0.00      0.00      0.00         4
+instrument--Tambura       0.57      0.67      0.62         6
+         tala--atta       0.11      0.25      0.15         8
+ raga--Purvikalyani       0.00      0.00      0.00         7
+
+          micro avg       0.12      0.13      0.13       100
+          macro avg       0.15      0.12      0.12       100
+       weighted avg       0.16      0.13      0.13       100
+        samples avg       0.13      0.13      0.13       100
+
+
+[INFO]
+- Method: LCP
+- # Prototypes: 17
+- # Unique items in support set: 44
+- # Unique items in query set: 97
+- Mean groung truth labels per item: 1.03
+- Mean predicted labels per item: 1.08
+
+Execution time: 15 seconds

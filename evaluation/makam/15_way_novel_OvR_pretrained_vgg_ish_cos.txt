@@ -1,0 +1,45 @@
+
+Evaluation of model "pretrained/makam/vgg_ish" on "makam" test set, with
+- N-way: 15
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.13190336206653863
+- micro-f1: 0.13259432956725645
+
+
+Classification report:
+                         precision    recall  f1-score   support
+
+           makam--Mahur       0.12      1.00      0.21        35
+        makam--Hicazkar       0.10      1.00      0.18        29
+      instrument--Daire       0.09      1.00      0.16        26
+            usul--Semai       0.09      1.00      0.16        26
+        makam--Muhayyer       0.09      1.00      0.16        25
+            usul--Hafif       0.07      1.00      0.13        21
+      usul--Senginsemai       0.08      1.00      0.14        22
+       usul--Türkaksağı       0.06      1.00      0.12        18
+instrument--Double bass       0.06      1.00      0.11        17
+        makam--Karcığar       0.06      1.00      0.11        17
+         makam--Suzinak       0.05      1.00      0.10        16
+        usul--Nimsofyan       0.05      1.00      0.10        16
+       makam--Ferahfeza       0.05      1.00      0.10        15
+    instrument--Strings       0.05      1.00      0.09        14
+         makam--Isfahan       0.05      1.00      0.09        14
+
+              micro avg       0.07      1.00      0.13       311
+              macro avg       0.07      1.00      0.13       311
+           weighted avg       0.08      1.00      0.14       311
+            samples avg       0.07      1.00      0.13       311
+
+
+[INFO]
+- Method: OvR
+- # Prototypes: 15
+- # Unique items in support set: 38
+- # Unique items in query set: 292
+- Mean groung truth labels per item: 1.07
+- Mean predicted labels per item: 15.0
+
+Execution time: 8 seconds

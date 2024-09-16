@@ -1,0 +1,35 @@
+
+Evaluation of model "makam/OvR_cos" on "makam" test set, with
+- N-way: 5
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.5382183667683804
+- micro-f1: 0.5532108698952483
+
+
+Classification report:
+                                  precision    recall  f1-score   support
+
+               instrument--Voice       0.68      1.00      0.81       646
+               instrument--Kanun       0.33      1.00      0.50       316
+              instrument--Tanbur       0.32      1.00      0.49       309
+                 instrument--Ney       0.32      1.00      0.48       304
+instrument--performing orchestra       0.26      1.00      0.41       247
+
+                       micro avg       0.38      1.00      0.55      1822
+                       macro avg       0.38      1.00      0.54      1822
+                    weighted avg       0.44      1.00      0.59      1822
+                     samples avg       0.38      1.00      0.52      1822
+
+
+[INFO]
+- Method: OvR
+- # Prototypes: 5
+- # Unique items in support set: 6
+- # Unique items in query set: 953
+- Mean groung truth labels per item: 1.91
+- Mean predicted labels per item: 5.0
+
+Execution time: 19 seconds

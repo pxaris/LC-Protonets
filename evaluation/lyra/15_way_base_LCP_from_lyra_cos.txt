@@ -1,0 +1,45 @@
+
+Evaluation of model "lyra/LCP_from_lyra_cos" on "lyra" test set, with
+- N-way: 15
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.5866693344650373
+- micro-f1: 0.6630048465266559
+
+
+Classification report:
+                         precision    recall  f1-score   support
+
+    instruments--Violin       0.66      0.86      0.75       161
+         genres--Aegean       0.30      0.70      0.42        27
+    instruments--Guitar       0.63      0.66      0.64       146
+            place--None       0.60      0.67      0.63        57
+   instruments--Klarino       0.64      0.60      0.62       113
+      genres--Nisiotiko       0.46      0.66      0.54        59
+      place--Aegean-sea       0.30      0.70      0.42        27
+    instruments--Laouto       0.69      0.66      0.68       136
+      instruments--Bass       0.74      0.80      0.77        35
+instruments--Percussion       0.83      0.60      0.70       178
+ instruments--Accordion       0.56      0.42      0.48        53
+    genres--Traditional       0.97      0.85      0.90       265
+       genres--Epirotic       0.16      0.26      0.19        27
+     instruments--Voice       0.90      0.48      0.63       215
+  instruments--Santouri       0.30      0.75      0.43        36
+
+              micro avg       0.66      0.67      0.66      1535
+              macro avg       0.58      0.64      0.59      1535
+           weighted avg       0.72      0.67      0.68      1535
+            samples avg       0.70      0.68      0.65      1535
+
+
+[INFO]
+- Method: LCP
+- # Prototypes: 1255
+- # Unique items in support set: 15
+- # Unique items in query set: 315
+- Mean groung truth labels per item: 4.87
+- Mean predicted labels per item: 4.95
+
+Execution time: 23 seconds

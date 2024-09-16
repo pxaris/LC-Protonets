@@ -1,0 +1,45 @@
+
+Evaluation of model "fma/LCP_from_fma_f_cos" on "fma" test set, with
+- N-way: 15
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.32397615818136877
+- micro-f1: 0.3510054844606947
+
+
+Classification report:
+                   precision    recall  f1-score   support
+
+            Lo-Fi       0.15      0.24      0.18        96
+        Loud-Rock       0.22      0.19      0.20       100
+           Glitch       0.30      0.41      0.34       119
+          Dubstep       0.22      0.28      0.24       107
+      Avant-Garde       0.52      0.57      0.54       116
+        Post-Punk       0.23      0.21      0.22       130
+        Power-Pop       0.40      0.47      0.43       104
+        Classical       0.61      0.88      0.72       113
+            Dance       0.32      0.13      0.18        95
+         Trip-Hop       0.28      0.37      0.31       139
+            Metal       0.43      0.29      0.35       104
+       Psych-Rock       0.12      0.04      0.06       123
+Singer-Songwriter       0.65      0.80      0.72       114
+ Experimental Pop       0.33      0.16      0.22        94
+        Post-Rock       0.20      0.10      0.14        87
+
+        micro avg       0.35      0.35      0.35      1641
+        macro avg       0.33      0.34      0.32      1641
+     weighted avg       0.33      0.35      0.33      1641
+      samples avg       0.36      0.36      0.36      1641
+
+
+[INFO]
+- Method: LCP
+- # Prototypes: 20
+- # Unique items in support set: 41
+- # Unique items in query set: 1485
+- Mean groung truth labels per item: 1.11
+- Mean predicted labels per item: 1.11
+
+Execution time: 9 seconds

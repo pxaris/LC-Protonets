@@ -1,0 +1,35 @@
+
+Evaluation of model "hindustani/LCP_cos" on "hindustani" test set, with
+- N-way: 5
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.31857142857142856
+- micro-f1: 0.3333333333333333
+
+
+Classification report:
+                     precision    recall  f1-score   support
+
+instrument--Shehnai       0.75      1.00      0.86         3
+   raga--Madhukauns       0.00      0.00      0.00         3
+ raga--Ahir bhairav       0.20      0.33      0.25         3
+       raga--Khamaj       0.50      0.20      0.29         5
+     raga--Malkauns       0.14      0.33      0.20         3
+
+          micro avg       0.32      0.35      0.33        17
+          macro avg       0.32      0.37      0.32        17
+       weighted avg       0.34      0.35      0.31        17
+        samples avg       0.29      0.35      0.31        17
+
+
+[INFO]
+- Method: LCP
+- # Prototypes: 6
+- # Unique items in support set: 14
+- # Unique items in query set: 17
+- Mean groung truth labels per item: 1.0
+- Mean predicted labels per item: 1.12
+
+Execution time: 3 seconds

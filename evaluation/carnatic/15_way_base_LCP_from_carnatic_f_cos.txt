@@ -1,0 +1,45 @@
+
+Evaluation of model "carnatic/LCP_from_carnatic_f_cos" on "carnatic" test set, with
+- N-way: 15
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.41809624464708034
+- micro-f1: 0.6938045180049206
+
+
+Classification report:
+                            precision    recall  f1-score   support
+
+     instrument--Mridangam       0.93      0.80      0.86       388
+form--Varnam - Tana Varnam       0.03      0.06      0.04        33
+          raga--ragamalika       0.02      0.10      0.03        10
+             form--Alapana       0.32      0.41      0.36        32
+       instrument--Morsing       0.37      0.79      0.50        14
+                 tala--adi       0.51      0.24      0.33       269
+      instrument--Khanjira       0.62      0.74      0.67        84
+               form--Kriti       0.72      0.62      0.66       343
+        tala--mishra chapu       0.00      0.00      0.00        27
+        tala--khanda chapu       0.03      0.12      0.05        16
+              tala--rupaka       0.09      0.11      0.10        57
+        instrument--Violin       0.96      0.92      0.94       414
+             form--Pallavi       0.05      0.07      0.06        14
+         instrument--Voice       0.93      0.91      0.92       409
+        instrument--Ghatam       0.79      0.73      0.76       158
+
+                 micro avg       0.70      0.68      0.69      2268
+                 macro avg       0.42      0.44      0.42      2268
+              weighted avg       0.76      0.68      0.71      2268
+               samples avg       0.70      0.68      0.66      2268
+
+
+[INFO]
+- Method: LCP
+- # Prototypes: 387
+- # Unique items in support set: 25
+- # Unique items in query set: 493
+- Mean groung truth labels per item: 4.6
+- Mean predicted labels per item: 4.47
+
+Execution time: 29 seconds

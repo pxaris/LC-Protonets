@@ -1,0 +1,35 @@
+
+Evaluation of model "hindustani/baseline_from_hindustani_f_cos" on "hindustani" test set, with
+- N-way: 5
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.35333333333333333
+- micro-f1: 0.3384615384615385
+
+
+Classification report:
+                     precision    recall  f1-score   support
+
+instrument--Shehnai       0.60      1.00      0.75         3
+   raga--Madhukauns       0.23      1.00      0.38         3
+ raga--Ahir bhairav       0.17      0.67      0.27         3
+       raga--Khamaj       0.00      0.00      0.00         5
+     raga--Malkauns       0.23      1.00      0.38         3
+
+          micro avg       0.23      0.65      0.34        17
+          macro avg       0.25      0.73      0.35        17
+       weighted avg       0.22      0.65      0.31        17
+        samples avg       0.24      0.65      0.35        17
+
+
+[INFO]
+- Method: baseline
+- # Prototypes: 5
+- # Unique items in support set: 14
+- # Unique items in query set: 17
+- Mean groung truth labels per item: 1.0
+- Mean predicted labels per item: 2.82
+
+Execution time: 7 seconds

@@ -1,0 +1,35 @@
+
+Evaluation of model "lyra/baseline_from_lyra_f_cos" on "lyra" test set, with
+- N-way: 5
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.6827616791947102
+- micro-f1: 0.6966292134831461
+
+
+Classification report:
+                         precision    recall  f1-score   support
+
+    genres--Traditional       0.98      0.74      0.84       273
+    instruments--Laouto       0.61      0.77      0.68       138
+    instruments--Violin       0.62      0.57      0.59       167
+instruments--Percussion       0.82      0.93      0.87       182
+     instruments--Voice       0.53      0.36      0.43       220
+
+              micro avg       0.73      0.66      0.70       980
+              macro avg       0.71      0.67      0.68       980
+           weighted avg       0.74      0.66      0.69       980
+            samples avg       0.56      0.60      0.56       980
+
+
+[INFO]
+- Method: baseline
+- # Prototypes: 5
+- # Unique items in support set: 5
+- # Unique items in query set: 325
+- Mean groung truth labels per item: 3.02
+- Mean predicted labels per item: 2.74
+
+Execution time: 7 seconds

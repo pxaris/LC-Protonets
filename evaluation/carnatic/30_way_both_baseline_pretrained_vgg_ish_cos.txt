@@ -1,0 +1,60 @@
+
+Evaluation of model "pretrained/carnatic/vgg_ish" on "carnatic" test set, with
+- N-way: 30
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.2094464729860578
+- micro-f1: 0.27804010547617586
+
+
+Classification report:
+                            precision    recall  f1-score   support
+
+        instrument--Ghatam       0.31      1.00      0.47       145
+          raga--ragamalika       0.02      1.00      0.05        11
+               raga--kamas       0.02      1.00      0.04         9
+              raga--abhogi       0.01      1.00      0.03         7
+               raga--thodi       0.02      1.00      0.04         9
+      instrument--Khanjira       0.17      1.00      0.29        78
+         raga--saurashtram       0.02      1.00      0.04         9
+            raga--bhairavi       0.01      1.00      0.02         5
+              raga--surati       0.02      1.00      0.04         9
+             raga--kalyani       0.01      1.00      0.03         7
+       instrument--Tambura       0.01      1.00      0.03         6
+                raga--kapi       0.01      1.00      0.03         7
+        tala--mishra chapu       0.06      1.00      0.11        27
+form--Varnam - Tana Varnam       0.07      1.00      0.12        31
+         instrument--Voice       0.84      1.00      0.91       392
+        raga--Purvikalyani       0.02      1.00      0.03         8
+             form--Alapana       0.07      1.00      0.13        32
+            form--Thillana       0.03      1.00      0.05        13
+             form--Pallavi       0.03      1.00      0.06        14
+        instrument--Violin       0.84      1.00      0.91       391
+     instrument--Mridangam       0.78      1.00      0.88       364
+               form--Kriti       0.70      1.00      0.82       326
+                tala--atta       0.02      1.00      0.03         8
+        form--Thiruppugazh       0.01      1.00      0.03         6
+            form--Mangalam       0.02      1.00      0.04        10
+               raga--behag       0.02      1.00      0.04         9
+                 tala--adi       0.53      1.00      0.69       249
+       instrument--Morsing       0.03      1.00      0.06        14
+        tala--khanda chapu       0.03      1.00      0.07        16
+              tala--rupaka       0.12      1.00      0.21        55
+
+                 micro avg       0.16      1.00      0.28      2267
+                 macro avg       0.16      1.00      0.21      2267
+              weighted avg       0.61      1.00      0.70      2267
+               samples avg       0.16      1.00      0.27      2267
+
+
+[INFO]
+- Method: baseline
+- # Prototypes: 30
+- # Unique items in support set: 54
+- # Unique items in query set: 468
+- Mean groung truth labels per item: 4.84
+- Mean predicted labels per item: 30.0
+
+Execution time: 67 seconds

@@ -1,0 +1,90 @@
+
+Evaluation of model "lyra/LCP_from_lyra_f_cos" on "lyra" test set, with
+- N-way: 60
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.5190905376220327
+- micro-f1: 0.7088393109291161
+
+
+Classification report:
+                          precision    recall  f1-score   support
+
+  instruments--Accordion       0.82      0.75      0.79        44
+   place--Southern-Italy       0.80      0.67      0.73        18
+      genres--Urban-folk       0.33      0.33      0.33         3
+           genres--Laiko       0.30      0.60      0.40         5
+             place--None       0.93      0.87      0.90        47
+  instruments--Tambouras       0.67      0.20      0.31        20
+   place--Central-Greece       0.67      0.11      0.19        18
+  instruments--Tsampouna       0.33      0.08      0.13        12
+        instruments--Ney       1.00      0.67      0.80         3
+   instruments--Floghera       0.50      0.25      0.33         8
+          genres--Cretan       0.50      0.20      0.29         5
+        genres--Thracian       0.62      0.28      0.38        18
+            place--Egypt       1.00      0.50      0.67         4
+            place--Crete       0.50      0.20      0.29         5
+        instruments--Oud       0.87      0.35      0.50        37
+      instruments--Voice       0.79      0.63      0.70       179
+            place--Kasos       0.17      0.50      0.25         2
+    genres--Mikrasiatiko       0.43      0.29      0.35        34
+      genres--Polyphonic       0.40      0.57      0.47        14
+       instruments--Bass       1.00      0.60      0.75        30
+       genres--Nisiotiko       0.78      0.68      0.73        53
+ instruments--Percussion       0.93      0.73      0.82       155
+    instruments--Klarino       0.89      0.65      0.76       104
+   instruments--Bouzouki       1.00      0.74      0.85        35
+     instruments--Violin       0.93      0.73      0.82       145
+      instruments--Flute       0.20      0.50      0.29         2
+       instruments--Tuba       0.25      0.50      0.33         2
+   instruments--Kanonaki       0.61      0.46      0.52        24
+      place--Peloponnese       0.33      0.43      0.38         7
+        genres--Politiko       1.00      0.33      0.50         3
+     genres--Arrangement       0.50      0.33      0.40         3
+        place--Macedonia       0.14      0.08      0.10        13
+        genres--Epirotic       0.71      0.46      0.56        26
+       place--Ionian-sea       0.70      0.76      0.73        21
+     instruments--Laouto       0.88      0.66      0.76       119
+          genres--Ionian       0.70      0.76      0.73        21
+          genres--Arabic       1.00      0.50      0.67         4
+   instruments--Baglamas       1.00      0.76      0.87        17
+           place--Pontus       0.93      0.50      0.65        26
+       instruments--Lyra       0.78      0.82      0.80        34
+genres--Southern-Italian       0.80      0.67      0.73        18
+           place--Epirus       0.71      0.46      0.56        26
+   instruments--Mandolin       0.57      0.57      0.57         7
+   instruments--Santouri       0.80      0.36      0.50        33
+   genres--Central-Greek       0.67      0.11      0.19        18
+          genres--Aegean       0.50      0.29      0.37        24
+       place--Aegean-sea       0.50      0.29      0.37        24
+       place--Asia-minor       0.43      0.29      0.35        34
+           place--Thrace       0.62      0.28      0.38        18
+   genres--Peloponnesian       0.33      0.43      0.38         7
+      instruments--Piano       0.00      0.00      0.00         0
+             place--Poli       1.00      0.33      0.50         3
+     instruments--Guitar       0.88      0.79      0.83       126
+         genres--Pontian       0.93      0.50      0.65        26
+     genres--Traditional       1.00      0.91      0.95       232
+      genres--Macedonian       0.14      0.08      0.10        13
+       genres--Arvanitic       0.07      0.50      0.12         2
+           place--Icaria       0.50      0.38      0.43         8
+            place--Corfu       0.70      0.76      0.73        21
+        genres--Rebetiko       0.88      0.50      0.64        30
+
+               micro avg       0.81      0.63      0.71      1990
+               macro avg       0.65      0.48      0.52      1990
+            weighted avg       0.81      0.63      0.70      1990
+             samples avg       0.81      0.64      0.69      1990
+
+
+[INFO]
+- Method: LCP
+- # Prototypes: 28149
+- # Unique items in support set: 58
+- # Unique items in query set: 272
+- Mean groung truth labels per item: 7.32
+- Mean predicted labels per item: 5.7
+
+Execution time: 379 seconds

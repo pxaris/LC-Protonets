@@ -1,0 +1,45 @@
+
+Evaluation of model "magnatagatune/LCP_cos" on "magnatagatune" test set, with
+- N-way: 15
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.2684735947935301
+- micro-f1: 0.28518689432395017
+
+
+Classification report:
+               precision    recall  f1-score   support
+
+female vocals       0.26      0.10      0.15        98
+        heavy       0.31      0.83      0.45        59
+  male vocals       0.16      0.20      0.18        82
+     electric       0.03      0.02      0.02        54
+      electro       0.00      0.00      0.00        74
+         jazz       0.26      0.51      0.35        83
+    hard rock       0.53      0.40      0.45        86
+     no piano       0.12      0.14      0.13        65
+       voices       0.23      0.35      0.28        54
+       trance       0.29      0.36      0.32        56
+ instrumental       0.13      0.15      0.14        72
+      foreign       0.26      0.34      0.29        62
+       chorus       0.66      0.34      0.45        68
+   harpsicord       0.69      0.91      0.79        57
+         drum       0.04      0.03      0.03        79
+
+    micro avg       0.28      0.29      0.29      1049
+    macro avg       0.27      0.31      0.27      1049
+ weighted avg       0.26      0.29      0.26      1049
+  samples avg       0.28      0.29      0.27      1049
+
+
+[INFO]
+- Method: LCP
+- # Prototypes: 26
+- # Unique items in support set: 35
+- # Unique items in query set: 890
+- Mean groung truth labels per item: 1.18
+- Mean predicted labels per item: 1.26
+
+Execution time: 6 seconds

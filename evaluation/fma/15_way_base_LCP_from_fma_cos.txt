@@ -1,0 +1,45 @@
+
+Evaluation of model "fma/LCP_from_fma_cos" on "fma" test set, with
+- N-way: 15
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.4513276397152656
+- micro-f1: 0.5738330865736773
+
+
+Classification report:
+                    precision    recall  f1-score   support
+
+              Rock       0.90      0.78      0.83      1387
+        Indie-Rock       0.23      0.48      0.31       260
+      Experimental       0.49      0.46      0.47       438
+        Chip Music       0.62      0.83      0.71       178
+            Techno       0.16      0.50      0.24       141
+              Folk       0.54      0.63      0.58       322
+              Punk       0.73      0.22      0.34       645
+      Instrumental       0.36      0.43      0.39       272
+           Hip-Hop       0.74      0.83      0.78       443
+        Electronic       0.76      0.74      0.75      1247
+               IDM       0.29      0.15      0.20       189
+               Pop       0.25      0.24      0.24       244
+Ambient Electronic       0.14      0.15      0.15       200
+     International       0.52      0.75      0.61       221
+            Garage       0.51      0.10      0.16       277
+
+         micro avg       0.58      0.57      0.57      6464
+         macro avg       0.48      0.49      0.45      6464
+      weighted avg       0.63      0.57      0.57      6464
+       samples avg       0.59      0.58      0.57      6464
+
+
+[INFO]
+- Method: LCP
+- # Prototypes: 26
+- # Unique items in support set: 39
+- # Unique items in query set: 4574
+- Mean groung truth labels per item: 1.41
+- Mean predicted labels per item: 1.39
+
+Execution time: 32 seconds

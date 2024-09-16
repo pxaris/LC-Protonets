@@ -1,0 +1,65 @@
+
+Evaluation of model "pretrained/hindustani/vgg_ish" on "hindustani" test set, with
+- N-way: 35
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.1524451077428345
+- micro-f1: 0.1913194948468573
+
+
+Classification report:
+                       precision    recall  f1-score   support
+
+   raga--Yaman kalyan       0.02      1.00      0.04         4
+   instrument--Violin       0.01      1.00      0.01         1
+            raga--Des       0.01      1.00      0.01         1
+       raga--Malkauns       0.02      1.00      0.03         3
+    instrument--Sitar       0.05      1.00      0.10         9
+      raga--Bageshree       0.01      1.00      0.01         1
+  instrument--Tambura       0.25      1.00      0.40        44
+         raga--Khamaj       0.03      1.00      0.05         5
+          tala--Rupak       0.01      1.00      0.02         2
+       raga--Bhairabi       0.02      1.00      0.04         4
+          raga--Kedar       0.01      1.00      0.02         2
+         tala--Ektaal       0.18      1.00      0.30        32
+    instrument--Sarod       0.01      1.00      0.02         2
+   raga--Ahir bhairav       0.02      1.00      0.03         3
+       tala--Jhaptaal       0.03      1.00      0.07         6
+    instrument--Voice       0.88      1.00      0.94       157
+  instrument--Shehnai       0.02      1.00      0.03         3
+         form--Thumri       0.07      1.00      0.14        13
+        tala--Sooltal       0.01      1.00      0.02         2
+         form--Khayal       0.43      1.00      0.60        76
+     instrument--Harp       0.01      1.00      0.02         2
+        tala--Jhoomra       0.01      1.00      0.02         2
+        raga--Bairagi       0.01      1.00      0.01         1
+instrument--Harmonium       0.39      1.00      0.56        70
+  instrument--Sarangi       0.07      1.00      0.14        13
+         form--Tarana       0.01      1.00      0.02         2
+   raga--Chandrakauns       0.01      1.00      0.02         2
+ instrument--Pakhavaj       0.08      1.00      0.16        15
+       tala--Teentaal       0.35      1.00      0.52        62
+          raga--Bihag       0.01      1.00      0.01         1
+        form--Dhrupad       0.07      1.00      0.14        13
+     raga--Charukeshi       0.01      1.00      0.02         2
+     raga--Madhukauns       0.02      1.00      0.03         3
+    instrument--Tabla       0.53      1.00      0.70        95
+         form--Bhajan       0.03      1.00      0.07         6
+
+            micro avg       0.11      1.00      0.19       659
+            macro avg       0.11      1.00      0.15       659
+         weighted avg       0.44      1.00      0.56       659
+          samples avg       0.11      1.00      0.19       659
+
+
+[INFO]
+- Method: baseline
+- # Prototypes: 35
+- # Unique items in support set: 59
+- # Unique items in query set: 178
+- Mean groung truth labels per item: 3.7
+- Mean predicted labels per item: 35.0
+
+Execution time: 21 seconds

@@ -1,0 +1,35 @@
+
+Evaluation of model "carnatic/LCP_from_carnatic_cos" on "carnatic" test set, with
+- N-way: 5
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.22853383458646617
+- micro-f1: 0.22727272727272727
+
+
+Classification report:
+                   precision    recall  f1-score   support
+
+raga--saurashtram       0.18      0.22      0.20         9
+      raga--kamas       0.43      0.33      0.38         9
+      raga--behag       0.33      0.11      0.17         9
+     raga--surati       0.20      0.22      0.21         9
+       tala--atta       0.15      0.25      0.19         8
+
+        micro avg       0.23      0.23      0.23        44
+        macro avg       0.26      0.23      0.23        44
+     weighted avg       0.26      0.23      0.23        44
+      samples avg       0.23      0.23      0.23        44
+
+
+[INFO]
+- Method: LCP
+- # Prototypes: 5
+- # Unique items in support set: 15
+- # Unique items in query set: 44
+- Mean groung truth labels per item: 1.0
+- Mean predicted labels per item: 1.0
+
+Execution time: 2 seconds

@@ -1,0 +1,60 @@
+
+Evaluation of model "fma/OvR_from_fma_f_cos" on "fma" test set, with
+- N-way: 30
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.1919101555945955
+- micro-f1: 0.20318417087073315
+
+
+Classification report:
+                    precision    recall  f1-score   support
+
+              Rock       0.73      0.91      0.81      1380
+        Electronic       0.46      0.95      0.62      1240
+              Punk       0.34      0.96      0.51       638
+      Experimental       0.12      0.83      0.22       437
+           Hip-Hop       0.21      0.98      0.35       443
+              Folk       0.14      0.96      0.25       322
+            Garage       0.15      0.97      0.27       274
+      Instrumental       0.09      0.84      0.16       271
+        Indie-Rock       0.13      0.94      0.23       259
+               Pop       0.07      0.72      0.12       244
+        Chip Music       0.07      0.99      0.14       177
+Ambient Electronic       0.09      0.97      0.16       197
+     International       0.08      0.97      0.15       221
+               IDM       0.08      0.99      0.14       187
+            Techno       0.06      0.99      0.11       142
+         Downtempo       0.06      0.98      0.12       156
+        Soundtrack       0.06      0.83      0.11       172
+          Chiptune       0.06      0.99      0.11       120
+             House       0.05      0.97      0.09       129
+          Hardcore       0.06      0.97      0.12       115
+          Trip-Hop       0.05      0.95      0.09       139
+         Post-Punk       0.07      0.94      0.13       130
+        Psych-Rock       0.05      0.91      0.10       123
+            Glitch       0.05      0.97      0.10       119
+       Avant-Garde       0.04      0.92      0.07       116
+ Singer-Songwriter       0.05      0.98      0.10       114
+         Classical       0.04      0.99      0.08       113
+           Dubstep       0.04      0.97      0.08       107
+             Metal       0.06      0.98      0.11       105
+         Power-Pop       0.06      1.00      0.12       104
+
+         micro avg       0.11      0.93      0.20      8294
+         macro avg       0.12      0.94      0.19      8294
+      weighted avg       0.28      0.93      0.37      8294
+       samples avg       0.13      0.92      0.21      8294
+
+
+[INFO]
+- Method: OvR
+- # Prototypes: 30
+- # Unique items in support set: 58
+- # Unique items in query set: 4671
+- Mean groung truth labels per item: 1.78
+- Mean predicted labels per item: 14.56
+
+Execution time: 27 seconds

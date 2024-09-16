@@ -1,0 +1,35 @@
+
+Evaluation of model "makam/baseline_from_makam_f_cos" on "makam" test set, with
+- N-way: 5
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.6271971170095234
+- micro-f1: 0.6364729458917836
+
+
+Classification report:
+                                  precision    recall  f1-score   support
+
+               instrument--Kanun       0.46      0.98      0.63       317
+instrument--performing orchestra       0.38      0.91      0.54       247
+              instrument--Tanbur       0.45      0.90      0.60       309
+               instrument--Voice       0.68      0.76      0.72       645
+                 instrument--Ney       0.50      0.93      0.65       306
+
+                       micro avg       0.50      0.87      0.64      1824
+                       macro avg       0.50      0.90      0.63      1824
+                    weighted avg       0.53      0.87      0.65      1824
+                     samples avg       0.58      0.93      0.64      1824
+
+
+[INFO]
+- Method: baseline
+- # Prototypes: 5
+- # Unique items in support set: 11
+- # Unique items in query set: 948
+- Mean groung truth labels per item: 1.92
+- Mean predicted labels per item: 3.34
+
+Execution time: 19 seconds

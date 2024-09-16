@@ -1,0 +1,60 @@
+
+Evaluation of model "fma/LCP_from_fma_f_cos" on "fma" test set, with
+- N-way: 30
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.3109797406682573
+- micro-f1: 0.4698147665014349
+
+
+Classification report:
+                    precision    recall  f1-score   support
+
+              Folk       0.57      0.69      0.62       321
+         Post-Punk       0.08      0.09      0.09       129
+        Chip Music       0.32      0.43      0.37       178
+ Singer-Songwriter       0.11      0.10      0.10       114
+          Hardcore       0.24      0.71      0.36       114
+        Electronic       0.69      0.81      0.74      1242
+           Hip-Hop       0.86      0.62      0.72       443
+            Garage       0.20      0.36      0.26       276
+          Chiptune       0.22      0.45      0.30       120
+        Soundtrack       0.20      0.27      0.23       172
+             House       0.04      0.10      0.06       128
+Ambient Electronic       0.15      0.18      0.16       198
+         Downtempo       0.16      0.45      0.23       155
+        Indie-Rock       0.23      0.38      0.29       260
+     International       0.54      0.65      0.59       221
+             Metal       0.20      0.29      0.24       105
+          Trip-Hop       0.14      0.22      0.18       139
+       Avant-Garde       0.14      0.43      0.22       116
+           Dubstep       0.13      0.19      0.15       107
+               Pop       0.23      0.04      0.06       244
+              Rock       0.84      0.84      0.84      1379
+        Psych-Rock       0.07      0.06      0.06       123
+              Punk       0.43      0.72      0.54       638
+            Glitch       0.04      0.03      0.03       119
+      Experimental       0.53      0.42      0.47       438
+         Power-Pop       0.11      0.35      0.16       104
+      Instrumental       0.35      0.29      0.32       272
+         Classical       0.38      0.79      0.51       113
+               IDM       0.19      0.40      0.26       188
+            Techno       0.14      0.18      0.16       142
+
+         micro avg       0.41      0.54      0.47      8298
+         macro avg       0.29      0.38      0.31      8298
+      weighted avg       0.47      0.54      0.49      8298
+       samples avg       0.46      0.54      0.47      8298
+
+
+[INFO]
+- Method: LCP
+- # Prototypes: 133
+- # Unique items in support set: 56
+- # Unique items in query set: 4673
+- Mean groung truth labels per item: 1.78
+- Mean predicted labels per item: 2.33
+
+Execution time: 53 seconds

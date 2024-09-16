@@ -1,0 +1,45 @@
+
+Evaluation of model "makam/LCP_cos" on "makam" test set, with
+- N-way: 15
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.3176646765869441
+- micro-f1: 0.43005808325266215
+
+
+Classification report:
+                                  precision    recall  f1-score   support
+
+              instrument--Violin       0.28      0.22      0.25       171
+               instrument--Kanun       0.38      0.88      0.53       311
+              instrument--Tanbur       0.35      0.60      0.44       305
+                     usul--Düyek       0.12      0.38      0.18        91
+               instrument--Voice       0.69      0.78      0.73       640
+instrument--performing orchestra       0.27      0.18      0.22       245
+   instrument--Classical kemençe       0.31      0.85      0.45       244
+          instrument--Percussion       0.21      0.42      0.28       107
+                usul--Aksaksemai       0.06      0.09      0.07        81
+               instrument--Cello       0.31      0.59      0.41       165
+                     usul--Aksak       0.11      0.17      0.13       103
+                 instrument--Ney       0.44      0.78      0.57       300
+                 makam--Nihavent       0.06      0.10      0.07        70
+                    makam--Hicaz       0.10      0.15      0.12       123
+                 instrument--Oud       0.30      0.29      0.30       240
+
+                       micro avg       0.35      0.56      0.43      3196
+                       macro avg       0.27      0.43      0.32      3196
+                    weighted avg       0.37      0.56      0.43      3196
+                     samples avg       0.33      0.52      0.37      3196
+
+
+[INFO]
+- Method: LCP
+- # Prototypes: 1695
+- # Unique items in support set: 15
+- # Unique items in query set: 1036
+- Mean groung truth labels per item: 3.08
+- Mean predicted labels per item: 4.89
+
+Execution time: 95 seconds

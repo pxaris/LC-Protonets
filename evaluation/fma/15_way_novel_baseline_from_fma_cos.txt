@@ -1,0 +1,45 @@
+
+Evaluation of model "fma/baseline_from_fma_cos" on "fma" test set, with
+- N-way: 15
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.283523847695299
+- micro-f1: 0.27458423716558206
+
+
+Classification report:
+                   precision    recall  f1-score   support
+
+            Lo-Fi       0.11      0.80      0.19        96
+        Loud-Rock       0.14      0.94      0.24       100
+           Glitch       0.24      0.94      0.39       119
+          Dubstep       0.23      0.96      0.37       107
+      Avant-Garde       0.19      0.95      0.31       116
+        Post-Punk       0.19      0.94      0.31       130
+        Power-Pop       0.16      0.99      0.28       104
+        Classical       0.18      0.99      0.30       113
+            Dance       0.20      0.89      0.33        95
+         Trip-Hop       0.25      0.88      0.39       139
+            Metal       0.14      0.97      0.24       104
+       Psych-Rock       0.13      0.94      0.24       123
+Singer-Songwriter       0.19      0.98      0.32       114
+ Experimental Pop       0.10      0.81      0.18        94
+        Post-Rock       0.10      0.85      0.18        87
+
+        micro avg       0.16      0.93      0.27      1641
+        macro avg       0.17      0.92      0.28      1641
+     weighted avg       0.17      0.93      0.29      1641
+      samples avg       0.18      0.92      0.29      1641
+
+
+[INFO]
+- Method: baseline
+- # Prototypes: 15
+- # Unique items in support set: 41
+- # Unique items in query set: 1485
+- Mean groung truth labels per item: 1.11
+- Mean predicted labels per item: 6.35
+
+Execution time: 9 seconds

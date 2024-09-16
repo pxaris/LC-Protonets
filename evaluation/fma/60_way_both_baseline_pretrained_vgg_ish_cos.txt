@@ -1,0 +1,90 @@
+
+Evaluation of model "pretrained/fma/vgg_ish" on "fma" test set, with
+- N-way: 60
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.06293277766974154
+- micro-f1: 0.06672878776705927
+
+
+Classification report:
+                     precision    recall  f1-score   support
+
+             Garage       0.06      1.00      0.11       275
+         Noise-Rock       0.02      1.00      0.03        76
+      Hip-Hop Beats       0.01      1.00      0.01        33
+           Shoegaze       0.01      1.00      0.02        43
+           Chiptune       0.02      1.00      0.05       119
+          Post-Punk       0.03      1.00      0.05       130
+          Power-Pop       0.02      1.00      0.04       104
+              Lo-Fi       0.02      1.00      0.04        95
+            Dubstep       0.02      1.00      0.04       105
+  Singer-Songwriter       0.02      1.00      0.05       114
+Alternative Hip-Hop       0.01      1.00      0.02        46
+         Indie-Rock       0.05      1.00      0.10       258
+         Industrial       0.01      1.00      0.01        35
+          Downtempo       0.03      1.00      0.06       156
+                IDM       0.04      1.00      0.07       187
+      International       0.04      1.00      0.09       215
+        Drum & Bass       0.01      1.00      0.02        37
+        Progressive       0.01      1.00      0.02        37
+              Metal       0.02      1.00      0.04       105
+            Hip-Hop       0.09      1.00      0.17       439
+               Rock       0.28      1.00      0.44      1368
+         Psych-Folk       0.01      1.00      0.01        32
+         Electronic       0.26      1.00      0.41      1232
+        Avant-Garde       0.02      1.00      0.05       113
+                Pop       0.05      1.00      0.09       238
+          Chill-out       0.01      1.00      0.02        56
+               Jazz       0.01      1.00      0.03        65
+                Rap       0.01      1.00      0.03        65
+            Country       0.01      1.00      0.01        36
+    Electroacoustic       0.01      1.00      0.03        64
+             Europe       0.01      1.00      0.02        38
+          Classical       0.02      1.00      0.05       113
+             Glitch       0.02      1.00      0.05       118
+          Post-Rock       0.02      1.00      0.04        86
+   Experimental Pop       0.02      1.00      0.04        92
+   Field Recordings       0.01      1.00      0.01        31
+              Dance       0.02      1.00      0.04        94
+ Ambient Electronic       0.04      1.00      0.08       199
+         Chip Music       0.04      1.00      0.07       176
+             Improv       0.01      1.00      0.02        44
+          Loud-Rock       0.02      1.00      0.04       101
+              Drone       0.01      1.00      0.02        49
+           Hardcore       0.02      1.00      0.05       115
+         Psych-Rock       0.03      1.00      0.05       123
+         Soundtrack       0.04      1.00      0.07       171
+       Instrumental       0.06      1.00      0.11       269
+            Ambient       0.02      1.00      0.03        77
+Old-Time / Historic       0.02      1.00      0.03        84
+               Punk       0.13      1.00      0.23       638
+           Trip-Hop       0.03      1.00      0.06       138
+              House       0.03      1.00      0.05       126
+ Minimal Electronic       0.01      1.00      0.02        38
+       Experimental       0.09      1.00      0.16       429
+          Synth Pop       0.01      1.00      0.02        44
+       Reggae - Dub       0.01      1.00      0.02        48
+             Techno       0.03      1.00      0.06       142
+      Sound Collage       0.01      1.00      0.02        47
+               Folk       0.07      1.00      0.12       319
+             Balkan       0.01      1.00      0.02        42
+              Noise       0.02      1.00      0.03        85
+
+          micro avg       0.03      1.00      0.07      9954
+          macro avg       0.03      1.00      0.06      9954
+       weighted avg       0.11      1.00      0.18      9954
+        samples avg       0.03      1.00      0.07      9954
+
+
+[INFO]
+- Method: baseline
+- # Prototypes: 60
+- # Unique items in support set: 116
+- # Unique items in query set: 4807
+- Mean groung truth labels per item: 2.07
+- Mean predicted labels per item: 59.99
+
+Execution time: 28 seconds

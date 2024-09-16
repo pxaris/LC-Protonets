@@ -1,0 +1,35 @@
+
+Evaluation of model "hindustani/LCP_from_hindustani_cos" on "hindustani" test set, with
+- N-way: 5
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.6368753190719225
+- micro-f1: 0.6922519913106444
+
+
+Classification report:
+                       precision    recall  f1-score   support
+
+    instrument--Tabla       0.55      1.00      0.71       123
+instrument--Harmonium       0.33      0.46      0.38        92
+         form--Khayal       0.48      0.71      0.57        95
+       tala--Teentaal       0.58      0.56      0.57        81
+    instrument--Voice       0.91      1.00      0.95       201
+
+            micro avg       0.61      0.81      0.69       592
+            macro avg       0.57      0.74      0.64       592
+         weighted avg       0.63      0.81      0.70       592
+          samples avg       0.62      0.86      0.66       592
+
+
+[INFO]
+- Method: LCP
+- # Prototypes: 31
+- # Unique items in support set: 5
+- # Unique items in query set: 222
+- Mean groung truth labels per item: 2.67
+- Mean predicted labels per item: 3.55
+
+Execution time: 23 seconds

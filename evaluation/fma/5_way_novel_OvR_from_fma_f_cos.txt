@@ -1,0 +1,35 @@
+
+Evaluation of model "fma/OvR_from_fma_f_cos" on "fma" test set, with
+- N-way: 5
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.579073735529761
+- micro-f1: 0.5768482490272373
+
+
+Classification report:
+              precision    recall  f1-score   support
+
+    Trip-Hop       0.46      0.92      0.62       139
+   Post-Punk       0.47      0.95      0.63       130
+  Psych-Rock       0.42      0.92      0.58       123
+      Glitch       0.34      0.97      0.50       119
+ Avant-Garde       0.40      0.97      0.57       116
+
+   micro avg       0.41      0.95      0.58       627
+   macro avg       0.42      0.95      0.58       627
+weighted avg       0.42      0.95      0.58       627
+ samples avg       0.43      0.94      0.58       627
+
+
+[INFO]
+- Method: OvR
+- # Prototypes: 5
+- # Unique items in support set: 15
+- # Unique items in query set: 602
+- Mean groung truth labels per item: 1.04
+- Mean predicted labels per item: 2.37
+
+Execution time: 4 seconds

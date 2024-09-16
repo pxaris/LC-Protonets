@@ -1,0 +1,75 @@
+
+Evaluation of model "pretrained/fma/vgg_ish" on "fma" test set, with
+- N-way: 45
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.07895711788297667
+- micro-f1: 0.08348713398402839
+
+
+Classification report:
+                     precision    recall  f1-score   support
+
+         Indie-Rock       0.05      1.00      0.10       259
+          Power-Pop       0.02      1.00      0.04       104
+          Chill-out       0.01      1.00      0.02        54
+    Electroacoustic       0.01      1.00      0.03        64
+       Experimental       0.09      1.00      0.16       431
+              Metal       0.02      1.00      0.04       102
+         Electronic       0.26      1.00      0.41      1237
+            Dubstep       0.02      1.00      0.04       105
+           Chiptune       0.02      1.00      0.05       120
+               Punk       0.13      1.00      0.23       637
+             Glitch       0.02      1.00      0.05       119
+        Avant-Garde       0.02      1.00      0.05       116
+             Techno       0.03      1.00      0.06       141
+      International       0.05      1.00      0.09       219
+         Chip Music       0.04      1.00      0.07       178
+ Ambient Electronic       0.04      1.00      0.08       199
+  Singer-Songwriter       0.02      1.00      0.05       114
+              Dance       0.02      1.00      0.04        95
+                Pop       0.05      1.00      0.10       244
+               Rock       0.29      1.00      0.44      1371
+                Rap       0.01      1.00      0.03        65
+            Ambient       0.02      1.00      0.03        77
+            Hip-Hop       0.09      1.00      0.17       443
+       Reggae - Dub       0.01      1.00      0.02        48
+          Downtempo       0.03      1.00      0.06       156
+Old-Time / Historic       0.02      1.00      0.03        84
+                IDM       0.04      1.00      0.08       189
+          Loud-Rock       0.02      1.00      0.04       100
+               Jazz       0.01      1.00      0.03        65
+              Noise       0.02      1.00      0.03        84
+           Hardcore       0.02      1.00      0.05       114
+          Post-Punk       0.03      1.00      0.05       130
+          Classical       0.02      1.00      0.05       113
+         Psych-Rock       0.03      1.00      0.05       122
+              Drone       0.01      1.00      0.02        48
+              House       0.03      1.00      0.05       126
+          Post-Rock       0.02      1.00      0.04        87
+               Folk       0.07      1.00      0.13       322
+       Instrumental       0.06      1.00      0.11       272
+              Lo-Fi       0.02      1.00      0.04        96
+   Experimental Pop       0.02      1.00      0.04        94
+         Noise-Rock       0.02      1.00      0.03        77
+             Garage       0.06      1.00      0.11       277
+         Soundtrack       0.04      1.00      0.07       172
+           Trip-Hop       0.03      1.00      0.06       139
+
+          micro avg       0.04      1.00      0.08      9409
+          macro avg       0.04      1.00      0.08      9409
+       weighted avg       0.11      1.00      0.19      9409
+        samples avg       0.04      1.00      0.08      9409
+
+
+[INFO]
+- Method: baseline
+- # Prototypes: 45
+- # Unique items in support set: 83
+- # Unique items in query set: 4801
+- Mean groung truth labels per item: 1.96
+- Mean predicted labels per item: 44.99
+
+Execution time: 25 seconds

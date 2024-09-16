@@ -1,0 +1,75 @@
+
+Evaluation of model "makam/LCP_cos" on "makam" test set, with
+- N-way: 45
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.17745654987332019
+- micro-f1: 0.3644291754756871
+
+
+Classification report:
+                                  precision    recall  f1-score   support
+
+                    makam--Mahur       0.04      0.09      0.05        32
+   instrument--Classical kemençe       0.50      0.40      0.44       236
+               instrument--Viola       0.20      0.29      0.24        34
+               usul--Senginsemai       0.00      0.00      0.00        22
+                 instrument--Oud       0.51      0.43      0.47       228
+               instrument--Cello       0.52      0.46      0.49       157
+                makam--Ferahfeza       0.00      0.00      0.00        15
+              instrument--Tanbur       0.52      0.45      0.49       294
+               instrument--Daire       0.48      0.38      0.43        26
+                  makam--Hüseyni       0.00      0.00      0.00        25
+                 usul--Nimsofyan       0.00      0.00      0.00        16
+            instrument--Clarinet       0.20      0.19      0.20        52
+               instrument--Kanun       0.53      0.56      0.54       296
+              instrument--Violin       0.47      0.48      0.48       161
+                 makam--Nihavent       0.11      0.06      0.08        66
+              usul--Devr-i Kebir       0.15      0.35      0.21        23
+                usul--Türkaksağı       0.04      0.06      0.05        18
+                    makam--Segah       0.11      0.05      0.07        38
+                   usul--Curcuna       0.00      0.00      0.00        55
+                usul--Yürüksemai       0.17      0.12      0.14        41
+             instrument--Strings       0.33      0.07      0.12        14
+instrument--performing orchestra       0.41      0.25      0.31       236
+                    makam--Hicaz       0.22      0.17      0.19       120
+                 usul--Ağıraksak       0.00      0.00      0.00        38
+                    usul--Sofyan       0.00      0.00      0.00        45
+               instrument--Kudüm       0.32      0.25      0.28        44
+                  makam--Isfahan       0.07      0.29      0.12        14
+                   makam--Hüzzam       0.03      0.02      0.02        60
+                     usul--Semai       0.10      0.12      0.11        26
+                     usul--Hafif       0.00      0.00      0.00        22
+               instrument--Voice       0.79      0.66      0.72       604
+                 instrument--Ney       0.60      0.43      0.50       287
+                 makam--Muhayyer       0.00      0.00      0.00        25
+                 makam--Karcığar       0.00      0.00      0.00        18
+                    makam--Uşşak       0.04      0.02      0.03        55
+         instrument--Double bass       0.33      0.24      0.28        17
+                     makam--Rast       0.08      0.05      0.06        39
+          makam--Kürdilihicazkar       0.09      0.06      0.07        47
+                     usul--Düyek       0.15      0.10      0.12        86
+                  makam--Suzinak       0.02      0.12      0.04        16
+          instrument--Percussion       0.24      0.18      0.21       103
+                 makam--Hicazkar       0.00      0.00      0.00        29
+                     usul--Aksak       0.13      0.05      0.07       103
+                usul--Aksaksemai       0.20      0.11      0.14        80
+              instrument--Bendir       0.38      0.18      0.24        62
+
+                       micro avg       0.39      0.34      0.36      4025
+                       macro avg       0.20      0.17      0.18      4025
+                    weighted avg       0.41      0.34      0.37      4025
+                     samples avg       0.32      0.32      0.29      4025
+
+
+[INFO]
+- Method: LCP
+- # Prototypes: 60193
+- # Unique items in support set: 67
+- # Unique items in query set: 990
+- Mean groung truth labels per item: 4.07
+- Mean predicted labels per item: 3.58
+
+Execution time: 2726 seconds

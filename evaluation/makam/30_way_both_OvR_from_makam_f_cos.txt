@@ -1,0 +1,60 @@
+
+Evaluation of model "makam/OvR_from_makam_f_cos" on "makam" test set, with
+- N-way: 30
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.30597299655167226
+- micro-f1: 0.3160194439892949
+
+
+Classification report:
+                                  precision    recall  f1-score   support
+
+               instrument--Voice       0.66      0.72      0.69       624
+               instrument--Kanun       0.67      0.68      0.68       300
+              instrument--Tanbur       0.54      0.89      0.67       295
+                 instrument--Ney       0.61      0.88      0.72       288
+instrument--performing orchestra       0.35      0.90      0.50       237
+                 instrument--Oud       0.54      0.64      0.59       235
+   instrument--Classical kemençe       0.69      0.82      0.75       237
+               instrument--Cello       0.50      0.84      0.62       158
+              instrument--Violin       0.51      0.80      0.62       167
+                     usul--Aksak       0.11      0.39      0.17       101
+                    makam--Hicaz       0.13      0.85      0.23       123
+          instrument--Percussion       0.30      0.95      0.46       100
+                     usul--Düyek       0.12      0.85      0.20        88
+                usul--Aksaksemai       0.12      0.70      0.20        81
+                 makam--Nihavent       0.10      0.81      0.17        70
+                   makam--Hüzzam       0.08      0.76      0.15        62
+            instrument--Clarinet       0.18      0.92      0.31        53
+                   usul--Curcuna       0.04      0.31      0.07        55
+          makam--Kürdilihicazkar       0.05      0.42      0.09        45
+              instrument--Bendir       0.15      0.97      0.26        59
+                    makam--Uşşak       0.05      0.42      0.09        55
+                     makam--Rast       0.04      0.79      0.07        38
+               instrument--Kudüm       0.09      0.93      0.17        45
+               instrument--Viola       0.13      0.97      0.22        36
+                usul--Yürüksemai       0.03      0.63      0.07        41
+                    usul--Sofyan       0.05      0.48      0.09        46
+                    makam--Segah       0.04      0.79      0.07        38
+                 usul--Ağıraksak       0.05      0.73      0.10        37
+                  makam--Hüseyni       0.03      0.85      0.06        26
+              usul--Devr-i Kebir       0.04      0.92      0.08        25
+
+                       micro avg       0.20      0.77      0.32      3765
+                       macro avg       0.23      0.75      0.31      3765
+                    weighted avg       0.43      0.77      0.51      3765
+                     samples avg       0.18      0.75      0.28      3765
+
+
+[INFO]
+- Method: OvR
+- # Prototypes: 30
+- # Unique items in support set: 41
+- # Unique items in query set: 1016
+- Mean groung truth labels per item: 3.71
+- Mean predicted labels per item: 14.31
+
+Execution time: 26 seconds

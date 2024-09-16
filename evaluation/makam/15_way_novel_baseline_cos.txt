@@ -1,0 +1,45 @@
+
+Evaluation of model "makam/baseline_cos" on "makam" test set, with
+- N-way: 15
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.1323749611194096
+- micro-f1: 0.1330749354005168
+
+
+Classification report:
+                         precision    recall  f1-score   support
+
+    instrument--Strings       0.04      1.00      0.09        13
+           makam--Mahur       0.12      1.00      0.21        34
+        usul--Nimsofyan       0.06      1.00      0.10        16
+        makam--Karcığar       0.06      1.00      0.11        17
+        makam--Hicazkar       0.10      1.00      0.18        29
+            usul--Semai       0.09      1.00      0.17        26
+         makam--Isfahan       0.05      1.00      0.09        14
+       usul--Türkaksağı       0.06      1.00      0.11        17
+         makam--Suzinak       0.06      1.00      0.10        16
+        makam--Muhayyer       0.09      1.00      0.16        25
+      usul--Senginsemai       0.08      1.00      0.14        22
+       makam--Ferahfeza       0.05      1.00      0.10        15
+            usul--Hafif       0.08      1.00      0.14        22
+instrument--Double bass       0.06      1.00      0.11        17
+      instrument--Daire       0.09      1.00      0.17        26
+
+              micro avg       0.07      1.00      0.13       309
+              macro avg       0.07      1.00      0.13       309
+           weighted avg       0.08      1.00      0.14       309
+            samples avg       0.07      1.00      0.13       309
+
+
+[INFO]
+- Method: baseline
+- # Prototypes: 15
+- # Unique items in support set: 41
+- # Unique items in query set: 289
+- Mean groung truth labels per item: 1.07
+- Mean predicted labels per item: 15.0
+
+Execution time: 7 seconds

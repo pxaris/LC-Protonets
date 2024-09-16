@@ -1,0 +1,45 @@
+
+Evaluation of model "pretrained/hindustani/vgg_ish" on "hindustani" test set, with
+- N-way: 15
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.27619047619047615
+- micro-f1: 0.3380281690140845
+
+
+Classification report:
+                     precision    recall  f1-score   support
+
+   raga--Charukeshi       0.50      1.00      0.67         1
+      raga--Bairagi       0.00      0.00      0.00         1
+ raga--Chandrakauns       0.00      0.00      0.00         2
+          raga--Des       0.00      0.00      0.00         2
+ instrument--Violin       0.00      0.00      0.00         2
+     raga--Malkauns       0.00      0.00      0.00         3
+ raga--Ahir bhairav       0.00      0.00      0.00         3
+        raga--Kedar       0.00      0.00      0.00         2
+   instrument--Harp       1.00      1.00      1.00         2
+   raga--Madhukauns       0.33      0.33      0.33         3
+       raga--Khamaj       0.00      0.00      0.00         5
+      tala--Sooltal       1.00      1.00      1.00         4
+        raga--Bihag       0.00      0.00      0.00         1
+      tala--Jhoomra       0.20      0.50      0.29         2
+instrument--Shehnai       0.75      1.00      0.86         3
+
+          micro avg       0.34      0.33      0.34        36
+          macro avg       0.25      0.32      0.28        36
+       weighted avg       0.28      0.33      0.30        36
+        samples avg       0.32      0.30      0.31        36
+
+
+[INFO]
+- Method: LCP
+- # Prototypes: 16
+- # Unique items in support set: 43
+- # Unique items in query set: 33
+- Mean groung truth labels per item: 1.09
+- Mean predicted labels per item: 1.06
+
+Execution time: 12 seconds

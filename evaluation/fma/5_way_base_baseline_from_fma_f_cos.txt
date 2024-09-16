@@ -1,0 +1,35 @@
+
+Evaluation of model "fma/baseline_from_fma_f_cos" on "fma" test set, with
+- N-way: 5
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.6272746429656236
+- micro-f1: 0.6610663466483799
+
+
+Classification report:
+              precision    recall  f1-score   support
+
+        Punk       0.41      0.98      0.58       646
+Experimental       0.26      0.90      0.40       438
+  Electronic       0.70      0.88      0.78      1256
+     Hip-Hop       0.34      0.98      0.50       443
+        Rock       0.83      0.92      0.88      1393
+
+   micro avg       0.51      0.92      0.66      4176
+   macro avg       0.51      0.93      0.63      4176
+weighted avg       0.62      0.92      0.71      4176
+ samples avg       0.57      0.91      0.67      4176
+
+
+[INFO]
+- Method: baseline
+- # Prototypes: 5
+- # Unique items in support set: 12
+- # Unique items in query set: 3530
+- Mean groung truth labels per item: 1.18
+- Mean predicted labels per item: 2.12
+
+Execution time: 19 seconds

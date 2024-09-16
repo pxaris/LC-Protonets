@@ -1,0 +1,45 @@
+
+Evaluation of model "magnatagatune/baseline_from_magnatagatune_cos" on "magnatagatune" test set, with
+- N-way: 15
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.41484868610613235
+- micro-f1: 0.4210338468859675
+
+
+Classification report:
+              precision    recall  f1-score   support
+
+      violin       0.14      0.84      0.24       228
+     ambient       0.23      0.97      0.37       505
+        beat       0.20      0.96      0.33       340
+       vocal       0.30      0.86      0.44       432
+        rock       0.41      0.99      0.58       561
+        fast       0.24      0.82      0.37       490
+       synth       0.17      0.94      0.29       327
+      guitar       0.42      0.88      0.57       872
+      techno       0.35      0.97      0.52       594
+       drums       0.25      0.82      0.39       513
+  electronic       0.27      0.96      0.43       492
+     strings       0.19      0.93      0.32       391
+       piano       0.22      0.95      0.35       464
+   classical       0.36      0.99      0.53       694
+        slow       0.34      0.87      0.49       802
+
+   micro avg       0.27      0.92      0.42      7705
+   macro avg       0.27      0.92      0.41      7705
+weighted avg       0.30      0.92      0.44      7705
+ samples avg       0.29      0.93      0.42      7705
+
+
+[INFO]
+- Method: baseline
+- # Prototypes: 15
+- # Unique items in support set: 18
+- # Unique items in query set: 3694
+- Mean groung truth labels per item: 2.09
+- Mean predicted labels per item: 7.02
+
+Execution time: 20 seconds

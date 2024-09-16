@@ -1,0 +1,45 @@
+
+Evaluation of model "hindustani/OvR_cos" on "hindustani" test set, with
+- N-way: 15
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.31171244275216065
+- micro-f1: 0.37172359015091344
+
+
+Classification report:
+                       precision    recall  f1-score   support
+
+    instrument--Voice       0.91      1.00      0.95       187
+    instrument--Tabla       0.55      1.00      0.71       113
+         form--Khayal       0.44      1.00      0.61        90
+instrument--Harmonium       0.42      1.00      0.59        86
+       tala--Teentaal       0.38      1.00      0.55        77
+  instrument--Tambura       0.26      1.00      0.41        53
+         tala--Ektaal       0.18      1.00      0.30        36
+  instrument--Sarangi       0.07      1.00      0.13        14
+ instrument--Pakhavaj       0.07      1.00      0.14        15
+        form--Dhrupad       0.07      1.00      0.14        15
+         form--Tarana       0.02      1.00      0.04         4
+    instrument--Sarod       0.01      1.00      0.02         2
+   raga--Yaman kalyan       0.02      1.00      0.05         5
+          tala--Rupak       0.01      1.00      0.03         3
+      raga--Bageshree       0.01      1.00      0.02         2
+
+            micro avg       0.23      1.00      0.37       702
+            macro avg       0.23      1.00      0.31       702
+         weighted avg       0.51      1.00      0.63       702
+          samples avg       0.23      1.00      0.36       702
+
+
+[INFO]
+- Method: OvR
+- # Prototypes: 15
+- # Unique items in support set: 23
+- # Unique items in query set: 205
+- Mean groung truth labels per item: 3.42
+- Mean predicted labels per item: 15.0
+
+Execution time: 20 seconds

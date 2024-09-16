@@ -1,0 +1,35 @@
+
+Evaluation of model "magnatagatune/OvR_from_magnatagatune_cos" on "magnatagatune" test set, with
+- N-way: 5
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.508943194400343
+- micro-f1: 0.5101035829512651
+
+
+Classification report:
+              precision    recall  f1-score   support
+
+      guitar       0.35      0.71      0.47       870
+   classical       0.39      1.00      0.56       696
+        slow       0.42      0.90      0.57       803
+      techno       0.41      0.98      0.58       595
+     strings       0.22      0.98      0.36       391
+
+   micro avg       0.36      0.90      0.51      3355
+   macro avg       0.36      0.92      0.51      3355
+weighted avg       0.37      0.90      0.52      3355
+ samples avg       0.41      0.87      0.51      3355
+
+
+[INFO]
+- Method: OvR
+- # Prototypes: 5
+- # Unique items in support set: 9
+- # Unique items in query set: 2515
+- Mean groung truth labels per item: 1.33
+- Mean predicted labels per item: 3.35
+
+Execution time: 13 seconds

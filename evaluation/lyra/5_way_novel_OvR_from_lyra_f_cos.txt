@@ -1,0 +1,35 @@
+
+Evaluation of model "lyra/OvR_from_lyra_f_cos" on "lyra" test set, with
+- N-way: 5
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.543101604278075
+- micro-f1: 0.5437352245862884
+
+
+Classification report:
+                        precision    recall  f1-score   support
+
+       genres--Pontian       0.42      1.00      0.59        26
+         place--Pontus       0.42      1.00      0.59        26
+        genres--Ionian       0.33      1.00      0.49        21
+instruments--Tambouras       0.38      1.00      0.55        21
+          place--Corfu       0.33      1.00      0.49        21
+
+             micro avg       0.37      1.00      0.54       115
+             macro avg       0.37      1.00      0.54       115
+          weighted avg       0.38      1.00      0.55       115
+           samples avg       0.39      1.00      0.55       115
+
+
+[INFO]
+- Method: OvR
+- # Prototypes: 5
+- # Unique items in support set: 9
+- # Unique items in query set: 68
+- Mean groung truth labels per item: 1.69
+- Mean predicted labels per item: 4.53
+
+Execution time: 2 seconds

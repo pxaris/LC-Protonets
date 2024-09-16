@@ -1,0 +1,35 @@
+
+Evaluation of model "lyra/baseline_cos" on "lyra" test set, with
+- N-way: 5
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.6542002301495973
+- micro-f1: 0.6368715083798883
+
+
+Classification report:
+                        precision    recall  f1-score   support
+
+        genres--Ionian       0.60      1.00      0.75        21
+       genres--Pontian       0.49      1.00      0.66        26
+          place--Corfu       0.60      1.00      0.75        21
+         place--Pontus       0.49      1.00      0.66        26
+instruments--Tambouras       0.30      0.95      0.45        21
+
+             micro avg       0.47      0.99      0.64       115
+             macro avg       0.50      0.99      0.65       115
+          weighted avg       0.50      0.99      0.65       115
+           samples avg       0.49      0.99      0.64       115
+
+
+[INFO]
+- Method: baseline
+- # Prototypes: 5
+- # Unique items in support set: 9
+- # Unique items in query set: 68
+- Mean groung truth labels per item: 1.69
+- Mean predicted labels per item: 3.57
+
+Execution time: 5 seconds

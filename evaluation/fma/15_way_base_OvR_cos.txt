@@ -1,0 +1,45 @@
+
+Evaluation of model "fma/OvR_cos" on "fma" test set, with
+- N-way: 15
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.21266622770165494
+- micro-f1: 0.2254826603969797
+
+
+Classification report:
+                    precision    recall  f1-score   support
+
+              Rock       0.56      0.78      0.65      1387
+        Electronic       0.31      0.74      0.43      1249
+              Punk       0.28      0.84      0.42       645
+      Experimental       0.12      0.72      0.20       438
+           Hip-Hop       0.13      0.94      0.22       443
+              Folk       0.10      0.84      0.18       322
+            Garage       0.12      0.88      0.22       276
+      Instrumental       0.08      0.84      0.15       272
+        Indie-Rock       0.10      0.72      0.17       260
+               Pop       0.05      0.56      0.09       244
+        Chip Music       0.04      0.60      0.07       178
+Ambient Electronic       0.06      0.83      0.11       200
+     International       0.07      0.86      0.13       221
+               IDM       0.05      0.75      0.10       189
+            Techno       0.02      0.27      0.04       142
+
+         micro avg       0.13      0.77      0.23      6466
+         macro avg       0.14      0.74      0.21      6466
+      weighted avg       0.25      0.77      0.34      6466
+       samples avg       0.14      0.77      0.23      6466
+
+
+[INFO]
+- Method: OvR
+- # Prototypes: 15
+- # Unique items in support set: 37
+- # Unique items in query set: 4576
+- Mean groung truth labels per item: 1.41
+- Mean predicted labels per item: 8.25
+
+Execution time: 25 seconds

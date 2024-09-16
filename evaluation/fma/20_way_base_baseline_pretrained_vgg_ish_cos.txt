@@ -1,0 +1,50 @@
+
+Evaluation of model "pretrained/fma/vgg_ish" on "fma" test set, with
+- N-way: 20
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.13709297021950828
+- micro-f1: 0.14507340929614335
+
+
+Classification report:
+                    precision    recall  f1-score   support
+
+            Garage       0.06      1.00      0.11       276
+        Soundtrack       0.04      1.00      0.07       172
+Ambient Electronic       0.04      1.00      0.08       198
+               IDM       0.04      1.00      0.08       187
+          Hardcore       0.03      1.00      0.05       115
+          Chiptune       0.03      1.00      0.05       120
+      Instrumental       0.06      1.00      0.11       272
+           Hip-Hop       0.10      1.00      0.18       443
+              Punk       0.14      1.00      0.25       644
+        Electronic       0.27      1.00      0.43      1244
+              Rock       0.30      1.00      0.47      1388
+            Techno       0.03      1.00      0.06       141
+         Downtempo       0.03      1.00      0.07       157
+        Indie-Rock       0.06      1.00      0.11       260
+     International       0.05      1.00      0.09       221
+             House       0.03      1.00      0.05       129
+        Chip Music       0.04      1.00      0.07       178
+      Experimental       0.10      1.00      0.17       438
+               Pop       0.05      1.00      0.10       244
+              Folk       0.07      1.00      0.13       322
+
+         micro avg       0.08      1.00      0.15      7149
+         macro avg       0.08      1.00      0.14      7149
+      weighted avg       0.15      1.00      0.25      7149
+       samples avg       0.08      1.00      0.14      7149
+
+
+[INFO]
+- Method: baseline
+- # Prototypes: 20
+- # Unique items in support set: 41
+- # Unique items in query set: 4572
+- Mean groung truth labels per item: 1.56
+- Mean predicted labels per item: 19.99
+
+Execution time: 26 seconds

@@ -1,0 +1,45 @@
+
+Evaluation of model "pretrained/magnatagatune/vgg_ish" on "magnatagatune" test set, with
+- N-way: 15
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.14609164175936945
+- micro-f1: 0.14642657733109996
+
+
+Classification report:
+               precision    recall  f1-score   support
+
+female vocals       0.11      1.00      0.20        98
+    hard rock       0.09      1.00      0.17        83
+  male vocals       0.09      1.00      0.17        84
+         jazz       0.09      1.00      0.17        83
+         drum       0.09      1.00      0.16        78
+      electro       0.08      1.00      0.15        74
+ instrumental       0.08      1.00      0.15        72
+       chorus       0.08      1.00      0.14        67
+     no piano       0.07      1.00      0.14        65
+      foreign       0.07      1.00      0.13        62
+        heavy       0.07      1.00      0.12        59
+   harpsicord       0.06      1.00      0.12        57
+       voices       0.06      1.00      0.12        57
+       trance       0.06      1.00      0.12        56
+     electric       0.06      1.00      0.11        54
+
+    micro avg       0.08      1.00      0.15      1049
+    macro avg       0.08      1.00      0.15      1049
+ weighted avg       0.08      1.00      0.15      1049
+  samples avg       0.08      1.00      0.15      1049
+
+
+[INFO]
+- Method: OvR
+- # Prototypes: 15
+- # Unique items in support set: 39
+- # Unique items in query set: 886
+- Mean groung truth labels per item: 1.18
+- Mean predicted labels per item: 14.99
+
+Execution time: 7 seconds

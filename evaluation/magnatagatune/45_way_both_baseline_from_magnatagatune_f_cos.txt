@@ -1,0 +1,75 @@
+
+Evaluation of model "magnatagatune/baseline_from_magnatagatune_f_cos" on "magnatagatune" test set, with
+- N-way: 45
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.20976397714630973
+- micro-f1: 0.22490767972049622
+
+
+Classification report:
+                 precision    recall  f1-score   support
+
+           slow       0.30      0.89      0.45       793
+         trance       0.03      0.93      0.06        56
+       electric       0.02      0.90      0.05        51
+          chant       0.04      0.98      0.08        48
+           jazz       0.03      0.95      0.06        80
+        electro       0.04      1.00      0.08        73
+          synth       0.16      0.90      0.28       322
+         voices       0.05      0.84      0.09        57
+          vocal       0.27      0.91      0.42       426
+       no piano       0.02      0.66      0.04        65
+        singing       0.22      0.93      0.36       290
+         string       0.02      1.00      0.04        45
+     electronic       0.25      0.96      0.40       485
+      classical       0.33      0.94      0.49       691
+  woman singing       0.03      0.98      0.06        48
+           male       0.17      0.98      0.28       258
+    electronica       0.03      0.98      0.06        49
+         vocals       0.18      0.92      0.30       277
+         violin       0.09      0.87      0.17       228
+         guitar       0.37      0.93      0.53       861
+          heavy       0.03      1.00      0.07        59
+         female       0.29      0.93      0.44       376
+      no vocals       0.07      0.70      0.12       240
+        strings       0.18      0.95      0.30       390
+         indian       0.05      0.44      0.08       171
+          jazzy       0.02      0.94      0.04        53
+          drums       0.24      0.94      0.38       509
+electric guitar       0.02      1.00      0.05        46
+         chorus       0.06      0.99      0.12        68
+          piano       0.21      0.93      0.34       464
+   instrumental       0.02      0.65      0.04        72
+           beat       0.20      0.97      0.33       337
+           rock       0.34      1.00      0.51       555
+           fast       0.22      0.84      0.35       479
+    male vocals       0.06      0.95      0.12        84
+      no guitar       0.02      0.65      0.03        49
+           drum       0.03      0.96      0.06        78
+        foreign       0.04      0.87      0.08        62
+     harpsicord       0.03      1.00      0.06        57
+        ambient       0.23      0.97      0.37       501
+          opera       0.32      0.99      0.48       369
+         techno       0.34      0.98      0.51       585
+  female vocals       0.06      0.94      0.12        99
+      hard rock       0.05      1.00      0.10        84
+        eastern       0.02      0.70      0.04        47
+
+      micro avg       0.13      0.92      0.22     11037
+      macro avg       0.13      0.91      0.21     11037
+   weighted avg       0.23      0.92      0.35     11037
+    samples avg       0.13      0.93      0.22     11037
+
+
+[INFO]
+- Method: baseline
+- # Prototypes: 45
+- # Unique items in support set: 57
+- # Unique items in query set: 4054
+- Mean groung truth labels per item: 2.72
+- Mean predicted labels per item: 19.59
+
+Execution time: 22 seconds

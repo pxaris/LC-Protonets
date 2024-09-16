@@ -1,0 +1,45 @@
+
+Evaluation of model "hindustani/baseline_from_hindustani_cos" on "hindustani" test set, with
+- N-way: 15
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.18686626565977757
+- micro-f1: 0.17751479289940827
+
+
+Classification report:
+                     precision    recall  f1-score   support
+
+   raga--Charukeshi       0.07      1.00      0.12         1
+      raga--Bairagi       0.04      1.00      0.08         1
+ raga--Chandrakauns       0.04      0.50      0.07         2
+          raga--Des       0.05      0.50      0.10         2
+ instrument--Violin       0.09      1.00      0.17         2
+     raga--Malkauns       0.14      1.00      0.24         3
+ raga--Ahir bhairav       0.08      0.67      0.15         3
+        raga--Kedar       0.06      0.50      0.11         2
+   instrument--Harp       0.10      1.00      0.17         2
+   raga--Madhukauns       0.14      1.00      0.25         3
+       raga--Khamaj       0.14      0.60      0.23         5
+      tala--Sooltal       0.31      1.00      0.47         4
+        raga--Bihag       0.04      1.00      0.08         1
+      tala--Jhoomra       0.09      1.00      0.16         2
+instrument--Shehnai       0.25      1.00      0.40         3
+
+          micro avg       0.10      0.83      0.18        36
+          macro avg       0.11      0.85      0.19        36
+       weighted avg       0.13      0.83      0.22        36
+        samples avg       0.11      0.85      0.19        36
+
+
+[INFO]
+- Method: baseline
+- # Prototypes: 15
+- # Unique items in support set: 43
+- # Unique items in query set: 33
+- Mean groung truth labels per item: 1.09
+- Mean predicted labels per item: 9.15
+
+Execution time: 25 seconds

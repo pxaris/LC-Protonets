@@ -1,0 +1,60 @@
+
+Evaluation of model "carnatic/OvR_from_carnatic_cos" on "carnatic" test set, with
+- N-way: 30
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.20982254667594105
+- micro-f1: 0.27862102869784305
+
+
+Classification report:
+                            precision    recall  f1-score   support
+
+         instrument--Voice       0.84      1.00      0.91       390
+        instrument--Violin       0.83      1.00      0.91       389
+     instrument--Mridangam       0.78      1.00      0.87       362
+               form--Kriti       0.70      1.00      0.83       329
+                 tala--adi       0.53      1.00      0.70       249
+        instrument--Ghatam       0.31      1.00      0.48       147
+      instrument--Khanjira       0.18      1.00      0.30        82
+              tala--rupaka       0.12      1.00      0.21        56
+        tala--mishra chapu       0.06      1.00      0.11        26
+form--Varnam - Tana Varnam       0.06      1.00      0.12        30
+             form--Alapana       0.07      1.00      0.13        32
+             form--Pallavi       0.03      1.00      0.06        14
+          raga--ragamalika       0.02      1.00      0.05        11
+        tala--khanda chapu       0.03      1.00      0.07        16
+       instrument--Morsing       0.03      1.00      0.05        13
+               raga--thodi       0.02      1.00      0.04        10
+            form--Thillana       0.03      1.00      0.05        13
+            form--Mangalam       0.02      1.00      0.04         9
+            raga--bhairavi       0.01      1.00      0.02         4
+             raga--kalyani       0.01      1.00      0.03         7
+               raga--behag       0.02      1.00      0.04         9
+               raga--kamas       0.02      1.00      0.04         9
+         raga--saurashtram       0.02      1.00      0.04         9
+                tala--atta       0.02      1.00      0.03         8
+              raga--surati       0.02      1.00      0.04        10
+        raga--Purvikalyani       0.01      1.00      0.03         7
+              raga--abhogi       0.01      1.00      0.03         7
+                raga--kapi       0.01      1.00      0.03         7
+        form--Thiruppugazh       0.01      1.00      0.03         6
+       instrument--Tambura       0.01      1.00      0.03         6
+
+                 micro avg       0.16      1.00      0.28      2267
+                 macro avg       0.16      1.00      0.21      2267
+              weighted avg       0.61      1.00      0.70      2267
+               samples avg       0.16      1.00      0.28      2267
+
+
+[INFO]
+- Method: OvR
+- # Prototypes: 30
+- # Unique items in support set: 55
+- # Unique items in query set: 467
+- Mean groung truth labels per item: 4.85
+- Mean predicted labels per item: 29.99
+
+Execution time: 22 seconds

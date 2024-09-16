@@ -1,0 +1,35 @@
+
+Evaluation of model "carnatic/OvR_cos" on "carnatic" test set, with
+- N-way: 5
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.3332365747460087
+- micro-f1: 0.3333333333333333
+
+
+Classification report:
+                   precision    recall  f1-score   support
+
+      raga--behag       0.20      1.00      0.34         9
+      raga--kamas       0.20      1.00      0.34         9
+raga--saurashtram       0.20      1.00      0.34         9
+       tala--atta       0.18      1.00      0.31         8
+     raga--surati       0.20      1.00      0.34         9
+
+        micro avg       0.20      1.00      0.33        44
+        macro avg       0.20      1.00      0.33        44
+     weighted avg       0.20      1.00      0.33        44
+      samples avg       0.20      1.00      0.33        44
+
+
+[INFO]
+- Method: OvR
+- # Prototypes: 5
+- # Unique items in support set: 15
+- # Unique items in query set: 44
+- Mean groung truth labels per item: 1.0
+- Mean predicted labels per item: 5.0
+
+Execution time: 2 seconds

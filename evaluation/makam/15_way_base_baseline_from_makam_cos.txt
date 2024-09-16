@@ -1,0 +1,45 @@
+
+Evaluation of model "makam/baseline_from_makam_cos" on "makam" test set, with
+- N-way: 15
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.47581990182710304
+- micro-f1: 0.47762984286913757
+
+
+Classification report:
+                                  precision    recall  f1-score   support
+
+              instrument--Violin       0.53      0.85      0.65       171
+               instrument--Kanun       0.88      0.82      0.85       311
+              instrument--Tanbur       0.66      0.62      0.64       305
+                     usul--Düyek       0.10      0.25      0.14        91
+               instrument--Voice       0.84      0.30      0.44       640
+instrument--performing orchestra       0.33      0.64      0.43       245
+   instrument--Classical kemençe       0.64      0.80      0.71       244
+          instrument--Percussion       0.43      0.93      0.59       107
+                usul--Aksaksemai       0.12      0.83      0.21        81
+               instrument--Cello       0.51      0.92      0.66       165
+                     usul--Aksak       0.14      0.77      0.24       103
+                 instrument--Ney       0.71      0.69      0.70       300
+                 makam--Nihavent       0.05      0.33      0.08        70
+                    makam--Hicaz       0.07      0.17      0.10       123
+                 instrument--Oud       0.64      0.76      0.69       240
+
+                       micro avg       0.39      0.62      0.48      3196
+                       macro avg       0.44      0.65      0.48      3196
+                    weighted avg       0.59      0.62      0.55      3196
+                     samples avg       0.27      0.39      0.29      3196
+
+
+[INFO]
+- Method: baseline
+- # Prototypes: 15
+- # Unique items in support set: 15
+- # Unique items in query set: 1036
+- Mean groung truth labels per item: 3.08
+- Mean predicted labels per item: 4.96
+
+Execution time: 22 seconds

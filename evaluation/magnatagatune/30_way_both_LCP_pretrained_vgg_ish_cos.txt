@@ -1,0 +1,60 @@
+
+Evaluation of model "pretrained/magnatagatune/vgg_ish" on "magnatagatune" test set, with
+- N-way: 30
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.3373022962601897
+- micro-f1: 0.4290988056460369
+
+
+Classification report:
+               precision    recall  f1-score   support
+
+   harpsicord       0.32      0.98      0.49        57
+   electronic       0.44      0.32      0.37       488
+ instrumental       0.05      0.18      0.08        72
+     electric       0.02      0.07      0.03        54
+    hard rock       0.24      0.64      0.35        84
+     no piano       0.00      0.00      0.00        64
+         beat       0.41      0.43      0.42       337
+      foreign       0.23      0.32      0.27        60
+      electro       0.10      0.10      0.10        73
+         jazz       0.08      0.34      0.13        82
+       chorus       0.49      0.53      0.51        68
+        piano       0.71      0.73      0.72       463
+       techno       0.85      0.61      0.71       591
+female vocals       0.28      0.32      0.30        98
+    classical       0.51      0.45      0.48       695
+       trance       0.06      0.43      0.11        56
+        heavy       0.14      0.29      0.19        59
+        vocal       0.53      0.33      0.41       431
+       voices       0.33      0.25      0.28        57
+      strings       0.41      0.20      0.27       390
+       violin       0.40      0.63      0.49       228
+       guitar       0.63      0.47      0.54       866
+         slow       0.38      0.43      0.40       795
+  male vocals       0.07      0.10      0.08        84
+         rock       0.87      0.70      0.77       557
+         drum       0.06      0.15      0.09        78
+         fast       0.28      0.18      0.22       488
+        drums       0.36      0.50      0.42       503
+      ambient       0.60      0.74      0.66       501
+        synth       0.19      0.33      0.24       323
+
+    micro avg       0.41      0.45      0.43      8702
+    macro avg       0.34      0.39      0.34      8702
+ weighted avg       0.48      0.45      0.45      8702
+  samples avg       0.44      0.50      0.41      8702
+
+
+[INFO]
+- Method: LCP
+- # Prototypes: 481
+- # Unique items in support set: 48
+- # Unique items in query set: 3762
+- Mean groung truth labels per item: 2.31
+- Mean predicted labels per item: 2.58
+
+Execution time: 160 seconds

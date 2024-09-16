@@ -1,0 +1,35 @@
+
+Evaluation of model "carnatic/baseline_cos" on "carnatic" test set, with
+- N-way: 5
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.2436088803972495
+- micro-f1: 0.27058823529411763
+
+
+Classification report:
+                   precision    recall  f1-score   support
+
+raga--saurashtram       0.24      0.89      0.37         9
+      raga--kamas       0.15      0.56      0.23         9
+      raga--behag       0.13      0.22      0.17         9
+     raga--surati       0.10      0.11      0.11         9
+       tala--atta       0.21      0.88      0.34         8
+
+        micro avg       0.18      0.52      0.27        44
+        macro avg       0.17      0.53      0.24        44
+     weighted avg       0.16      0.52      0.24        44
+      samples avg       0.17      0.52      0.26        44
+
+
+[INFO]
+- Method: baseline
+- # Prototypes: 5
+- # Unique items in support set: 15
+- # Unique items in query set: 44
+- Mean groung truth labels per item: 1.0
+- Mean predicted labels per item: 2.86
+
+Execution time: 3 seconds

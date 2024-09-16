@@ -1,0 +1,60 @@
+
+Evaluation of model "pretrained/lyra/vgg_ish" on "lyra" test set, with
+- N-way: 30
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.29029077009832804
+- micro-f1: 0.333176912247771
+
+
+Classification report:
+                         precision    recall  f1-score   support
+
+     instruments--Voice       0.68      1.00      0.81       200
+    genres--Traditional       0.84      1.00      0.92       250
+    instruments--Violin       0.52      1.00      0.68       153
+instruments--Percussion       0.56      1.00      0.72       167
+    instruments--Laouto       0.43      1.00      0.60       127
+    instruments--Guitar       0.46      1.00      0.63       137
+   instruments--Klarino       0.36      1.00      0.53       107
+      genres--Nisiotiko       0.20      1.00      0.33        58
+            place--None       0.18      1.00      0.31        54
+      instruments--Bass       0.11      1.00      0.20        33
+ instruments--Accordion       0.17      1.00      0.28        49
+  instruments--Santouri       0.12      1.00      0.21        35
+         genres--Aegean       0.09      1.00      0.17        27
+      place--Aegean-sea       0.09      1.00      0.17        27
+       genres--Epirotic       0.09      1.00      0.17        27
+          place--Epirus       0.09      1.00      0.17        27
+  instruments--Bouzouki       0.12      1.00      0.22        36
+   genres--Mikrasiatiko       0.11      1.00      0.21        34
+      place--Asia-minor       0.11      1.00      0.21        34
+       genres--Rebetiko       0.11      1.00      0.20        33
+          genres--Laiko       0.02      1.00      0.03         5
+     instruments--Piano       0.00      1.00      0.01         1
+      instruments--Lyra       0.13      1.00      0.23        39
+       instruments--Oud       0.14      1.00      0.25        42
+     genres--Macedonian       0.04      1.00      0.08        12
+       place--Macedonia       0.04      1.00      0.08        12
+  genres--Peloponnesian       0.02      1.00      0.05         7
+     place--Peloponnese       0.02      1.00      0.05         7
+  instruments--Mandolin       0.02      1.00      0.05         7
+  instruments--Kanonaki       0.09      1.00      0.17        28
+
+              micro avg       0.20      1.00      0.33      1775
+              macro avg       0.20      1.00      0.29      1775
+           weighted avg       0.42      1.00      0.55      1775
+            samples avg       0.20      1.00      0.33      1775
+
+
+[INFO]
+- Method: OvR
+- # Prototypes: 30
+- # Unique items in support set: 34
+- # Unique items in query set: 296
+- Mean groung truth labels per item: 6.0
+- Mean predicted labels per item: 30.0
+
+Execution time: 10 seconds

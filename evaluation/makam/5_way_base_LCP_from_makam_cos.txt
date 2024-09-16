@@ -1,0 +1,35 @@
+
+Evaluation of model "makam/LCP_from_makam_cos" on "makam" test set, with
+- N-way: 5
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.7132662770540213
+- micro-f1: 0.7494672754946727
+
+
+Classification report:
+                                  precision    recall  f1-score   support
+
+               instrument--Kanun       0.87      0.68      0.76       317
+instrument--performing orchestra       0.72      0.31      0.44       247
+              instrument--Tanbur       0.74      0.82      0.78       309
+               instrument--Voice       0.88      0.74      0.81       645
+                 instrument--Ney       0.94      0.67      0.79       306
+
+                       micro avg       0.84      0.67      0.75      1824
+                       macro avg       0.83      0.65      0.71      1824
+                    weighted avg       0.84      0.67      0.74      1824
+                     samples avg       0.85      0.75      0.76      1824
+
+
+[INFO]
+- Method: LCP
+- # Prototypes: 11
+- # Unique items in support set: 11
+- # Unique items in query set: 948
+- Mean groung truth labels per item: 1.92
+- Mean predicted labels per item: 1.54
+
+Execution time: 19 seconds

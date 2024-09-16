@@ -1,0 +1,45 @@
+
+Evaluation of model "carnatic/baseline_from_carnatic_f_cos" on "carnatic" test set, with
+- N-way: 15
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.38510746649293354
+- micro-f1: 0.4701856268796018
+
+
+Classification report:
+                            precision    recall  f1-score   support
+
+     instrument--Mridangam       0.79      1.00      0.88       388
+form--Varnam - Tana Varnam       0.07      1.00      0.13        33
+          raga--ragamalika       0.02      1.00      0.04        10
+             form--Alapana       0.06      0.97      0.12        32
+       instrument--Morsing       0.03      1.00      0.06        14
+                 tala--adi       0.55      1.00      0.71       269
+      instrument--Khanjira       0.17      1.00      0.29        84
+               form--Kriti       0.70      1.00      0.82       343
+        tala--mishra chapu       0.05      1.00      0.10        27
+        tala--khanda chapu       0.03      1.00      0.06        16
+              tala--rupaka       0.12      1.00      0.21        57
+        instrument--Violin       0.84      1.00      0.91       414
+             form--Pallavi       0.03      1.00      0.06        14
+         instrument--Voice       0.83      1.00      0.91       409
+        instrument--Ghatam       0.32      1.00      0.49       158
+
+                 micro avg       0.31      1.00      0.47      2268
+                 macro avg       0.31      1.00      0.39      2268
+              weighted avg       0.64      1.00      0.74      2268
+               samples avg       0.31      1.00      0.46      2268
+
+
+[INFO]
+- Method: baseline
+- # Prototypes: 15
+- # Unique items in support set: 25
+- # Unique items in query set: 493
+- Mean groung truth labels per item: 4.6
+- Mean predicted labels per item: 14.96
+
+Execution time: 28 seconds

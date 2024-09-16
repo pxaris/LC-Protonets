@@ -1,0 +1,45 @@
+
+Evaluation of model "pretrained/fma/vgg_ish" on "fma" test set, with
+- N-way: 15
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.3303170328463106
+- micro-f1: 0.3578882750153468
+
+
+Classification report:
+                   precision    recall  f1-score   support
+
+            Lo-Fi       0.14      0.23      0.18        96
+        Loud-Rock       0.26      0.20      0.22       100
+           Glitch       0.28      0.36      0.32       119
+          Dubstep       0.21      0.23      0.22       107
+      Avant-Garde       0.52      0.59      0.55       116
+        Post-Punk       0.26      0.24      0.25       130
+        Power-Pop       0.44      0.49      0.46       104
+        Classical       0.69      0.88      0.77       113
+            Dance       0.33      0.13      0.18        95
+         Trip-Hop       0.31      0.44      0.36       139
+            Metal       0.36      0.24      0.29       104
+       Psych-Rock       0.16      0.07      0.10       123
+Singer-Songwriter       0.65      0.80      0.71       114
+ Experimental Pop       0.30      0.21      0.25        94
+        Post-Rock       0.16      0.06      0.08        87
+
+        micro avg       0.36      0.36      0.36      1641
+        macro avg       0.34      0.34      0.33      1641
+     weighted avg       0.34      0.36      0.34      1641
+      samples avg       0.37      0.37      0.37      1641
+
+
+[INFO]
+- Method: LCP
+- # Prototypes: 20
+- # Unique items in support set: 41
+- # Unique items in query set: 1485
+- Mean groung truth labels per item: 1.11
+- Mean predicted labels per item: 1.09
+
+Execution time: 18 seconds

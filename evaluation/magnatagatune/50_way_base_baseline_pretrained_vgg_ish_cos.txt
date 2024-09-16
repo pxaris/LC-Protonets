@@ -1,0 +1,80 @@
+
+Evaluation of model "pretrained/magnatagatune/vgg_ish" on "magnatagatune" test set, with
+- N-way: 50
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.11899842871662702
+- micro-f1: 0.12206956927232494
+
+
+Classification report:
+              precision    recall  f1-score   support
+
+      female       0.09      1.00      0.16       372
+       beats       0.03      1.00      0.06       137
+     country       0.01      1.00      0.03        64
+      choral       0.03      1.00      0.06       127
+        solo       0.04      1.00      0.07       154
+       synth       0.08      1.00      0.14       324
+         man       0.03      1.00      0.06       132
+       flute       0.04      1.00      0.07       158
+     singing       0.07      1.00      0.13       291
+    no voice       0.03      1.00      0.05       113
+       voice       0.03      1.00      0.06       139
+  male vocal       0.04      1.00      0.07       163
+female vocal       0.04      1.00      0.07       155
+    no vocal       0.04      1.00      0.08       183
+   classical       0.16      1.00      0.28       686
+       vocal       0.10      1.00      0.18       428
+        beat       0.08      1.00      0.15       338
+      techno       0.14      1.00      0.24       589
+     classic       0.02      1.00      0.05       105
+      indian       0.04      1.00      0.08       169
+  male voice       0.03      1.00      0.05       119
+       dance       0.03      1.00      0.07       149
+        fast       0.11      1.00      0.21       488
+        soft       0.06      1.00      0.11       245
+        rock       0.13      1.00      0.23       556
+     strings       0.09      1.00      0.17       385
+        male       0.06      1.00      0.11       260
+        harp       0.03      1.00      0.06       138
+       drums       0.12      1.00      0.21       508
+        slow       0.19      1.00      0.31       790
+   no vocals       0.06      1.00      0.11       240
+female voice       0.03      1.00      0.05       116
+     ambient       0.12      1.00      0.21       500
+       sitar       0.02      1.00      0.04        98
+       opera       0.09      1.00      0.16       367
+       choir       0.04      1.00      0.08       184
+       quiet       0.06      1.00      0.11       244
+       woman       0.06      1.00      0.11       245
+      violin       0.05      1.00      0.10       228
+       weird       0.03      1.00      0.06       127
+  electronic       0.12      1.00      0.21       492
+         pop       0.04      1.00      0.09       190
+      vocals       0.07      1.00      0.12       278
+        loud       0.06      1.00      0.12       267
+       cello       0.00      1.00      0.01        17
+       piano       0.11      1.00      0.19       457
+     new age       0.03      1.00      0.07       145
+      guitar       0.20      1.00      0.34       866
+ harpsichord       0.04      1.00      0.08       186
+       metal       0.04      1.00      0.07       162
+
+   micro avg       0.07      1.00      0.12     13874
+   macro avg       0.06      1.00      0.12     13874
+weighted avg       0.09      1.00      0.17     13874
+ samples avg       0.07      1.00      0.12     13874
+
+
+[INFO]
+- Method: baseline
+- # Prototypes: 50
+- # Unique items in support set: 62
+- # Unique items in query set: 4270
+- Mean groung truth labels per item: 3.25
+- Mean predicted labels per item: 49.99
+
+Execution time: 22 seconds

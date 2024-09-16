@@ -1,0 +1,60 @@
+
+Evaluation of model "fma/baseline_cos" on "fma" test set, with
+- N-way: 30
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.18851467720330625
+- micro-f1: 0.20652314781481748
+
+
+Classification report:
+                    precision    recall  f1-score   support
+
+              Folk       0.15      0.93      0.25       321
+         Post-Punk       0.06      0.91      0.11       129
+        Chip Music       0.08      0.91      0.16       178
+ Singer-Songwriter       0.05      0.95      0.10       114
+          Hardcore       0.06      0.96      0.11       114
+        Electronic       0.51      0.83      0.63      1242
+           Hip-Hop       0.21      0.91      0.34       443
+            Garage       0.13      0.97      0.23       276
+          Chiptune       0.06      0.91      0.11       120
+        Soundtrack       0.07      0.79      0.13       172
+             House       0.05      0.78      0.09       128
+Ambient Electronic       0.08      0.85      0.15       198
+         Downtempo       0.06      0.80      0.12       155
+        Indie-Rock       0.12      0.88      0.20       260
+     International       0.09      0.79      0.15       221
+             Metal       0.04      0.96      0.08       105
+          Trip-Hop       0.05      0.82      0.10       139
+       Avant-Garde       0.04      0.72      0.08       116
+           Dubstep       0.05      0.93      0.10       107
+               Pop       0.05      0.55      0.09       244
+              Rock       0.62      0.90      0.73      1379
+        Psych-Rock       0.06      0.90      0.11       123
+              Punk       0.31      0.94      0.46       638
+            Glitch       0.05      0.93      0.10       119
+      Experimental       0.16      0.68      0.26       438
+         Power-Pop       0.05      0.99      0.09       104
+      Instrumental       0.12      0.83      0.20       272
+         Classical       0.06      0.98      0.11       113
+               IDM       0.07      0.93      0.14       188
+            Techno       0.07      0.90      0.12       142
+
+         micro avg       0.12      0.86      0.21      8298
+         macro avg       0.12      0.87      0.19      8298
+      weighted avg       0.26      0.86      0.36      8298
+       samples avg       0.13      0.84      0.21      8298
+
+
+[INFO]
+- Method: baseline
+- # Prototypes: 30
+- # Unique items in support set: 56
+- # Unique items in query set: 4673
+- Mean groung truth labels per item: 1.78
+- Mean predicted labels per item: 13.09
+
+Execution time: 26 seconds

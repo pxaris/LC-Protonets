@@ -1,0 +1,35 @@
+
+Evaluation of model "makam/OvR_from_makam_f_cos" on "makam" test set, with
+- N-way: 5
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.3747621301824245
+- micro-f1: 0.3679060665362035
+
+
+Classification report:
+                   precision    recall  f1-score   support
+
+     makam--Mahur       0.25      0.56      0.35        34
+  makam--Hicazkar       0.14      0.34      0.20        29
+instrument--Daire       0.42      1.00      0.59        26
+      usul--Semai       0.29      0.85      0.43        26
+  makam--Muhayyer       0.19      0.68      0.30        25
+
+        micro avg       0.25      0.67      0.37       140
+        macro avg       0.26      0.69      0.37       140
+     weighted avg       0.26      0.67      0.37       140
+      samples avg       0.27      0.68      0.37       140
+
+
+[INFO]
+- Method: OvR
+- # Prototypes: 5
+- # Unique items in support set: 15
+- # Unique items in query set: 136
+- Mean groung truth labels per item: 1.03
+- Mean predicted labels per item: 2.73
+
+Execution time: 3 seconds

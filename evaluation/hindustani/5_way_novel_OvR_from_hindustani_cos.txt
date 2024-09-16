@@ -1,0 +1,35 @@
+
+Evaluation of model "hindustani/OvR_from_hindustani_cos" on "hindustani" test set, with
+- N-way: 5
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.35655011655011654
+- micro-f1: 0.35555555555555557
+
+
+Classification report:
+                     precision    recall  f1-score   support
+
+       raga--Khamaj       0.29      1.00      0.45         5
+instrument--Shehnai       0.30      1.00      0.46         3
+ raga--Ahir bhairav       0.17      0.67      0.27         3
+   raga--Madhukauns       0.18      1.00      0.30         3
+     raga--Malkauns       0.18      1.00      0.30         3
+
+          micro avg       0.22      0.94      0.36        17
+          macro avg       0.22      0.93      0.36        17
+       weighted avg       0.23      0.94      0.37        17
+        samples avg       0.22      0.94      0.36        17
+
+
+[INFO]
+- Method: OvR
+- # Prototypes: 5
+- # Unique items in support set: 14
+- # Unique items in query set: 17
+- Mean groung truth labels per item: 1.0
+- Mean predicted labels per item: 4.29
+
+Execution time: 3 seconds

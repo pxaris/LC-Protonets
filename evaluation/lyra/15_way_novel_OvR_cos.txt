@@ -1,0 +1,45 @@
+
+Evaluation of model "lyra/OvR_cos" on "lyra" test set, with
+- N-way: 15
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.23463288756876166
+- micro-f1: 0.23529411764705882
+
+
+Classification report:
+                          precision    recall  f1-score   support
+
+         genres--Pontian       0.18      1.00      0.30        26
+           place--Pontus       0.18      1.00      0.30        26
+          genres--Ionian       0.13      1.00      0.23        19
+  instruments--Tambouras       0.14      1.00      0.25        21
+            place--Corfu       0.13      1.00      0.23        19
+       place--Ionian-sea       0.13      1.00      0.23        19
+genres--Southern-Italian       0.14      1.00      0.24        20
+   place--Southern-Italy       0.14      1.00      0.24        20
+        genres--Thracian       0.13      1.00      0.23        19
+           place--Thrace       0.13      1.00      0.23        19
+   genres--Central-Greek       0.12      1.00      0.22        18
+   place--Central-Greece       0.12      1.00      0.22        18
+   instruments--Baglamas       0.12      1.00      0.21        17
+      genres--Polyphonic       0.11      1.00      0.20        16
+  instruments--Tsampouna       0.09      1.00      0.16        13
+
+               micro avg       0.13      1.00      0.24       290
+               macro avg       0.13      1.00      0.23       290
+            weighted avg       0.14      1.00      0.24       290
+             samples avg       0.13      1.00      0.23       290
+
+
+[INFO]
+- Method: OvR
+- # Prototypes: 15
+- # Unique items in support set: 24
+- # Unique items in query set: 145
+- Mean groung truth labels per item: 2.0
+- Mean predicted labels per item: 15.0
+
+Execution time: 4 seconds

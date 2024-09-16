@@ -1,0 +1,45 @@
+
+Evaluation of model "carnatic/OvR_from_carnatic_f_cos" on "carnatic" test set, with
+- N-way: 15
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.381401361462389
+- micro-f1: 0.4658302189001602
+
+
+Classification report:
+                            precision    recall  f1-score   support
+
+         instrument--Voice       0.82      0.53      0.65       405
+        instrument--Violin       0.80      0.77      0.79       410
+     instrument--Mridangam       0.82      0.93      0.88       384
+               form--Kriti       0.71      0.84      0.77       340
+                 tala--adi       0.55      0.66      0.60       266
+        instrument--Ghatam       0.73      0.91      0.81       157
+      instrument--Khanjira       0.23      0.95      0.37        83
+              tala--rupaka       0.12      0.91      0.22        57
+        tala--mishra chapu       0.06      0.78      0.11        27
+form--Varnam - Tana Varnam       0.06      0.58      0.11        33
+             form--Alapana       0.08      1.00      0.15        32
+             form--Pallavi       0.03      0.93      0.06        14
+          raga--ragamalika       0.02      0.82      0.05        11
+        tala--khanda chapu       0.04      0.81      0.07        16
+       instrument--Morsing       0.05      1.00      0.09        14
+
+                 micro avg       0.33      0.78      0.47      2249
+                 macro avg       0.34      0.83      0.38      2249
+              weighted avg       0.67      0.78      0.68      2249
+               samples avg       0.35      0.78      0.46      2249
+
+
+[INFO]
+- Method: OvR
+- # Prototypes: 15
+- # Unique items in support set: 29
+- # Unique items in query set: 489
+- Mean groung truth labels per item: 4.6
+- Mean predicted labels per item: 10.72
+
+Execution time: 21 seconds

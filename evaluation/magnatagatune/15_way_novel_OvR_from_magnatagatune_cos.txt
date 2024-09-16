@@ -1,0 +1,45 @@
+
+Evaluation of model "magnatagatune/OvR_from_magnatagatune_cos" on "magnatagatune" test set, with
+- N-way: 15
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.22436686015334376
+- micro-f1: 0.22267206477732793
+
+
+Classification report:
+               precision    recall  f1-score   support
+
+female vocals       0.19      0.93      0.32        98
+    hard rock       0.17      1.00      0.29        83
+  male vocals       0.17      0.98      0.29        84
+         jazz       0.12      0.88      0.22        83
+         drum       0.13      0.95      0.23        78
+      electro       0.13      1.00      0.23        74
+ instrumental       0.13      0.89      0.22        72
+       chorus       0.14      1.00      0.24        67
+     no piano       0.11      0.92      0.19        65
+      foreign       0.09      0.89      0.16        62
+        heavy       0.10      1.00      0.18        59
+   harpsicord       0.13      1.00      0.23        57
+       voices       0.12      0.84      0.22        57
+       trance       0.10      1.00      0.18        56
+     electric       0.09      0.87      0.16        54
+
+    micro avg       0.13      0.94      0.22      1049
+    macro avg       0.13      0.94      0.22      1049
+ weighted avg       0.13      0.94      0.23      1049
+  samples avg       0.13      0.94      0.23      1049
+
+
+[INFO]
+- Method: OvR
+- # Prototypes: 15
+- # Unique items in support set: 39
+- # Unique items in query set: 886
+- Mean groung truth labels per item: 1.18
+- Mean predicted labels per item: 8.85
+
+Execution time: 6 seconds

@@ -1,0 +1,35 @@
+
+Evaluation of model "lyra/OvR_from_lyra_f_cos" on "lyra" test set, with
+- N-way: 5
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.7667328924559208
+- micro-f1: 0.7749140893470791
+
+
+Classification report:
+                         precision    recall  f1-score   support
+
+     instruments--Voice       0.69      0.93      0.79       219
+    genres--Traditional       0.85      0.91      0.88       269
+    instruments--Violin       0.61      0.90      0.73       166
+instruments--Percussion       0.60      0.95      0.74       182
+    instruments--Laouto       0.55      0.97      0.70       138
+
+              micro avg       0.67      0.93      0.77       974
+              macro avg       0.66      0.93      0.77       974
+           weighted avg       0.69      0.93      0.78       974
+            samples avg       0.65      0.91      0.73       974
+
+
+[INFO]
+- Method: OvR
+- # Prototypes: 5
+- # Unique items in support set: 9
+- # Unique items in query set: 321
+- Mean groung truth labels per item: 3.03
+- Mean predicted labels per item: 4.22
+
+Execution time: 7 seconds

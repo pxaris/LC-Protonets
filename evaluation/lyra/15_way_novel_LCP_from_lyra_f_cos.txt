@@ -1,0 +1,45 @@
+
+Evaluation of model "lyra/LCP_from_lyra_f_cos" on "lyra" test set, with
+- N-way: 15
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.5492153187883181
+- micro-f1: 0.5847750865051903
+
+
+Classification report:
+                          precision    recall  f1-score   support
+
+  instruments--Tsampouna       0.28      0.64      0.39        11
+       place--Ionian-sea       0.82      0.70      0.76        20
+      genres--Polyphonic       0.41      0.56      0.47        16
+           place--Pontus       0.61      0.96      0.75        26
+   place--Central-Greece       1.00      0.28      0.43        18
+          genres--Ionian       0.82      0.70      0.76        20
+genres--Southern-Italian       0.42      0.25      0.31        20
+  instruments--Tambouras       0.44      0.57      0.50        21
+         genres--Pontian       0.61      0.96      0.75        26
+   place--Southern-Italy       0.42      0.25      0.31        20
+   genres--Central-Greek       1.00      0.28      0.43        18
+           place--Thrace       0.60      0.32      0.41        19
+   instruments--Baglamas       0.65      1.00      0.79        17
+        genres--Thracian       0.60      0.32      0.41        19
+            place--Corfu       0.82      0.70      0.76        20
+
+               micro avg       0.59      0.58      0.58       291
+               macro avg       0.63      0.57      0.55       291
+            weighted avg       0.64      0.58      0.56       291
+             samples avg       0.59      0.59      0.58       291
+
+
+[INFO]
+- Method: LCP
+- # Prototypes: 39
+- # Unique items in support set: 23
+- # Unique items in query set: 146
+- Mean groung truth labels per item: 1.99
+- Mean predicted labels per item: 1.97
+
+Execution time: 4 seconds

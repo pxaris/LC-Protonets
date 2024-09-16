@@ -1,0 +1,35 @@
+
+Evaluation of model "fma/LCP_cos" on "fma" test set, with
+- N-way: 5
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.5888801716532805
+- micro-f1: 0.6369817942531257
+
+
+Classification report:
+              precision    recall  f1-score   support
+
+        Punk       0.42      0.91      0.57       646
+Experimental       0.35      0.48      0.40       438
+  Electronic       0.73      0.53      0.62      1256
+     Hip-Hop       0.46      0.62      0.52       443
+        Rock       0.83      0.84      0.83      1393
+
+   micro avg       0.59      0.70      0.64      4176
+   macro avg       0.56      0.67      0.59      4176
+weighted avg       0.65      0.70      0.65      4176
+ samples avg       0.57      0.66      0.60      4176
+
+
+[INFO]
+- Method: LCP
+- # Prototypes: 6
+- # Unique items in support set: 12
+- # Unique items in query set: 3530
+- Mean groung truth labels per item: 1.18
+- Mean predicted labels per item: 1.4
+
+Execution time: 27 seconds

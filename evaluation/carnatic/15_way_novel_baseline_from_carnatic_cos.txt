@@ -1,0 +1,45 @@
+
+Evaluation of model "carnatic/baseline_from_carnatic_cos" on "carnatic" test set, with
+- N-way: 15
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.1328002217992925
+- micro-f1: 0.13233082706766916
+
+
+Classification report:
+                     precision    recall  f1-score   support
+
+      raga--mohanam       0.07      1.00      0.14         6
+        raga--kamas       0.10      1.00      0.18         9
+ form--Thiruppugazh       0.06      0.67      0.10         6
+       raga--abhogi       0.09      1.00      0.17         7
+     raga--hindolam       0.02      0.40      0.04         5
+        raga--behag       0.06      0.62      0.11         8
+       form--Javali       0.03      0.75      0.06         4
+  raga--saurashtram       0.11      0.89      0.20         9
+  raga--kamavardani       0.06      1.00      0.12         5
+       raga--surati       0.10      1.00      0.18         9
+         raga--kapi       0.09      1.00      0.16         7
+       raga--kanada       0.03      0.75      0.07         4
+instrument--Tambura       0.07      1.00      0.14         6
+         tala--atta       0.10      1.00      0.18         8
+ raga--Purvikalyani       0.08      0.86      0.15         7
+
+          micro avg       0.07      0.88      0.13       100
+          macro avg       0.07      0.86      0.13       100
+       weighted avg       0.08      0.88      0.14       100
+        samples avg       0.07      0.88      0.14       100
+
+
+[INFO]
+- Method: baseline
+- # Prototypes: 15
+- # Unique items in support set: 44
+- # Unique items in query set: 97
+- Mean groung truth labels per item: 1.03
+- Mean predicted labels per item: 12.68
+
+Execution time: 6 seconds

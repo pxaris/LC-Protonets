@@ -1,0 +1,75 @@
+
+Evaluation of model "lyra/LCP_from_lyra_f_cos" on "lyra" test set, with
+- N-way: 45
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.5344097927455946
+- micro-f1: 0.7269798657718121
+
+
+Classification report:
+                          precision    recall  f1-score   support
+
+        genres--Thracian       0.52      0.65      0.58        17
+       instruments--Bass       0.95      0.62      0.75        32
+      instruments--Piano       0.00      0.00      0.00         0
+   instruments--Baglamas       1.00      0.94      0.97        17
+     instruments--Guitar       0.84      0.76      0.80       136
+       instruments--Lyra       0.73      0.75      0.74        36
+    instruments--Klarino       0.89      0.75      0.81       104
+        genres--Rebetiko       0.94      0.55      0.69        31
+      place--Peloponnese       0.36      0.71      0.48         7
+           place--Thrace       0.52      0.65      0.58        17
+           place--Pontus       1.00      0.42      0.59        26
+   instruments--Mandolin       0.30      0.43      0.35         7
+      genres--Macedonian       0.00      0.00      0.00        12
+      instruments--Voice       0.81      0.87      0.84       189
+   genres--Peloponnesian       0.36      0.71      0.48         7
+         genres--Pontian       1.00      0.42      0.59        26
+        genres--Epirotic       0.82      0.52      0.64        27
+   instruments--Bouzouki       0.93      0.80      0.86        35
+     instruments--Violin       0.94      0.66      0.78       154
+       genres--Nisiotiko       0.73      0.70      0.71        57
+genres--Southern-Italian       0.70      0.35      0.47        20
+       place--Aegean-sea       0.61      0.74      0.67        27
+       place--Asia-minor       0.43      0.26      0.32        35
+     genres--Traditional       0.99      0.97      0.98       243
+   instruments--Kanonaki       0.58      0.58      0.58        26
+            place--Corfu       0.50      0.33      0.40        21
+        instruments--Oud       0.45      0.25      0.32        40
+       place--Ionian-sea       0.50      0.33      0.40        21
+           genres--Laiko       0.33      0.80      0.47         5
+      genres--Polyphonic       0.15      0.15      0.15        13
+   place--Central-Greece       0.14      0.06      0.08        18
+  instruments--Tambouras       0.38      0.14      0.21        21
+        place--Macedonia       0.00      0.00      0.00        12
+   instruments--Santouri       0.85      0.49      0.62        35
+             place--None       0.97      0.75      0.85        52
+           place--Epirus       0.82      0.52      0.64        27
+          genres--Ionian       0.50      0.33      0.40        21
+ instruments--Percussion       0.92      0.74      0.82       163
+          genres--Aegean       0.61      0.74      0.67        27
+  instruments--Tsampouna       0.45      0.42      0.43        12
+     instruments--Laouto       0.84      0.79      0.81       124
+    genres--Mikrasiatiko       0.43      0.26      0.32        35
+  instruments--Accordion       0.71      0.60      0.65        48
+   place--Southern-Italy       0.70      0.35      0.47        20
+   genres--Central-Greek       0.14      0.06      0.08        18
+
+               micro avg       0.79      0.67      0.73      2021
+               macro avg       0.61      0.51      0.53      2021
+            weighted avg       0.79      0.67      0.71      2021
+             samples avg       0.81      0.68      0.71      2021
+
+
+[INFO]
+- Method: LCP
+- # Prototypes: 8775
+- # Unique items in support set: 43
+- # Unique items in query set: 287
+- Mean groung truth labels per item: 7.04
+- Mean predicted labels per item: 5.94
+
+Execution time: 114 seconds

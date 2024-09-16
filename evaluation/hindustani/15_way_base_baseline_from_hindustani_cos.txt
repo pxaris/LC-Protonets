@@ -1,0 +1,45 @@
+
+Evaluation of model "hindustani/baseline_from_hindustani_cos" on "hindustani" test set, with
+- N-way: 15
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.4016633699048139
+- micro-f1: 0.49848024316109424
+
+
+Classification report:
+                       precision    recall  f1-score   support
+
+         form--Khayal       0.56      1.00      0.72        91
+  instrument--Tambura       0.49      0.88      0.63        52
+    instrument--Sarod       0.04      1.00      0.08         2
+         form--Tarana       0.02      1.00      0.03         3
+  instrument--Sarangi       0.13      0.93      0.22        15
+       tala--Teentaal       0.41      0.91      0.57        75
+ instrument--Pakhavaj       0.27      1.00      0.43        14
+instrument--Harmonium       0.54      0.97      0.69        86
+          tala--Rupak       0.02      1.00      0.03         3
+        form--Dhrupad       0.29      0.93      0.44        15
+   raga--Yaman kalyan       0.04      0.83      0.08         6
+    instrument--Tabla       0.65      0.89      0.75       115
+      raga--Bageshree       0.02      1.00      0.03         2
+    instrument--Voice       0.98      0.91      0.95       188
+         tala--Ektaal       0.22      1.00      0.36        37
+
+            micro avg       0.34      0.93      0.50       704
+            macro avg       0.31      0.95      0.40       704
+         weighted avg       0.61      0.93      0.70       704
+          samples avg       0.34      0.88      0.46       704
+
+
+[INFO]
+- Method: baseline
+- # Prototypes: 15
+- # Unique items in support set: 22
+- # Unique items in query set: 206
+- Mean groung truth labels per item: 3.42
+- Mean predicted labels per item: 9.36
+
+Execution time: 27 seconds

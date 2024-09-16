@@ -1,0 +1,75 @@
+
+Evaluation of model "carnatic/LCP_cos" on "carnatic" test set, with
+- N-way: 45
+- K-shot: 3
+- distance: cos
+
+Test set evaluation:
+- macro-f1: 0.1309123689323962
+- micro-f1: 0.5620885357548241
+
+
+Classification report:
+                            precision    recall  f1-score   support
+
+      instrument--Khanjira       0.34      0.28      0.31        72
+               raga--thodi       0.00      0.00      0.00         9
+       instrument--Tambura       0.09      0.25      0.13         4
+         raga--kamavardani       0.08      0.40      0.14         5
+         raga--natakurinji       0.00      0.00      0.00         3
+       raga--karaharapriya       0.00      0.00      0.00         3
+              tala--rupaka       0.10      0.24      0.15        45
+             raga--kamboji       0.00      0.00      0.00         3
+              raga--surati       0.06      0.22      0.10         9
+        tala--khanda chapu       0.09      0.14      0.11        14
+         raga--hamsadhvani       0.00      0.00      0.00         2
+            form--Thillana       0.10      0.08      0.09        12
+              raga--kanada       0.00      0.00      0.00         3
+         instrument--Voice       0.86      0.75      0.80       361
+              form--Javali       0.00      0.00      0.00         3
+            raga--hindolam       0.00      0.00      0.00         5
+              raga--abhogi       0.00      0.00      0.00         7
+             form--Pallavi       0.00      0.00      0.00        13
+     instrument--Mridangam       0.80      0.81      0.81       333
+                 tala--adi       0.56      0.30      0.39       237
+             raga--mukhari       0.00      0.00      0.00         3
+            raga--bhairavi       0.00      0.00      0.00         5
+        tala--mishra chapu       0.06      0.09      0.07        23
+        instrument--Violin       0.87      0.88      0.88       360
+        raga--Purvikalyani       0.00      0.00      0.00         7
+         raga--saurashtram       0.00      0.00      0.00         9
+       instrument--Morsing       0.17      0.29      0.21        14
+             raga--kalyani       0.08      0.12      0.10         8
+          raga--riti gaula       0.00      0.00      0.00         3
+                raga--kapi       0.11      0.14      0.12         7
+        instrument--Thavil       0.07      1.00      0.13         1
+          raga--ragamalika       0.04      0.09      0.06        11
+             raga--mohanam       0.00      0.00      0.00         6
+                raga--nata       0.00      0.00      0.00         4
+        form--Thiruppugazh       0.00      0.00      0.00         6
+                raga--sama       0.00      0.00      0.00         3
+            form--Mangalam       0.00      0.00      0.00        10
+form--Varnam - Tana Varnam       0.18      0.14      0.16        29
+        instrument--Ghatam       0.35      0.32      0.34       133
+               raga--atana       0.00      0.00      0.00         3
+               form--Kriti       0.71      0.71      0.71       301
+               raga--behag       0.00      0.00      0.00         9
+                tala--atta       0.00      0.00      0.00         8
+             form--Alapana       0.20      0.06      0.10        32
+               raga--kamas       0.00      0.00      0.00         9
+
+                 micro avg       0.55      0.58      0.56      2147
+                 macro avg       0.13      0.16      0.13      2147
+              weighted avg       0.62      0.58      0.59      2147
+               samples avg       0.54      0.57      0.53      2147
+
+
+[INFO]
+- Method: LCP
+- # Prototypes: 2705
+- # Unique items in support set: 89
+- # Unique items in query set: 433
+- Mean groung truth labels per item: 4.96
+- Mean predicted labels per item: 5.21
+
+Execution time: 95 seconds
