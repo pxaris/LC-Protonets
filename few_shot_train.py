@@ -163,7 +163,7 @@ if __name__ == '__main__':
     parser.add_argument('--dataset', type=str,
                         default='lyra', choices=DATASETS)
     parser.add_argument('--data_dir', type=str,
-                        default=os.path.join(DATA_DIR, 'lyra'))
+                        help='directory where the "mel-spectrograms" and "split" dirs are expected to be found', default=os.path.join(DATA_DIR, 'lyra'))
     parser.add_argument('--method', type=str, default='LCP',
                         help='Method to be used for multi-label few-shot learning: "baseline" for "ML-PNs", "OvR" for "One-vs.-Rest", "LCP" for "LC-Protonets"', choices=['baseline', 'OvR', 'LCP'])
     parser.add_argument('--backbone_model', type=str,
@@ -173,11 +173,11 @@ if __name__ == '__main__':
     parser.add_argument("--freeze", type=lambda x: bool(strtobool(x)), nargs='?', const=True, default=False,
                         help='whether to freeze backbone model weights except the final embedding layer')
     parser.add_argument('--source', type=str,
-                        default=None, choices=DATASETS + [None])
+                        default=None, help='optionally, define a dataset to load a pre-trained model from its directory', choices=DATASETS + [None])
     parser.add_argument('--device', type=str, default='cuda:0',
                         help='use "cpu" when no GPU is available, otherwise set the cuda index appropriately, e.g. "cuda:1".')
     parser.add_argument('--run_idx', type=str, default='1',
-                        choices=['1', '2', '3', '4', '5'])
+                        help='set the run_idx so that a different seed will be used for different runs', choices=['1', '2', '3', '4', '5'])
     args = parser.parse_args()
 
     # initialize dict from dataset configuration
