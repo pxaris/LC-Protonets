@@ -18,7 +18,7 @@ SEEDS = {
     "5": 21,
 }
 
-# FSL configuration per dataset
+# FSL configuration
 FSL_CONFIG = {
     'training': {
         'n_way': 10,  # number of labels for each task/episode
