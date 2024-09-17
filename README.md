@@ -122,25 +122,25 @@ The models will be saved in the `saved_models/{dataset}` directory using the fol
 
 ## Evaluation
 
-To evaluate the models, use the `few_shot_evaluate.py` script. The command-line arguments are the following:
+To evaluate the models, use the `few_shot_evaluate.py` script. The command-line arguments are the following (the descriptions that are the same as in Training, are omitted):
 
 
 ### Arguments
 
-Same as in training:
 - `--dataset`
+
 - `--data_dir`
+
 - `--method`
+
 - `--dist`
-- `--device`
-- `--run_idx`
 
 - `--model`:  
   The trained model to be used for evaluation.  
   **Default**: `baseline`
 
 - `--N`:  
-  The number of tags/labels to include in the evaluation (N-way).
+  The number of tags/labels to include in the evaluation (N-way).  
   **Default**: `5`
 
 - `--K`:  
@@ -158,6 +158,10 @@ Same as in training:
 - `--source`:  
   The directory from which to load the pre-trained model. For example, you can load a model from the `magnatagatune` dataset or a pre-trained model directory like `pretrained/makam`.  
   **Default**: `magnatagatune`
+
+- `--run_idx`
+
+- `--device`
 
 
 ### Example commands
