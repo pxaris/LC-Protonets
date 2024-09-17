@@ -151,9 +151,9 @@ if __name__ == '__main__':
         formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
     parser.add_argument('--dataset', type=str,
-                        default='lyra', choices=DATASETS)
+                        default='magnatagatune', choices=DATASETS)
     parser.add_argument('--data_dir', type=str,
-                        help='directory where the "mel-spectrograms" and "split" dirs are expected to be found', default=os.path.join(DATA_DIR, 'lyra'))
+                        help='directory where the "mel-spectrograms" and "split" dirs are expected to be found', default=os.path.join(DATA_DIR, 'magnatagatune'))
     parser.add_argument('--method', type=str, default='LCP',
                         help='Method to be used for multi-label few-shot learning: "baseline" for "ML-PNs", "OvR" for "One-vs.-Rest", "LCP" for "LC-Protonets"', choices=['baseline', 'OvR', 'LCP'])
     parser.add_argument('--dist', type=str, default='cos',
@@ -166,8 +166,8 @@ if __name__ == '__main__':
                         help='K-shot, the number of support items per label.')
     parser.add_argument('--type', type=str, default='novel',
                         help='Whether to use "base", "novel" or "both" types of classes during the evaluation', choices=['base', 'novel', 'both'])
-    parser.add_argument('--source', type=str, default=None,
-                        help='directory from which to load the model, e.g. "lyra", "pretrained/makam" etc.')
+    parser.add_argument('--source', type=str, default='magnatagatune',
+                        help='directory from which to load the model, e.g. "magnatagatune", "pretrained/makam" etc.')
     parser.add_argument('--device', type=str, default='cuda:0',
                         help='use "cpu" when no GPU is available, otherwise set the cuda index appropriately, e.g. "cuda:1".')
     parser.add_argument('--run_idx', type=str, default='1',
