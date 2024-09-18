@@ -5,7 +5,7 @@ PyTorch implementation of **LC-Protonets**, a method designed for multi-label fe
 
 ## Reference
 
-[**LC-Protonets: Multi-label Few-shot learning for world music audio tagging**](https://arxiv.org/).  
+[**LC-Protonets: Multi-label Few-shot learning for world music audio tagging**](https://arxiv.org/abs/2409.11264).  
 - Charilaos Papaioannou, Emmanouil Benetos, and Alexandros Potamianos
 
 
