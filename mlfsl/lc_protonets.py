@@ -30,7 +30,7 @@ class LCProtonets(Protonets):
         for embedding, item_labels in zip(support_embeddings, support_labels):
             item_labels_indices = torch.nonzero(item_labels).T.tolist()[0]
             # for each item, get all the combinations of its labels
-            # and add them to the label_combinations_features dict
+            # and add them to the label_combinations_embeddings dict
             for r in range(1, len(item_labels_indices)+1):
                 labels_combinations = list(
                     itertools.combinations(item_labels_indices, r))
