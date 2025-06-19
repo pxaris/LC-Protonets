@@ -71,7 +71,9 @@ class MLFSLSampler(Sampler):
             n_items_to_sample = n_items - label_counts[label]
             if n_items_to_sample > 0:
                 selected_samples = random.sample(
-                    set(self.per_label_indices[label]) & pool_items_indices, n_items_to_sample)
+                    list(set(self.per_label_indices[label]) & pool_items_indices),
+                    n_items_to_sample
+                )
                 sample_set.update(selected_samples)
                 # update label counts for all item labels
                 for idx in selected_samples:
@@ -90,7 +92,7 @@ class MLFSLSampler(Sampler):
         for _ in range(self.n_task):
             batch_ids = []
             selected_labels = random.sample(
-                self.per_label_indices.keys(), self.n_way)
+                list(self.per_label_indices.keys()), self.n_way)
             self.selected_labels_idx = torch.tensor(
                 [label[0] for label in selected_labels])
 
@@ -116,15 +118,17 @@ class MLFSLSampler(Sampler):
         Collate function to be used as argument for the collate_fn parameter of episodic
             data loaders.
         Args:
-            - input_data: each element is a tuple containing:
-                - a feature vector as a torch Tensor of shape (time_length, mel_bins)
-                - the labels of this item as a multi-hot vector
+            input_data: List of tuples, each containing:
+                - A feature vector (spectrogram) as a torch Tensor.
+                - A multi-hot label vector.
+
         Returns:
-            - support items of shape (support_set_length, time_length, mel_bins),
-            - their labels of shape (support_set_length, n_way),
-            - query items of shape (query_set_length, time_length, mel_bins)
-            - their labels of shape (query_set_length, n_way),
-            - the selected labels indices for the current task
+            - support_items: Tensor of shape (support_set_length, time_length, mel_bins) for spectrograms
+                            or (support_set_length, num_samples) for waveforms.
+            - support_labels: Multi-hot labels for support set.
+            - query_items: Tensor of shape (query_set_length, time_length, mel_bins) or (query_set_length, num_samples).
+            - query_labels: Multi-hot labels for query set.
+            - selected_labels_idx: The selected labels indices for the current task.
         '''
         if self.is_test:
             # in case of test set, the full length of the spectrogram is retuned by the dataset
