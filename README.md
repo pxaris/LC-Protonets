@@ -2,12 +2,17 @@
 
 PyTorch implementation of **LC-Protonets**, a method designed for multi-label few-shot learning. This implementation is applied specifically to the task of music tagging, with an emphasis on world music.
 
+## ⚡ Performance Optimization
 
-## Reference
+This implementation includes significant performance optimizations that **accelerate inference time by 10x to 100x** compared to the original method. These optimizations are detailed in our ISMIR 2025 paper (see references below).
+
+## References
 
 [**LC-Protonets: Multi-label Few-shot learning for world music audio tagging**](https://ieeexplore.ieee.org/abstract/document/10839319).  
 - Charilaos Papaioannou, Emmanouil Benetos, and Alexandros Potamianos
 
+[**Universal Music Representations? Evaluating Foundation Models on World Music Corpora**](https://arxiv.org/__TBD__), ISMIR 2025.  
+- Charilaos Papaioannou, Emmanouil Benetos, and Alexandros Potamianos
 
 ## Requirements
 
@@ -18,7 +23,6 @@ python -m venv venv
 source venv/bin/activate    # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
-
 
 ## Data preparation
 
