@@ -87,4 +87,4 @@ Old-Time / Historic       0.84      0.88      0.86        84
 - Mean groung truth labels per item: 2.07
 - Mean predicted labels per item: 2.24
 
-Execution time: 106 seconds
+Execution time: 34 seconds

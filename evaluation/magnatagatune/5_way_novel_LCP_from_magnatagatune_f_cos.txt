@@ -32,4 +32,4 @@ female vocals       0.89      0.74      0.81        98
 - Mean groung truth labels per item: 1.05
 - Mean predicted labels per item: 1.19
 
-Execution time: 3 seconds
+Execution time: 2 seconds

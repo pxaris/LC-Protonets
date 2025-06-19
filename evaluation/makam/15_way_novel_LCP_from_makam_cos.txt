@@ -5,41 +5,41 @@ Evaluation of model "makam/LCP_from_makam_cos" on "makam" test set, with
 - distance: cos
 
 Test set evaluation:
-- macro-f1: 0.24174296141945598
-- micro-f1: 0.25116279069767444
+- macro-f1: 0.24591481235630028
+- micro-f1: 0.23547400611620795
 
 
 Classification report:
                          precision    recall  f1-score   support
 
-    instrument--Strings       0.57      0.92      0.71        13
-           makam--Mahur       0.06      0.03      0.04        34
-        usul--Nimsofyan       0.04      0.06      0.05        16
-        makam--Karcığar       0.00      0.00      0.00        17
-        makam--Hicazkar       0.00      0.00      0.00        29
-            usul--Semai       0.28      0.58      0.38        26
-         makam--Isfahan       0.29      0.29      0.29        14
-       usul--Türkaksağı       0.09      0.06      0.07        17
-         makam--Suzinak       0.00      0.00      0.00        16
-        makam--Muhayyer       0.09      0.04      0.06        25
-      usul--Senginsemai       0.12      0.27      0.16        22
-       makam--Ferahfeza       0.14      0.40      0.20        15
-            usul--Hafif       0.22      0.09      0.13        22
-instrument--Double bass       0.79      0.65      0.71        17
-      instrument--Daire       0.88      0.81      0.84        26
+           makam--Mahur       0.15      0.18      0.16        34
+        usul--Nimsofyan       0.38      0.20      0.26        15
+      usul--Senginsemai       0.00      0.00      0.00        22
+         makam--Suzinak       0.28      0.31      0.29        16
+        makam--Karcığar       0.08      0.24      0.12        17
+        makam--Muhayyer       0.17      0.08      0.11        25
+       makam--Ferahfeza       0.17      0.25      0.21        16
+      instrument--Daire       0.65      0.68      0.67        25
+instrument--Double bass       0.86      0.35      0.50        17
+         makam--Isfahan       0.10      0.21      0.14        14
+       usul--Türkaksağı       0.12      0.17      0.14        18
+            usul--Semai       0.14      0.12      0.13        26
+            usul--Hafif       0.11      0.05      0.06        22
+        makam--Hicazkar       0.29      0.24      0.26        29
+    instrument--Strings       0.48      0.93      0.63        14
 
-              micro avg       0.24      0.26      0.25       309
-              macro avg       0.24      0.28      0.24       309
-           weighted avg       0.23      0.26      0.23       309
-            samples avg       0.22      0.26      0.23       309
+              micro avg       0.22      0.25      0.24       310
+              macro avg       0.27      0.27      0.25       310
+           weighted avg       0.26      0.25      0.24       310
+            samples avg       0.22      0.25      0.22       310
 
 
 [INFO]
 - Method: LCP
-- # Prototypes: 21
-- # Unique items in support set: 41
-- # Unique items in query set: 289
+- # Prototypes: 22
+- # Unique items in support set: 39
+- # Unique items in query set: 291
 - Mean groung truth labels per item: 1.07
-- Mean predicted labels per item: 1.16
+- Mean predicted labels per item: 1.18
 
 Execution time: 7 seconds

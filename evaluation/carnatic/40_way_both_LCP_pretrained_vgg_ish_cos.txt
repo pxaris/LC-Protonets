@@ -6,7 +6,7 @@ Evaluation of model "pretrained/carnatic/vgg_ish" on "carnatic" test set, with
 
 Test set evaluation:
 - macro-f1: 0.1798045611203277
-- micro-f1: 0.6436194895591647
+- micro-f1: 0.6434701925307353
 
 
 Classification report:
@@ -67,4 +67,4 @@ form--Varnam - Tana Varnam       0.11      0.14      0.13        28
 - Mean groung truth labels per item: 4.92
 - Mean predicted labels per item: 4.85
 
-Execution time: 111 seconds
+Execution time: 35 seconds

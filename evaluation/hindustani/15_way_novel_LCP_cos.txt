@@ -42,4 +42,4 @@ instrument--Shehnai       1.00      1.00      1.00         3
 - Mean groung truth labels per item: 1.09
 - Mean predicted labels per item: 1.09
 
-Execution time: 7 seconds
+Execution time: 9 seconds

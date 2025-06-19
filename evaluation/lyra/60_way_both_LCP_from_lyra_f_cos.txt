@@ -87,4 +87,4 @@ genres--Southern-Italian       0.80      0.67      0.73        18
 - Mean groung truth labels per item: 7.32
 - Mean predicted labels per item: 5.7
 
-Execution time: 379 seconds
+Execution time: 11 seconds

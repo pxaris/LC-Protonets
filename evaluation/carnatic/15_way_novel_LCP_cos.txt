@@ -42,4 +42,4 @@ instrument--Tambura       0.09      0.17      0.12         6
 - Mean groung truth labels per item: 1.03
 - Mean predicted labels per item: 1.08
 
-Execution time: 6 seconds
+Execution time: 13 seconds

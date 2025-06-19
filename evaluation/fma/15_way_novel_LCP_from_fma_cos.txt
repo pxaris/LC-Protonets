@@ -42,4 +42,4 @@ Singer-Songwriter       0.60      0.83      0.70       114
 - Mean groung truth labels per item: 1.11
 - Mean predicted labels per item: 1.09
 
-Execution time: 10 seconds
+Execution time: 8 seconds

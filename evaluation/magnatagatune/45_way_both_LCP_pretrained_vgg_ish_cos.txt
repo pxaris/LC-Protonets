@@ -72,4 +72,4 @@ electric guitar       0.13      0.26      0.18        46
 - Mean groung truth labels per item: 2.72
 - Mean predicted labels per item: 2.8
 
-Execution time: 461 seconds
+Execution time: 21 seconds

@@ -5,31 +5,31 @@ Evaluation of model "makam/LCP_from_makam_cos" on "makam" test set, with
 - distance: cos
 
 Test set evaluation:
-- macro-f1: 0.3114074074074074
-- micro-f1: 0.33447098976109213
+- macro-f1: 0.5122612921669525
+- micro-f1: 0.5270758122743683
 
 
 Classification report:
                    precision    recall  f1-score   support
 
-     makam--Mahur       0.20      0.06      0.09        35
-      usul--Semai       0.00      0.00      0.00        26
-instrument--Daire       0.86      0.92      0.89        26
-  makam--Hicazkar       0.23      0.55      0.32        29
-  makam--Muhayyer       0.24      0.28      0.26        25
+      usul--Semai       0.50      0.42      0.46        26
+instrument--Daire       0.65      1.00      0.79        26
+     makam--Mahur       0.60      0.43      0.50        35
+  makam--Muhayyer       0.40      0.40      0.40        25
+  makam--Hicazkar       0.46      0.38      0.42        29
 
-        micro avg       0.32      0.35      0.33       141
-        macro avg       0.30      0.36      0.31       141
-     weighted avg       0.30      0.35      0.30       141
-      samples avg       0.34      0.34      0.34       141
+        micro avg       0.54      0.52      0.53       141
+        macro avg       0.52      0.53      0.51       141
+     weighted avg       0.53      0.52      0.51       141
+      samples avg       0.54      0.53      0.53       141
 
 
 [INFO]
 - Method: LCP
-- # Prototypes: 7
-- # Unique items in support set: 13
-- # Unique items in query set: 138
-- Mean groung truth labels per item: 1.02
-- Mean predicted labels per item: 1.1
+- # Prototypes: 5
+- # Unique items in support set: 15
+- # Unique items in query set: 136
+- Mean groung truth labels per item: 1.04
+- Mean predicted labels per item: 1.0
 
 Execution time: 3 seconds
