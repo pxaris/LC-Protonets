@@ -146,8 +146,11 @@ def evaluate(model, dataloader, config, is_test=True):
             # predictions
             if config['method'] == 'LCP':
                 # get predictions with LC-Protonets method
-                predictions = get_lc_protonets_predictions(
-                    distances, model.support_label_combinations, query_labels.shape[1], tqdm_active=is_test)
+                if model.is_optimized:
+                    predictions = get_lc_protonets_predictions_optimized(distances, model.prototype_to_combinations, query_labels.shape[1])
+                else:
+                    predictions = get_lc_protonets_predictions(
+                        distances, model.support_label_combinations, query_labels.shape[1], tqdm_active=is_test)
             else:
                 # baseline method, one prototype per label
                 probabilities = sigmoid(-distances)
@@ -183,6 +186,28 @@ def evaluate(model, dataloader, config, is_test=True):
     else:
         clf_report = None
     return tasks_macro_f1/n_tasks, tasks_micro_f1/n_tasks, clf_report, info_messages
+
+
+def get_lc_protonets_predictions_optimized(items_distances_from_unique_prototypes, prototype_to_combinations, n_labels):
+    """
+    Optimized prediction function that leverages the knowledge of unique prototypes
+    """
+    predictions = []
+    for item_distances in tqdm(items_distances_from_unique_prototypes, desc='LC-Protonets predictions (optimized)'):
+        # Find minimum distance of item from unique prototypes
+        min_dist, min_idx = torch.min(item_distances, dim=0)
+        min_idx = min_idx.item()
+        
+        # Find the best label combination for this unique prototype
+        possible_lcs = prototype_to_combinations[min_idx]
+        best_lc = max(possible_lcs, key=len)  # Get the one with more labels
+        
+        # Create prediction
+        item_prediction = np.zeros(n_labels)
+        item_prediction[list(best_lc)] = 1
+        predictions.append(item_prediction)
+    
+    return predictions
 
 
 def evaluate_ovr(model, dataloader, config, is_test=True):
