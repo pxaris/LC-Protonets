@@ -32,4 +32,4 @@ weighted avg       0.44      0.50      0.45      3354
 - Mean groung truth labels per item: 1.34
 - Mean predicted labels per item: 1.5
 
-Execution time: 15 seconds
+Execution time: 13 seconds

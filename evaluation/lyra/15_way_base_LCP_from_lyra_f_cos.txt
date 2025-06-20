@@ -42,4 +42,4 @@ instruments--Percussion       0.81      0.71      0.75       178
 - Mean groung truth labels per item: 4.87
 - Mean predicted labels per item: 4.74
 
-Execution time: 25 seconds
+Execution time: 7 seconds

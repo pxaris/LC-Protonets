@@ -5,86 +5,86 @@ Evaluation of model "makam/LCP_from_makam_f_cos" on "makam" test set, with
 - distance: cos
 
 Test set evaluation:
-- macro-f1: 0.3068426536471373
-- micro-f1: 0.5701654667171908
+- macro-f1: 0.3076968270882876
+- micro-f1: 0.5776850886339937
 
 
 Classification report:
                                   precision    recall  f1-score   support
 
-                     usul--Semai       0.09      0.30      0.14        23
-                 instrument--Ney       0.93      0.74      0.83       283
-                     makam--Rast       0.05      0.08      0.07        37
-                  makam--Isfahan       0.03      0.08      0.04        12
-               instrument--Kanun       0.85      0.83      0.84       288
-                 instrument--Oud       0.86      0.80      0.83       219
-             makam--Sultanıyegah       0.00      0.00      0.00         9
-                 usul--Nimsofyan       0.00      0.00      0.00        16
-              instrument--Violin       0.95      0.76      0.84       160
-               instrument--Kudüm       0.72      0.72      0.72        39
-                 makam--Nihavent       0.27      0.04      0.08        67
-                  makam--Suzidil       0.11      0.20      0.14        10
-              usul--Devr-i Kebir       0.14      0.24      0.18        25
-                   makam--Hüzzam       0.33      0.24      0.27        59
-                     makam--Saba       0.11      0.17      0.13        12
-               instrument--Cello       0.96      0.56      0.71       154
-                 makam--Muhayyer       0.00      0.00      0.00        25
-               instrument--Viola       0.86      0.53      0.66        36
-              instrument--santur       0.67      0.75      0.71         8
-                     usul--Aksak       0.11      0.10      0.11        96
-                 makam--Karcığar       0.12      0.19      0.14        16
-                instrument--Zill       0.05      0.12      0.07         8
-                usul--Türkaksağı       0.00      0.00      0.00        17
-                   makam--Beyati       0.00      0.00      0.00         9
-              instrument--Tanbur       0.88      0.76      0.82       287
-            instrument--Clarinet       0.84      0.70      0.76        53
-               instrument--Rebab       0.26      0.50      0.34        10
-                   makam--Şehnaz       0.04      0.33      0.08         9
-                usul--Aksaksemai       0.22      0.10      0.14        79
-                makam--Ferahfeza       0.00      0.00      0.00        15
-instrument--performing orchestra       0.85      0.72      0.78       222
-          makam--Kürdilihicazkar       0.09      0.13      0.11        46
-                   makam--Evcara       0.02      0.22      0.04         9
-                     usul--Hafif       0.09      0.04      0.06        23
-                   usul--Serbest       0.09      0.56      0.16         9
-               usul--Senginsemai       0.00      0.00      0.00        22
-                    makam--Uşşak       0.00      0.00      0.00        57
-                    usul--Sofyan       0.10      0.09      0.09        46
-           instrument--Accordion       0.69      0.82      0.75        11
-                usul--Yürüksemai       0.00      0.00      0.00        41
-         instrument--Double bass       1.00      0.59      0.74        17
-              instrument--Bendir       0.67      0.74      0.70        58
-                  usul--Muhammes       0.00      0.00      0.00        14
-                    makam--Mahur       0.20      0.03      0.05        35
-            makam--Muhayyerkürdi       0.10      0.56      0.17         9
-                    usul--Zencir       0.07      0.50      0.13        10
-                   usul--Curcuna       0.13      0.17      0.15        52
-                    makam--Segah       0.08      0.08      0.08        38
-          instrument--Percussion       0.73      0.39      0.51       102
-               instrument--Daire       0.67      0.75      0.71        24
-                    makam--Hicaz       0.09      0.03      0.05       121
-               instrument--Voice       0.94      0.88      0.91       593
-                 makam--Hicazkar       0.21      0.21      0.21        28
-             instrument--Strings       0.57      0.92      0.71        13
-               instrument--Komuz       0.67      0.67      0.67         9
+   instrument--Classical kemençe       0.79      0.70      0.74       223
+               instrument--Viola       0.84      0.70      0.76        30
+                 makam--Karcığar       0.02      0.06      0.03        17
+                   usul--Serbest       0.10      0.56      0.16         9
+                 usul--Ağıraksak       0.10      0.14      0.11        37
+                usul--Yürüksemai       0.12      0.10      0.11        41
+             instrument--Strings       0.89      0.67      0.76        12
+                   makam--Hüzzam       0.00      0.00      0.00        60
                   makam--Suzinak       0.00      0.00      0.00        16
-                 usul--Ağıraksak       0.07      0.03      0.04        38
-   instrument--Classical kemençe       0.82      0.69      0.75       233
-                  makam--Hüseyni       0.07      0.04      0.05        26
-                     usul--Düyek       0.34      0.12      0.18        88
+               instrument--Komuz       1.00      0.40      0.57        10
+              usul--Devr-i Kebir       0.24      0.41      0.30        22
+          instrument--Percussion       0.67      0.65      0.66        91
+                   makam--Evcara       0.00      0.00      0.00         9
+                usul--Aksaksemai       0.20      0.09      0.12        78
+                     usul--Aksak       0.20      0.15      0.17        96
+               instrument--Voice       0.94      0.87      0.90       590
+                   makam--Şehnaz       0.03      0.11      0.05         9
+               instrument--Kudüm       0.75      0.73      0.74        41
+                 makam--Nihavent       0.32      0.09      0.14        68
+                 makam--Muhayyer       0.00      0.00      0.00        25
+                 instrument--Oud       0.89      0.71      0.79       214
+                 instrument--Ney       0.92      0.76      0.83       270
+            instrument--Clarinet       0.85      0.72      0.78        47
+                  makam--Isfahan       0.08      0.15      0.11        13
+                     makam--Saba       0.07      0.33      0.12        12
+                  makam--Suzidil       0.05      0.10      0.07        10
+                     usul--Hafif       0.05      0.05      0.05        21
+                    usul--Sofyan       0.05      0.02      0.03        46
+                instrument--Zill       0.33      0.12      0.18         8
+            makam--Muhayyerkürdi       0.05      0.33      0.09         9
+                    usul--Zencir       0.20      0.30      0.24        10
+          makam--Kürdilihicazkar       0.05      0.04      0.05        46
+                  makam--Hüseyni       0.08      0.04      0.06        24
+              instrument--Bendir       0.65      0.72      0.68        57
+               instrument--Kanun       0.96      0.77      0.85       282
+                     usul--Semai       0.17      0.19      0.18        26
+                   makam--Beyati       0.00      0.00      0.00         9
+                usul--Türkaksağı       0.00      0.00      0.00        18
+                  usul--Muhammes       0.04      0.14      0.06        14
+           instrument--Accordion       0.86      0.60      0.71        10
+                     makam--Rast       0.01      0.03      0.01        39
+               usul--Senginsemai       0.00      0.00      0.00        21
+               instrument--Rebab       0.20      0.60      0.30        10
+               instrument--Cello       0.89      0.71      0.79       147
+                   usul--Curcuna       0.14      0.06      0.08        53
+              instrument--Violin       0.96      0.68      0.80       153
+              instrument--Tanbur       0.90      0.80      0.85       283
+               instrument--Daire       0.62      0.64      0.63        25
+                     usul--Düyek       0.23      0.29      0.26        86
+                 usul--Nimsofyan       0.10      0.19      0.13        16
+              instrument--santur       1.00      0.44      0.62         9
+             makam--Sultanıyegah       0.00      0.00      0.00        10
+                    makam--Hicaz       0.29      0.09      0.14       119
+                makam--Ferahfeza       0.04      0.07      0.05        15
+instrument--performing orchestra       0.85      0.76      0.80       234
+                 makam--Hicazkar       0.00      0.00      0.00        29
+         instrument--Double bass       0.89      0.50      0.64        16
+                    makam--Segah       0.00      0.00      0.00        38
+                    makam--Mahur       0.09      0.09      0.09        35
+                    makam--Uşşak       0.12      0.05      0.07        57
 
-                       micro avg       0.59      0.55      0.57      4091
-                       macro avg       0.33      0.33      0.31      4091
-                    weighted avg       0.64      0.55      0.58      4091
-                     samples avg       0.52      0.53      0.49      4091
+                       micro avg       0.61      0.55      0.58      4025
+                       macro avg       0.35      0.31      0.31      4025
+                    weighted avg       0.65      0.55      0.59      4025
+                     samples avg       0.53      0.52      0.50      4025
 
 
 [INFO]
 - Method: LCP
-- # Prototypes: 92226
+- # Prototypes: 127532
 - # Unique items in support set: 89
 - # Unique items in query set: 968
-- Mean groung truth labels per item: 4.23
-- Mean predicted labels per item: 3.95
+- Mean groung truth labels per item: 4.16
+- Mean predicted labels per item: 3.77
 
-Execution time: 3442 seconds
+Execution time: 44 seconds

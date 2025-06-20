@@ -72,4 +72,4 @@ form--Varnam - Tana Varnam       0.20      0.21      0.20        29
 - Mean groung truth labels per item: 4.96
 - Mean predicted labels per item: 5.11
 
-Execution time: 90 seconds
+Execution time: 35 seconds

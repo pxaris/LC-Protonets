@@ -5,56 +5,56 @@ Evaluation of model "pretrained/makam/vgg_ish" on "makam" test set, with
 - distance: cos
 
 Test set evaluation:
-- macro-f1: 0.3949561975346401
-- micro-f1: 0.5685778901157377
+- macro-f1: 0.36569818043715346
+- micro-f1: 0.566
 
 
 Classification report:
                                   precision    recall  f1-score   support
 
-          instrument--Percussion       0.38      0.55      0.45       101
-               instrument--Cello       0.53      0.67      0.59       159
-                   makam--Hüzzam       0.20      0.20      0.20        60
-                     makam--Rast       0.03      0.11      0.05        38
-instrument--performing orchestra       0.90      0.75      0.82       239
-               instrument--Kanun       0.69      0.71      0.70       299
-                    makam--Hicaz       0.17      0.27      0.21       119
-                 instrument--Oud       0.90      0.50      0.65       232
-                     usul--Düyek       0.23      0.26      0.24        89
-              instrument--Bendir       0.73      0.55      0.63        60
-                usul--Aksaksemai       0.18      0.35      0.24        81
-                usul--Yürüksemai       0.17      0.05      0.08        41
-              instrument--Tanbur       0.82      0.76      0.79       293
-               instrument--Kudüm       0.74      0.51      0.61        45
-              usul--Devr-i Kebir       0.15      0.40      0.22        25
-                   usul--Curcuna       0.13      0.19      0.16        53
-                     usul--Aksak       0.21      0.14      0.17       101
-                 makam--Nihavent       0.14      0.07      0.09        70
-                    usul--Sofyan       0.09      0.04      0.06        46
-                 usul--Ağıraksak       0.15      0.11      0.12        38
-                 instrument--Ney       0.66      0.80      0.72       286
-            instrument--Clarinet       0.89      0.75      0.82        53
-               instrument--Voice       0.93      0.73      0.82       623
-   instrument--Classical kemençe       0.64      0.68      0.66       233
-                    makam--Uşşak       0.15      0.12      0.13        57
-                    makam--Segah       0.03      0.03      0.03        39
-                  makam--Hüseyni       0.05      0.12      0.07        26
-          makam--Kürdilihicazkar       0.08      0.09      0.08        47
-              instrument--Violin       0.75      0.76      0.76       164
-               instrument--Viola       0.88      0.58      0.70        38
+              instrument--Violin       0.92      0.70      0.79       164
+            instrument--Clarinet       0.91      0.38      0.53        56
+                    usul--Sofyan       0.03      0.09      0.05        46
+                    makam--Uşşak       0.07      0.04      0.05        56
+                     makam--Rast       0.00      0.00      0.00        39
+   instrument--Classical kemençe       0.84      0.71      0.77       238
+          makam--Kürdilihicazkar       0.02      0.06      0.03        47
+              instrument--Tanbur       0.86      0.82      0.84       299
+                   usul--Curcuna       0.10      0.26      0.15        53
+                usul--Yürüksemai       0.14      0.27      0.18        41
+                  makam--Hüseyni       0.00      0.00      0.00        27
+                usul--Aksaksemai       0.16      0.06      0.09        81
+              instrument--Bendir       0.67      0.62      0.64        60
+                    makam--Segah       0.03      0.03      0.03        37
+               instrument--Voice       0.91      0.76      0.83       625
+               instrument--Viola       0.88      0.19      0.31        37
+               instrument--Kudüm       0.62      0.67      0.65        46
+              usul--Devr-i Kebir       0.46      0.24      0.32        25
+                 usul--Ağıraksak       0.05      0.03      0.03        38
+instrument--performing orchestra       0.77      0.34      0.48       239
+               instrument--Kanun       0.84      0.79      0.81       301
+                 instrument--Oud       0.78      0.62      0.69       230
+                 instrument--Ney       0.81      0.51      0.63       294
+                 makam--Nihavent       0.10      0.11      0.11        70
+                     usul--Aksak       0.41      0.07      0.12       103
+                    makam--Hicaz       0.27      0.18      0.22       121
+               instrument--Cello       0.81      0.64      0.72       158
+                   makam--Hüzzam       0.11      0.15      0.13        62
+          instrument--Percussion       0.72      0.71      0.72       103
+                     usul--Düyek       0.12      0.07      0.09        90
 
-                       micro avg       0.57      0.57      0.57      3755
-                       macro avg       0.42      0.39      0.39      3755
-                    weighted avg       0.62      0.57      0.58      3755
-                     samples avg       0.50      0.54      0.48      3755
+                       micro avg       0.62      0.52      0.57      3786
+                       macro avg       0.45      0.34      0.37      3786
+                    weighted avg       0.67      0.52      0.58      3786
+                     samples avg       0.53      0.50      0.48      3786
 
 
 [INFO]
 - Method: LCP
-- # Prototypes: 20351
-- # Unique items in support set: 43
-- # Unique items in query set: 1014
-- Mean groung truth labels per item: 3.7
-- Mean predicted labels per item: 3.71
+- # Prototypes: 15821
+- # Unique items in support set: 40
+- # Unique items in query set: 1017
+- Mean groung truth labels per item: 3.72
+- Mean predicted labels per item: 3.16
 
-Execution time: 1036 seconds
+Execution time: 28 seconds

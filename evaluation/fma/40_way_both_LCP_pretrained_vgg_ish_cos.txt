@@ -5,8 +5,8 @@ Evaluation of model "pretrained/fma/vgg_ish" on "fma" test set, with
 - distance: cos
 
 Test set evaluation:
-- macro-f1: 0.30273941388186
-- micro-f1: 0.47787238515715336
+- macro-f1: 0.3027258036388919
+- micro-f1: 0.47784726966941715
 
 
 Classification report:
@@ -67,4 +67,4 @@ Old-Time / Historic       0.87      0.95      0.91        84
 - Mean groung truth labels per item: 1.9
 - Mean predicted labels per item: 2.05
 
-Execution time: 105 seconds
+Execution time: 35 seconds

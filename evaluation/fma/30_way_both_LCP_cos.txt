@@ -57,4 +57,4 @@ Ambient Electronic       0.13      0.18      0.15       198
 - Mean groung truth labels per item: 1.78
 - Mean predicted labels per item: 2.34
 
-Execution time: 57 seconds
+Execution time: 25 seconds

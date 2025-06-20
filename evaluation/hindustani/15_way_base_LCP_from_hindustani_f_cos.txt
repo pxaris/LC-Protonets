@@ -42,4 +42,4 @@ instrument--Harmonium       0.81      0.49      0.61        86
 - Mean groung truth labels per item: 3.42
 - Mean predicted labels per item: 2.89
 
-Execution time: 23 seconds
+Execution time: 38 seconds
