@@ -11,7 +11,7 @@ This implementation includes significant performance optimizations that **accele
 [**LC-Protonets: Multi-label Few-shot learning for world music audio tagging**](https://ieeexplore.ieee.org/abstract/document/10839319).  
 - Charilaos Papaioannou, Emmanouil Benetos, and Alexandros Potamianos
 
-[**Universal Music Representations? Evaluating Foundation Models on World Music Corpora**](https://arxiv.org/__TBD__), ISMIR 2025.  
+[**Universal Music Representations? Evaluating Foundation Models on World Music Corpora**](https://arxiv.org/abs/2506.17055), ISMIR 2025.  
 - Charilaos Papaioannou, Emmanouil Benetos, and Alexandros Potamianos
 
 ## Requirements
